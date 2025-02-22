@@ -27,12 +27,12 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+repo_theme_light: default # set the GitHub Readme Stats card themes in light mode https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md (default: default)
+repo_theme_dark: dark # set the GitHub Readme Stats card themes in dark mode https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md (default: dark)
+repo_trophies: # configure GitHub profile trophies
+  enabled: true # show GitHub profile trophies (default: true)
+  theme_light: flat # set the GitHub trophies theme in light mode https://github.com/ryo-ma/github-profile-trophy (default: flat)
+  theme_dark: gitdimmed # set the GitHub trophies theme in dark mode https://github.com/ryo-ma/github-profile-trophy (default: gitdimmed)
 
 # -----------------------------------------------------------------------------
 # RSS Feed
