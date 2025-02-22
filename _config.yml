@@ -40,7 +40,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: true # enable the display of an RSS feed icon and link on your site, allowing visitors to subscribe to your RSS feed if they choose (default: true)
 
 # -----------------------------------------------------------------------------
 # Layout
