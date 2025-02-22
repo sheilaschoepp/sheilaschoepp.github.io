@@ -2,25 +2,25 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: Sheila
+title: blank # website title; if blank, first and last name will be used instead of a custom title (default: blank)
+first_name: Sheila # display name
 middle_name:
 last_name: Schoepp
 #contact_note: >
 #  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: > # a short overview of your site—used by search engines and social media (note: the ">" symbol means to ignore newlines until "footer_text:")
   I am a Computing Science PhD student at the University of Alberta, exploring how foundation models can enhance reinforcement learning.
-footer_text: >
+footer_text: > # display custom text in the footer
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-keywords: artificial intelligence, AI, reinforcement learning, RL, large language model, LLM, vision language model, VLM, foundation model, FM, deep learning, DL, robots, robotics, university of alberta, academic, research # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+keywords: artificial intelligence, AI, reinforcement learning, RL, large language model, LLM, vision language model, VLM, foundation model, FM, deep learning, DL, robots, robotics, university of alberta, academic, research # comma-separated terms to help with SEO (improves search engine visibility)
+lang: en # the primary language of the site
+icon: ⚛️ # favicon for the site (can be an emoji or the name of an image in assets/img/)
 
-url: https://sheilaschoepp.github.io # the base hostname & protocol for your site
-baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: true # set to true if you want to display last updated in the footer
+url: https://sheilaschoepp.github.io # the main address for the site
+baseurl: # a path if your site is in a subdirectory (e.g. /blog); leave empty for root
+last_updated: true # display a “Last updated” date in the footer (default: false)
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+back_to_top: true # show the back to top button at the bottom right of the page (default: true)
 
 # -----------------------------------------------------------------------------
 # Theme
