@@ -46,14 +46,14 @@ rss_icon: true
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
-search_enabled: true
-socials_in_search: true
-bib_search: true
+navbar_fixed: true # keep the top navigation bar fixed in place while scrolling (default: true)
+footer_fixed: true # keep the bottom navigation bar fixed in place while scrolling (default: true)
+search_enabled: true # activate the built-in site search functionality (default: true)
+socials_in_search: true # display social icons or links within the search interface (default: true)
+bib_search: true # if using publication features, enable searching through bibliography entries (default: true)
 
 # Dimensions
-max_width: 930px
+max_width: 1000px # maximum content width (default: 930px)
 
 # TODO: add layout settings (single page vs. multi-page)
 
