@@ -6,7 +6,7 @@ title: blank # website title; if blank, first and last name will be used instead
 first_name: Sheila # display name
 middle_name:
 last_name: Schoepp
-#contact_note: >
+#contact_note: > # optional field for adding a short note that shows up near your contact info on the site (for example, a note about your preferred method of contact)
 #  You can even add a little note about which of these is the best way to reach you.
 description: > # a short overview of your site—used by search engines and social media (note: the ">" symbol means to ignore newlines until "footer_text:")
   I am a Computing Science PhD student at the University of Alberta, exploring how foundation models can enhance reinforcement learning.
