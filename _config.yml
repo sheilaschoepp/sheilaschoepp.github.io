@@ -66,6 +66,7 @@ max_width: 1000px # maximum content width (default: 930px)
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
+
 serve_og_meta: false # include Open Graph meta tags in the HTML head for better social media previews
 serve_schema_org: false # include Schema.org structured data in the HTML head to help search engines parse site information
 og_image: # a default Open Graph preview image for social media links if no specific image is set on an individual page
@@ -89,8 +90,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: # blog_name will be displayed in your blog page
+blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
