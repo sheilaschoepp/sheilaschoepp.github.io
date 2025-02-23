@@ -17,14 +17,18 @@ lang: en # the primary language of the site
 icon: ⚛️ # favicon for the site (can be an emoji or the name of an image in assets/img/)
 
 url: https://sheilaschoepp.github.io # the main address for the site
-baseurl: # a path if your site is in a subdirectory (e.g. /blog); leave empty for root
-last_updated: true # display a “Last updated” date in the footer (default: false)
+baseurl: # a path if your site is in a subdirectory (e.g. /blog); leave empty for root (default: empty)
+last_updated: true # display a “last updated” date in the footer (default: false)
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # show the back to top button at the bottom right of the page (default: true)
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
+
+# code highlighter theme
+highlight_theme_light: github # code highlight theme used in light mode https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native # code highlight theme used in dark mode https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
 repo_theme_light: default # set the GitHub Readme Stats card themes in light mode https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md (default: default)
