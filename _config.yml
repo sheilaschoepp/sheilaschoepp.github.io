@@ -147,15 +147,15 @@ newsletter:
 # Collections
 # -----------------------------------------------------------------------------
 
-collections:
+collections: # a method to group different types of content
   news:
     defaults:
-      layout: post
-    output: true
-    permalink: /:collection/:title/
+      layout: post # set the layout to use for any item in this collection (default: post)
+    output: true # render this collection as pages (otherwise they’d remain data-only) (default: true)
+    permalink: /:collection/:title/ # defines the URL structure; for an item in “news,” you’d get /news/<title>/ (default: /:collection/:title/)
   projects:
-    output: true
-    permalink: /:collection/:title/
+    output: true # render this collection as pages (otherwise they’d remain data-only) (default: true)
+    permalink: /:collection/:title/ # defines the URL structure; for an item in “projects,” you’d get /projects/<title>/ (default: /:collection/:title/)
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
