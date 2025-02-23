@@ -90,33 +90,33 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: # blog_name will be displayed in your blog page
-blog_description:
-permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+blog_name: # blog_name will be displayed in your blog page (default: blank)
+blog_description: # blog_description will be displayed in your blog page (default: blank)
+permalink: /blog/:year/:title/ # the URL structure for your posts (default: /blog/:year/:title/)
+lsi: false # build a semantic index for related-post suggestions (default: false)
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: true # split a long list of blog posts into multiple pages, rather than displaying them all at once
 
 related_blog_posts:
-  enabled: true
-  max_related: 5
+  enabled: true # show a “related posts” section for each blog post (default: true)
+  max_related: 5 # maximum number of related posts to display (default: 5)
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
 giscus:
-  repo: # <your-github-user-name>/<your-github-repo-name>
-  repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
-  category: Comments # name of the category under which discussions will be created
-  category_id: # leave empty or specify your category_id (see https://giscus.app/)
-  mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
-  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
-  emit_metadata: 0
-  lang: en
+  repo: # specifies which GitHub repository hosts the discussion threads for your comments (<your-github-user-name>/<your-github-repo-name>) (default: blank)
+  repo_id: # unique identifier for the above repository (see https://giscus.app/) (default: blank)
+  category: Comments # name of the GitHub discussions category where new discussions (blog comments) are created (default: blank)
+  category_id: # id of the GitHub discussions category where new discussions are created (see https://giscus.app/) (default: blank)
+  mapping: title # connect a blog post to GitHub discussion by post title (default: title)
+  strict: 1 # use strict identification mode, where mapping is based on the exact post title (default: 1)
+  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions on comments (default: 1)
+  input_position: bottom # display input form below (bottom) or above (top) the comments (default: bottom)
+  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode) (default: preferred_color_scheme)
+  emit_metadata: 0 # enable (1) or disable (0) metadata emission (default: 0)
+  lang: en # interface language for the Giscus widget (default: en)
 
 # Disqus comments (DEPRECATED)
 disqus_shortname: al-folio # put your disqus shortname
