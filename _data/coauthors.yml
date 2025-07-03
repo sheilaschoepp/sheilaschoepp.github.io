@@ -1,34 +1,35 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"abdollahi":
+  - firstname: ["Fatemeh"]
+    url: https://www.linkedin.com/in/fatemeh-abdollahi/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"cao":
+  - firstname: ["Yingyue"]
+    url: https://scholar.google.ca/citations?user=s8SwPGkAAAAJ # https://www.linkedin.com/in/yingyue-cao-2b2724234/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"golestan":
+  - firstname: ["Shadan"]
+    url: https://shadangolestan.github.io/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"jafaripour":
+  - firstname: ["Masoud"]
+    url: https://sites.google.com/view/masoud-jafaripoor/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"sufiyan":
+  - firstname: ["Zahin"]
+    url: https://scholar.google.com/citations?user=shEWfaIAAAAJ
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"taghian":
+  - firstname: ["Mehran"]
+    url: https://mehrantaghian.github.io/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"taylor":
+  - firstname: ["Matthew", "Matthew E.", "M. E."]
+    url: https://drmatttaylor.net/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"yang":
+  - firstname: ["Tianpei"]
+    url: https://tianpeiyang.github.io/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"zaiane":
+  - firstname: ["Osmar", "Osmar R.", "O. R."]
+    url: https://webdocs.cs.ualberta.ca/~zaiane/
