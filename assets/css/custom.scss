@@ -1,0 +1,55 @@
+// assets/css/custom.scss
+// make sure this file is imported *after* main.scss in your build!
+
+//.publications {
+//
+//  /* make the paper title the boldest */
+//  ol.bibliography li .title {
+//    font-weight: bold;
+//  }
+//
+//  /* first author (wrapped in <em>) bold, no underline */
+//  ol.bibliography li .author > em {
+//    font-style: normal;
+//    font-weight: bolder;
+//    border-bottom: none;
+//  }
+//
+//  /* all other authors normal weight, no underline */
+//  ol.bibliography li .author a {
+//    font-style: normal;
+//    font-weight: normal;
+//    border-bottom: none;
+//    text-decoration: none;
+//  }
+//}
+
+/*–––– Publications: first author bold+colour, co-authors normal+black ––––*/
+.publications ol.bibliography li {
+  /* super‐bold paper title (leave its colour as is) */
+  .title {
+    font-weight: bold;
+  }
+
+  .author {
+    /* your name (the <em> wrapped author) */
+    > em {
+      font-style: normal;
+      font-weight: bolder !important;
+      color: var(--global-theme-color);
+      border-bottom: none;
+    }
+
+    /* everyone else (the <a> links) */
+    a {
+      font-style: normal;
+      font-weight: lighter;
+      color: var(--global-text-color);
+      border-bottom: 1px dashed black;
+    }
+
+    a:hover {
+      border-bottom: 1px solid black;
+    }
+  }
+}
