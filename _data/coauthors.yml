@@ -1,25 +1,33 @@
 "abdollahi":
-  - firstname: ["Fatemeh"]
+  - firstname: ["Fatemeh", "F."]
     url: https://www.linkedin.com/in/fatemeh-abdollahi/
 
 "cao":
-  - firstname: ["Yingyue"]
+  - firstname: ["Yingyue", "Y."]
     url: https://scholar.google.ca/citations?user=s8SwPGkAAAAJ # https://www.linkedin.com/in/yingyue-cao-2b2724234/
 
 "golestan":
-  - firstname: ["Shadan"]
+  - firstname: ["Shadan", "S."]
     url: https://shadangolestan.github.io/
 
 "jafaripour":
-  - firstname: ["Masoud"]
+  - firstname: ["Masoud", "M."]
     url: https://sites.google.com/view/masoud-jafaripoor/
 
+"miwa":
+  - firstname: ["Shotaro", "S."]
+    url: https://scholar.google.ca/citations?user=95Fsr6QAAAAJ
+
+"mitsuka":
+  - firstname: ["Yoshihiro", "Y."]
+    url: https://scholar.google.com/citations?user=j9S4_fYAAAAJ
+
 "sufiyan":
-  - firstname: ["Zahin"]
+  - firstname: ["Zahin", "Z."]
     url: https://scholar.google.com/citations?user=shEWfaIAAAAJ
 
 "taghian":
-  - firstname: ["Mehran"]
+  - firstname: ["Mehran", "M."]
     url: https://mehrantaghian.github.io/
 
 "taylor":
@@ -27,7 +35,7 @@
     url: https://drmatttaylor.net/
 
 "yang":
-  - firstname: ["Tianpei"]
+  - firstname: ["Tianpei", "T."]
     url: https://tianpeiyang.github.io/
 
 "zaiane":
