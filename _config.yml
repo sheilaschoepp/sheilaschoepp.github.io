@@ -2,39 +2,39 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
+title: blank # website title; if blank, first and last name will be used instead of a custom title
+first_name: Sheila # display name
+middle_name:
+last_name: Schoepp
+contact_note: > # optional field for adding a short note that shows up near your contact info on the site (for example, a note about your preferred method of contact)
+# You can even add a little note about which of these is the best way to reach you.
+description: > # a short overview of your site—used by search engines and social media (note: the ">" symbol means to ignore newlines until "footer_text:")
+  I am a Computing Science PhD student at the University of Alberta, exploring how foundation models can enhance reinforcement learning.
+footer_text: > # display custom text in the footer
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
-lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+#  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+#  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+keywords: artificial intelligence, AI, reinforcement learning, RL, large language model, LLM, vision language model, VLM, foundation model, FM, deep learning, DL, robots, robotics, university of alberta, academic, academia, research # add your own keywords or leave empty (comma-separated terms to improve search engine visibility)
+lang: en # the primary language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️ # favicon for the site (can be an emoji or the name of an image in assets/img/)
 
-url: https://sheilaschoepp.github.io # the base hostname & protocol for your site (default: https://alshedivat.github.io)
-baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root (default: /al-folio)
-last_updated: false # set to true if you want to display last updated in the footer
+url: https://sheilaschoepp.github.io # the base hostname & protocol for your site
+baseurl: # a path if your site is in a subdirectory (e.g. /blog); leave empty for root
+last_updated: true # display a “Last updated” date in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
-back_to_top: true # set to false to disable the back to top button
+back_to_top: true # show the back to top button at the bottom right of the page
 
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_trophies:
-  enabled: true
-  theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
+repo_theme_light: default # set the GitHub Readme Stats card themes in light mode (https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md)
+repo_theme_dark: dark # set the GitHub Readme Stats card themes in dark mode (https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md)
+repo_trophies: # configure GitHub profile trophies
+  enabled: true # show GitHub profile trophies
+  theme_light: flat # set the GitHub trophies theme in light mode (https://github.com/ryo-ma/github-profile-trophy)
+  theme_dark: gitdimmed # set the GitHub trophies theme in dark mode (https://github.com/ryo-ma/github-profile-trophy)
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -46,15 +46,15 @@ repo_trophies:
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
-bib_search: true
+navbar_fixed: true # keep the top navigation bar fixed in place while scrolling
+footer_fixed: true # keep the bottom navigation bar fixed in place while scrolling
+search_enabled: true # activate the built-in site search functionality
+socials_in_search: true # display social icons or links within the search interface
+posts_in_search: true # if using publication features, enable searching through blog posts
+bib_search: true # if using publication features, enable searching through bibliography entries
 
 # Dimensions
-max_width: 930px
+max_width: 1000px # maximum content width
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -63,9 +63,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: false # include Open Graph meta tags in the HTML head for better social media previews
+serve_schema_org: false # include Schema.org structured data in the HTML head to help search engines parse site information
+og_image: # a default Open Graph preview image for social media links if no specific image is set on an individual page
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -86,10 +86,10 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
+blog_name: # blog_name will be displayed in your blog page
+blog_description: # blog_description will be displayed in your blog page
+permalink: /blog/:year/:title/ # the URL structure for your posts
+lsi: false # build a semantic index for related-post suggestions
 
 # Pagination
 pagination:
@@ -122,20 +122,20 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
+#external_sources:
+#  - name: medium.com
+#    rss_url: https://medium.com/@al-folio/feed
+#  - name: Google Blog
+#    posts:
+#      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#        published_date: 2024-05-14
 
 # -----------------------------------------------------------------------------
 # Newsletter
 # -----------------------------------------------------------------------------
 
 newsletter:
-  enabled: false
+  enabled: false # adds a form that collects emails (or other data) and sends them to the specified endpoint
   endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
@@ -143,7 +143,7 @@ newsletter:
 # Collections
 # -----------------------------------------------------------------------------
 
-collections:
+collections: # a method to group different types of content
   books:
     output: true
   news:
@@ -192,6 +192,14 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/blog.md
+  - _pages/cv.md
+  - _pages/dropdown.md
+  - _pages/news.md
+  - _pages/profiles.md
+  - _pages/projects.md
+  - _pages/repositories.md
+  - _pages/teaching.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -260,12 +268,12 @@ display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] #
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
-# Jekyll Scholar
+# Jekyll Scholar (Publications)
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Schoepp]
+  first_name: [Sheila]
 
   style: apa
   locale: en
@@ -324,7 +332,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
