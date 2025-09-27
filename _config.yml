@@ -50,7 +50,7 @@ repo_trophies: # configure GitHub profile trophies
 
 navbar_fixed: true # keep the top navigation bar fixed in place while scrolling
 footer_fixed: true # keep the bottom navigation bar fixed in place while scrolling
-search_enabled: true # activate the built-in site search functionality
+search_enabled: false # activate the built-in site search functionality
 socials_in_search: true # display social icons or links within the search interface
 posts_in_search: true # if using publication features, enable searching through blog posts
 bib_search: true # if using publication features, enable searching through bibliography entries
