@@ -6,9 +6,9 @@
   - firstname: ["Yingyue", "Y."]
     url: https://scholar.google.ca/citations?user=s8SwPGkAAAAJ # https://www.linkedin.com/in/yingyue-cao-2b2724234/
 
-#"golestan":
-#  - firstname: ["Shadan", "S."]
-#    url: https://shadangolestan.github.io/
+"golestan":
+  - firstname: ["Shadan", "S."]
+    url: https://shadangolestan.github.io/
 
 "jafaripour":
   - firstname: ["Masoud", "M."]
@@ -22,9 +22,9 @@
   - firstname: ["Yoshihiro", "Y."]
     url: https://scholar.google.com/citations?user=j9S4_fYAAAAJ
 
-#"sufiyan":
-#  - firstname: ["Zahin", "Z."]
-#    url: https://scholar.google.com/citations?user=shEWfaIAAAAJ
+"sufiyan":
+  - firstname: ["Zahin", "Z."]
+    url: https://scholar.google.com/citations?user=shEWfaIAAAAJ
 
 "taghian":
   - firstname: ["Mehran", "M."]
