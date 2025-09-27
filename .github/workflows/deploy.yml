@@ -92,9 +92,8 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
-          bundle info jekyll-imagemagick || true   # shows if the gem is present
           export JEKYLL_ENV=production
-          bundle exec jekyll build --trace
+          bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
