@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2025-08-16 08:00:00+0800
 inline: true
-related_posts: false
+related_posts: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Attended IJCAI 2025 in Montreal, Canada (August 16 - 22, 2025).
