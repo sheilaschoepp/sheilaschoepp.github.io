@@ -16,7 +16,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "news-gave-a-talk-in-amii-s-ai-seminar-series-at-the-university-of-alberta-youtube",
+        },{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
+          title: 'Began serving as a workflow chair for AAAI 2026 (May 2025 - January...',
+          description: "",
+          section: "News",},{id: "news-gave-a-talk-in-amii-s-ai-seminar-series-at-the-university-of-alberta-youtube",
           title: 'Gave a talk in Amii’s AI Seminar series at the University of Alberta...',
           description: "",
           section: "News",},{id: "news-attended-ijcai-2025-in-montreal-canada-august-16-22-2025",
