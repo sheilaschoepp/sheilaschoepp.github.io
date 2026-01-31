@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Gave a talk in Amii's AI Seminar series at the University of Alberta ([YouTube](https://www.youtube.com/watch?v=fDAXERcy7Bc)).
+Gave a talk in Amii's AI Seminar series at the University of Alberta.
