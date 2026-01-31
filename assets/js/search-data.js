@@ -16,16 +16,17 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+        },{id: "news-gave-a-talk-in-amii-s-ai-seminar-series-at-the-university-of-alberta-youtube",
+          title: 'Gave a talk in Amii’s AI Seminar series at the University of Alberta...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-attended-ijcai-2025-in-montreal-canada-august-16-22-2025",
+          title: 'Attended IJCAI 2025 in Montreal, Canada (August 16 - 22, 2025).',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-presented-our-paper-the-evolving-landscape-of-llm-and-vlm-integrated-reinforcement-learning-at-ijcai-2025",
+          title: 'Presented our paper, “The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning”, at...',
+          description: "",
+          section: "News",},{id: "news-attended-aaai-2026-in-singapore-january-20-27-2026",
+          title: 'Attended AAAI 2026 in Singapore (January 20 - 27, 2026).',
           description: "",
           section: "News",},{
         id: 'social-email',
