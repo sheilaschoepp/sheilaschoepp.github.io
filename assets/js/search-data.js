@@ -38,6 +38,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/moonwalking_with_einstein/";
+            },},{id: "books-psycho-cybernetics-updated-and-expanded",
+          title: 'Psycho-Cybernetics: Updated and Expanded',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/psycho_cybernetics/";
             },},{id: "books-the-courage-to-be-disliked-the-japanese-phenomenon-that-shows-you-how-to-change-your-life-and-achieve-real-happiness",
           title: 'The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to...',
           description: "",
