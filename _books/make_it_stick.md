@@ -5,7 +5,7 @@ author: Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel
 cover: assets/img/book_covers/make_it_stick.jpg
 olid:
 isbn:
-categories: ["non-fiction", "professional & technical", "professional science", "behavioral sciences", "cognitive psychology"]
+categories: ["business & investing", "management & leadership", "management"]
 tags:
 buy_link: https://www.amazon.ca/Four-Thousand-Weeks-smash-hit-bestseller/dp/0735232482
 date: 2026-01-18
@@ -14,7 +14,7 @@ finished:
 released: 2023
 stars: 4.6
 goodreads_review:
-status: reading # options: abandoned, finished, interested, paused, queued, reading, reread
+status: queued # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--

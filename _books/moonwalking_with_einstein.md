@@ -5,7 +5,7 @@ author: Joshua Foer
 cover: assets/img/book_covers/moonwalking_with_einstein.jpg
 olid:
 isbn:
-categories: ["non-fiction", "medicine", "internal medicine", "neurology", "neuroscience"]
+categories: ["medicine", "internal medicine", "neurology", "neuroscience"]
 tags:
 buy_link: https://www.amazon.ca/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530
 date: 2023-08-12

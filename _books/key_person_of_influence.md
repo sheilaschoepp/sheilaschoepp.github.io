@@ -5,7 +5,7 @@ author: Daniel Priestley and Mike Reid
 cover: assets/img/book_covers/key_person_of_influence.jpg
 olid:
 isbn:
-categories: ["non-fiction", "business & investing", "industries and professions", "human resources & personnel management", "knowledge capital"]
+categories: ["professional & technical", "business management", "management & leadership", "leadership"] # these are from the Canadian edition
 tags:
 buy_link: https://www.amazon.ca/Key-Person-Influence-Revised-Five-Step/dp/178133109X
 date: 2026-01-15

@@ -5,7 +5,7 @@ author: Oliver Burkeman
 cover: assets/img/book_covers/four_thousand_weeks.jpg
 olid:
 isbn:
-categories: ["non-fiction", "business & investing", "management & leadership", "management"]
+categories: ["business & investing", "management & leadership", "management"]
 tags:
 buy_link: https://www.amazon.ca/Four-Thousand-Weeks-smash-hit-bestseller/dp/0735232482
 date: 2026-01-18

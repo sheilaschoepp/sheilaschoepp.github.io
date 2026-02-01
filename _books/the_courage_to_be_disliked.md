@@ -5,9 +5,9 @@ author: Ichiro Kishimi and Fumitake Koga
 cover: assets/img/book_covers/the_courage_to_be_disliked.jpg
 olid:
 isbn:
-categories: ["non-fiction", "health, fitness, & dieting", "mental health", "happiness"]
+categories: ["health, fitness & dieting", "mental health", "happiness"]
 tags:
-buy_link: https://www.amazon.ca/Courage-Be-Disliked-Yourself-Happiness/dp/B079MB72PT
+buy_link: https://www.amazon.ca/Courage-Be-Disliked-Phenomenon-Happiness/dp/1668065967
 date: 2023-11-12
 started:
 finished:
