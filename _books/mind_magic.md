@@ -12,7 +12,7 @@ date: 2025-02-16
 started:
 finished:
 released: 2024
-stars:
+stars: 4.6
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
