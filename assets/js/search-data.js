@@ -23,7 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
+        },{id: "books-the-courage-to-be-disliked-the-japanese-phenomenon-that-shows-you-how-to-change-your-life-and-achieve-real-happiness",
+          title: 'The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
           title: 'How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and...',
           description: "",
           section: "Books",handler: () => {
