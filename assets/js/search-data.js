@@ -53,6 +53,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-attitude-is-your-superpower-how-to-create-incredible-life-changing-success",
+          title: 'Attitude Is Your Superpower: How to Create Incredible Life-Changing Success',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/attitude_is_your_superpower/";
             },},{id: "books-mind-magic-the-neuroscience-of-manifestation-and-how-it-changes-everything",
           title: 'Mind Magic: The Neuroscience of Manifestation and How It Changes Everything',
           description: "",
