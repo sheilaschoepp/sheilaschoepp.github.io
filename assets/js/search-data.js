@@ -23,36 +23,31 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-the-courage-to-be-disliked-the-japanese-phenomenon-that-shows-you-how-to-change-your-life-and-achieve-real-happiness",
-          title: 'The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to...',
+        },{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
+          title: 'Building a Second Brain: A Proven Method to Organize Your Digital Life and...',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_courage_to_be_disliked/";
+              window.location.href = "/books/building_a_second_brain/";
             },},{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
           title: 'How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and...',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/how_to_take_smart_notes/";
-            },},{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
-          title: 'Building a Second Brain: A Proven Method to Organize Your Digital Life and...',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/building_a_second_brain/";
-            },},{id: "books-four-thousand-weeks-time-management-for-mortals",
-          title: 'Four Thousand Weeks: Time Management for Mortals',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/four_thousand_weeks/";
-            },},{id: "books-key-person-of-influence-the-five-step-method-to-become-one-of-the-most-highly-valued-and-highly-paid-people-in-your-industry",
-          title: 'Key Person of Influence: The Five-Step Method to Become One of the Most...',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/key_person_of_influence/";
             },},{id: "books-moonwalking-with-einstein-the-art-and-science-of-remembering-everything",
           title: 'Moonwalking with Einstein: The Art and Science of Remembering Everything',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/moonwalking_with_einstein/";
+            },},{id: "books-the-courage-to-be-disliked-the-japanese-phenomenon-that-shows-you-how-to-change-your-life-and-achieve-real-happiness",
+          title: 'The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-key-person-of-influence-the-five-step-method-to-become-one-of-the-most-highly-valued-and-highly-paid-people-in-your-industry",
+          title: 'Key Person of Influence: The Five-Step Method to Become One of the Most...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/key_person_of_influence/";
             },},{id: "books-talking-to-strangers-what-we-should-know-about-the-people-we-don-39-t-know",
           title: 'Talking to Strangers: What We Should Know about the People We Don&amp;#39;t Know...',
           description: "",
@@ -63,6 +58,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/when_the_body_says_no/";
+            },},{id: "books-four-thousand-weeks-time-management-for-mortals",
+          title: 'Four Thousand Weeks: Time Management for Mortals',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/four_thousand_weeks/";
             },},{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
           title: 'Began serving as a workflow chair for AAAI 2026 (May 2025 - January...',
           description: "",
