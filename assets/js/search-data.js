@@ -53,6 +53,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-mind-magic-the-neuroscience-of-manifestation-and-how-it-changes-everything",
+          title: 'Mind Magic: The Neuroscience of Manifestation and How It Changes Everything',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/mind_magic/";
             },},{id: "books-the-instant-ai-agency-how-to-cash-6-amp-7-figure-checks-in-the-new-digital-gold-rush-without-being-a-tech-nerd",
           title: 'The Instant AI Agency: How To Cash 6 &amp;amp; 7 Figure Checks In...',
           description: "",
