@@ -48,6 +48,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/talking_to_strangers/";
+            },},{id: "books-when-the-body-says-no-the-cost-of-hidden-stress",
+          title: 'When the Body Says No: The Cost of Hidden Stress',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/when_the_body_says_no/";
             },},{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
           title: 'Began serving as a workflow chair for AAAI 2026 (May 2025 - January...',
           description: "",
