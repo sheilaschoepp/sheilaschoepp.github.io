@@ -48,6 +48,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-awaken-the-giant-within-how-to-take-immediate-control-of-your-mental-emotional-physical-and-financial",
+          title: 'Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional,...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/awaken_the_giant_within/";
             },},{id: "books-discipline-is-destiny-the-power-of-self-control",
           title: 'Discipline Is Destiny: The Power of Self-Control',
           description: "",
