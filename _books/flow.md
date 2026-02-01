@@ -1,18 +1,18 @@
 ---
 layout: book-review
-title: "Moonwalking with Einstein: The Art and Science of Remembering Everything"
-author: Joshua Foer
-cover: assets/img/book_covers/moonwalking_with_einstein.jpg
+title: "Flow: The Psychology of Optimal Experience"
+author: Mihaly Csikszentmihalyi
+cover: assets/img/book_covers/flow.jpg
 olid:
 isbn:
 categories: ["medicine", "internal medicine", "neurology", "neuroscience"]
 tags:
-buy_link: https://www.amazon.ca/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530
-date: 2023-08-12
+buy_link: https://www.amazon.ca/Flow-Psychology-Experience-Mihaly-Csikszentmihalyi/dp/0061339202
+date: 2025-09-20
 started:
 finished:
-released: 2012
-stars: 4.4
+released: 2008
+stars: 4.5
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---

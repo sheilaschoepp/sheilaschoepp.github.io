@@ -14,7 +14,7 @@ finished:
 released: 2004
 stars: 4.7
 goodreads_review:
-status: queued # options: abandoned, finished, interested, paused, queued, reading, reread
+status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--

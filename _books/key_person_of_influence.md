@@ -14,7 +14,7 @@ finished:
 released: 2016
 stars: 4.6
 goodreads_review:
-status: queued # options: abandoned, finished, interested, paused, queued, reading, reread
+status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--
