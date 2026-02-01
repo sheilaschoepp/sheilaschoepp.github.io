@@ -53,6 +53,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-a-thousand-brains-a-new-theory-of-intelligence",
+          title: 'A Thousand Brains: A New Theory of Intelligence',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/a_thousand_brains/";
+            },},{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
+          title: 'Other Minds: The Octopus, the Sea, and the Deep Origins of Consciousness',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/other_minds/";
+            },},{id: "books-leaders-eat-last-why-some-teams-pull-together-and-others-don-39-t",
+          title: 'Leaders Eat Last: Why Some Teams Pull Together and Others Don&amp;#39;t',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/leaders_eat_last/";
             },},{id: "books-on-writing-a-memoir-of-the-craft",
           title: 'On Writing: A Memoir of the Craft',
           description: "",
