@@ -23,7 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
+        },{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
+          title: 'Building a Second Brain: A Proven Method to Organize Your Digital Life and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/building_a_second_brain/";
+            },},{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
           title: 'How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and...',
           description: "",
           section: "Books",handler: () => {
@@ -53,11 +58,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/when_the_body_says_no/";
-            },},{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
-          title: 'Building a Second Brain: A Proven Method to Organize Your Digital Life and...',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/building_a_second_brain/";
             },},{id: "books-four-thousand-weeks-time-management-for-mortals",
           title: 'Four Thousand Weeks: Time Management for Mortals',
           description: "",
