@@ -43,6 +43,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-flow-the-psychology-of-optimal-experience",
+          title: 'Flow: The Psychology of Optimal Experience',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/flow/";
             },},{id: "books-key-person-of-influence-the-five-step-method-to-become-one-of-the-most-highly-valued-and-highly-paid-people-in-your-industry",
           title: 'Key Person of Influence: The Five-Step Method to Become One of the Most...',
           description: "",
