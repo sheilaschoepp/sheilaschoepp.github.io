@@ -7,12 +7,12 @@ olid:
 isbn: 
 categories: ["non-fiction", "business & investing", "industries and professions", "human resources & personnel management", "knowledge capital"]
 tags:
-buy_link: https://www.amazon.ca/Key-Person-Influence-Five-Step-Industry/dp/B071W9VMC8
+buy_link: https://www.amazon.ca/Key-Person-Influence-Revised-Five-Step/dp/178133109X
 date: 2026-01-15
 started:
 finished:
-released: 2019
-stars: 0
+released: 2016
+stars: 4.6
 goodreads_review:
 status: queued # options: abandoned, finished, interested, paused, queued, reading, reread
 ---

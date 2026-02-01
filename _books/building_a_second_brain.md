@@ -8,11 +8,11 @@ isbn:
 categories: ["non-fiction", "business & investing", "management & leadership", "management"]
 tags:
 buy_link: https://www.amazon.ca/Four-Thousand-Weeks-smash-hit-bestseller/dp/0735232482
-date: 2023-08-05
+date: 2026-01-18
 started:
 finished:
 released: 2023
-stars: 0
+stars: 4.6
 goodreads_review:
 status: reading # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
