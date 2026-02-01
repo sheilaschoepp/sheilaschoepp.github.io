@@ -43,6 +43,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-blink-the-power-of-thinking-without-thinking",
+          title: 'Blink: The Power of Thinking Without Thinking',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/blink/";
             },},{id: "books-flow-the-psychology-of-optimal-experience",
           title: 'Flow: The Psychology of Optimal Experience',
           description: "",
