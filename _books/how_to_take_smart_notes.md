@@ -5,7 +5,7 @@ author: Sönke Ahrens
 cover: assets/img/book_covers/how_to_take_smart_notes.jpg
 olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: ['non-fiction', 'information management']
+categories: ['non-fiction', 'professional & technical', 'business management', 'management & leadership', 'information management']
 tags: 
 buy_link: https://www.amazon.ca/How-Take-Smart-Notes-Technique/dp/3982438802
 date: 2026-01-01

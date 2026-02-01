@@ -5,7 +5,7 @@ author: Gabor Maté MD
 cover: assets/img/book_covers/when_the_body_says_no.jpg
 olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: ['non-fiction', 'information management']
+categories: ['non-fiction', 'health, fitness, & dieting', 'personal health', 'stress', 'stress management']
 tags: 
 buy_link: https://www.amazon.ca/When-Body-Says-No-Hidden/dp/0676973124
 date: 2026-02-01

@@ -5,7 +5,7 @@ author: Malcolm Gladwell
 cover: assets/img/book_covers/talking_to_strangers.jpg
 olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: ['non-fiction', 'social psychology & interactions']
+categories: ['non-fiction', 'health, fitness, & dieting', 'psychology & counselling', 'social psychology & interactions']
 tags: 
 buy_link: https://www.amazon.ca/Talking-Strangers-Should-about-People/dp/0316299227
 date: 2026-02-01

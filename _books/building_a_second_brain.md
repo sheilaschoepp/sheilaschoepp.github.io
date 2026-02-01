@@ -5,7 +5,7 @@ author: Tiago Forte
 cover: assets/img/book_covers/building_a_second_brain.jpg
 olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: ['non-fiction', 'information management']
+categories: ['non-fiction', 'professional & technical', 'business management', 'management & leadership', 'information management']
 tags: 
 buy_link: https://www.amazon.ca/Four-Thousand-Weeks-smash-hit-bestseller/dp/0735232482
 date: 2026-01-02
