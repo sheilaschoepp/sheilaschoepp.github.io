@@ -1,20 +1,20 @@
 ---
 layout: book-review
-title: 
-author: 
+title:
+author:
 cover: assets/img/book_covers/todo.jpg
 olid:
 isbn:
-categories: 
+categories:
 tags:
-buy_link: 
+buy_link:
 date: YYYY-MM-DD
 started:
 finished:
 released: YYYY
-stars: 
+stars:
 goodreads_review:
-status:  # options: abandoned, finished, interested, paused, queued, reading, reread
+status: # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--
