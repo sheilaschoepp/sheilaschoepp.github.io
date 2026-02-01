@@ -7,8 +7,8 @@ olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: ['non-fiction', 'health, fitness, & dieting', 'psychology & counselling', 'social psychology & interactions']
 tags: 
-buy_link: https://www.amazon.ca/Talking-Strangers-Should-about-People/dp/0316299227
-date: 2026-02-01
+buy_link: https://www.amazon.ca/Talking-Strangers-Should-About-People/dp/B07NJ51RGF
+date: 2026-01-15
 started: 
 finished: 
 released: 2021

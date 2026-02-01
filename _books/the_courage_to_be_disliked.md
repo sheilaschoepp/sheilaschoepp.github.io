@@ -7,8 +7,8 @@ olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: ['non-fiction', 'health, fitness, & dieting', 'mental health', 'happiness']
 tags: 
-buy_link: https://www.amazon.ca/Courage-Be-Disliked-Phenomenon-Happiness/dp/1668069539
-date: 2026-01-01
+buy_link: https://www.amazon.ca/Courage-Be-Disliked-Yourself-Happiness/dp/B079MB72PT
+date: 2023-11-12
 started: 
 finished: 
 released: 2024

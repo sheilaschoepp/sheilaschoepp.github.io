@@ -7,8 +7,8 @@ olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: ['non-fiction', 'professional & technical', 'business management', 'management & leadership', 'information management']
 tags: 
-buy_link: https://www.amazon.ca/How-Take-Smart-Notes-Technique/dp/3982438802
-date: 2026-01-02
+buy_link: https://www.amazon.ca/How-Take-Smart-Notes-Technique-ebook/dp/B09V5M8FR5
+date: 2023-08-07
 started: 
 finished: 
 released: 2024

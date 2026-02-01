@@ -8,7 +8,7 @@ isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: ['non-fiction', 'medicine', 'internal medicine', 'neurology', 'neuroscience']
 tags: 
 buy_link: https://www.amazon.ca/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530
-date: 2026-02-01
+date: 2023-08-12
 started: 
 finished: 
 released: 2012
