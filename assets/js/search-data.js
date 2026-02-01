@@ -16,7 +16,39 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
+        },{id: "nav-bookshelf",
+          title: "bookshelf",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/books/";
+          },
+        },{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
+          title: 'How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_take_smart_notes/";
+            },},{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
+          title: 'Building a Second Brain: A Proven Method to Organize Your Digital Life and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/building_a_second_brain/";
+            },},{id: "books-four-thousand-weeks-time-management-for-mortals",
+          title: 'Four Thousand Weeks: Time Management for Mortals',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/four_thousand_weeks/";
+            },},{id: "books-moonwalking-with-einstein-the-art-and-science-of-remembering-everything",
+          title: 'Moonwalking with Einstein: The Art and Science of Remembering Everything',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/moonwalking_with_einstein/";
+            },},{id: "books-talking-to-strangers-what-we-should-know-about-the-people-we-don-39-t-know",
+          title: 'Talking to Strangers: What We Should Know about the People We Don&amp;#39;t Know...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/talking_to_strangers/";
+            },},{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
           title: 'Began serving as a workflow chair for AAAI 2026 (May 2025 - January...',
           description: "",
           section: "News",},{id: "news-gave-a-talk-in-amii-s-ai-seminar-series-at-the-university-of-alberta",
