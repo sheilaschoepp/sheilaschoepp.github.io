@@ -58,6 +58,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/mind_magic/";
+            },},{id: "books-say-what-you-mean-a-mindful-approach-to-nonviolent-communication",
+          title: 'Say What You Mean: A Mindful Approach to Nonviolent Communication',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/say_what_you_mean/";
             },},{id: "books-the-instant-ai-agency-how-to-cash-6-amp-7-figure-checks-in-the-new-digital-gold-rush-without-being-a-tech-nerd",
           title: 'The Instant AI Agency: How To Cash 6 &amp;amp; 7 Figure Checks In...',
           description: "",
