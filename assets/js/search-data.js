@@ -53,6 +53,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-the-instant-ai-agency-how-to-cash-6-amp-7-figure-checks-in-the-new-digital-gold-rush-without-being-a-tech-nerd",
+          title: 'The Instant AI Agency: How To Cash 6 &amp;amp; 7 Figure Checks In...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_instant_ai_agency/";
             },},{id: "books-awaken-the-giant-within-how-to-take-immediate-control-of-your-mental-emotional-physical-and-financial",
           title: 'Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional,...',
           description: "",
