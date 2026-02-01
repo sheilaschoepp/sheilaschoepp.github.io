@@ -23,7 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
+        },{id: "books-neville-goddard-the-complete-reader",
+          title: 'Neville Goddard: The Complete Reader',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/neville_goddard_the_complete_reader/";
+            },},{id: "books-building-a-second-brain-a-proven-method-to-organize-your-digital-life-and-unlock-your-creative-potential",
           title: 'Building a Second Brain: A Proven Method to Organize Your Digital Life and...',
           description: "",
           section: "Books",handler: () => {
