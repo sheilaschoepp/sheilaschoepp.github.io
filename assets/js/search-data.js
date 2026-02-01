@@ -63,6 +63,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/four_thousand_weeks/";
+            },},{id: "books-make-it-stick-the-science-of-successful-learning",
+          title: 'Make It Stick: The Science of Successful Learning',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/make_it_stick/";
             },},{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
           title: 'Began serving as a workflow chair for AAAI 2026 (May 2025 - January...',
           description: "",
