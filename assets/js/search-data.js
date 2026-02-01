@@ -43,6 +43,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-discipline-is-destiny-the-power-of-self-control",
+          title: 'Discipline Is Destiny: The Power of Self-Control',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/discipline_is_destiny/";
             },},{id: "books-blink-the-power-of-thinking-without-thinking",
           title: 'Blink: The Power of Thinking Without Thinking',
           description: "",
