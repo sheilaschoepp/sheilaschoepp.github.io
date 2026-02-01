@@ -38,6 +38,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/four_thousand_weeks/";
+            },},{id: "books-key-person-of-influence-the-five-step-method-to-become-one-of-the-most-highly-valued-and-highly-paid-people-in-your-industry",
+          title: 'Key Person of Influence: The Five-Step Method to Become One of the Most...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/key_person_of_influence/";
             },},{id: "books-moonwalking-with-einstein-the-art-and-science-of-remembering-everything",
           title: 'Moonwalking with Einstein: The Art and Science of Remembering Everything',
           description: "",
