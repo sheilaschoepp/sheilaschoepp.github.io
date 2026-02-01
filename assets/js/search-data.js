@@ -53,6 +53,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-difficult-conversations-how-to-discuss-what-matters-most",
+          title: 'Difficult Conversations: How to Discuss What Matters Most',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/difficult_conversations/";
             },},{id: "books-attitude-is-your-superpower-how-to-create-incredible-life-changing-success",
           title: 'Attitude Is Your Superpower: How to Create Incredible Life-Changing Success',
           description: "",
@@ -68,6 +73,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/say_what_you_mean/";
+            },},{id: "books-talk-like-ted-the-9-public-speaking-secrets-of-the-world-39-s-top-minds",
+          title: 'Talk Like TED: The 9 Public-Speaking Secrets of the World&amp;#39;s Top Minds',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/talk_like_ted/";
             },},{id: "books-the-instant-ai-agency-how-to-cash-6-amp-7-figure-checks-in-the-new-digital-gold-rush-without-being-a-tech-nerd",
           title: 'The Instant AI Agency: How To Cash 6 &amp;amp; 7 Figure Checks In...',
           description: "",
