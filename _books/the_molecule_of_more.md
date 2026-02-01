@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "The Molecule of More: How a Single Chemical in Your Brain Drives Love, Sex, and Creativity--and Will Determine the Fate of the Human Race"
-author: Daniel Z. Lieberman and Michael E. Long
+author: Daniel Z. Lieberman, Michael E. Long
 cover: assets/img/book_covers/the_molecule_of_more.jpg
 olid:
 isbn:

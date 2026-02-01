@@ -1,18 +1,18 @@
 ---
 layout: book-review
-title: "Say What You Mean: A Mindful Approach to Nonviolent Communication"
-author: Oren Jay Sofer, Joseph Goldstein
-cover: assets/img/book_covers/say_what_you_mean.jpg
+title: "Difficult Conversations: How to Discuss What Matters Most"
+author: Douglas Stone, Bruce Patton, Sheila Heen, Roger Fisher
+cover: assets/img/book_covers/difficult_conversations.jpg
 olid:
 isbn:
 categories: ["health, fitness & dieting", "psychology & counseling", "communication"]
 tags:
-buy_link: https://www.amazon.ca/Say-What-You-Mean-Communication/dp/161180583X
-date: 2025-02-16
+buy_link: https://www.amazon.ca/Difficult-Conversations-Discuss-What-Matters/dp/014313759X
+date: 2024-12-04
 started:
 finished:
-released: 2018
-stars: 4.7
+released: 2023
+stars: 4.6
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---

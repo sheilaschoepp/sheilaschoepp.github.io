@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to Change Your Life and Achieve Real Happiness"
-author: Ichiro Kishimi and Fumitake Koga
+author: Ichiro Kishimi, Fumitake Koga
 cover: assets/img/book_covers/the_courage_to_be_disliked.jpg
 olid:
 isbn:

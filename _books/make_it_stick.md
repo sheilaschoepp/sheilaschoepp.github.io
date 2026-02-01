@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "Make It Stick: The Science of Successful Learning"
-author: Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel
+author: Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel
 cover: assets/img/book_covers/make_it_stick.jpg
 olid:
 isbn:
