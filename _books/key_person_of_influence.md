@@ -3,8 +3,8 @@ layout: book-review
 title: "Key Person of Influence: The Five-Step Method to Become One of the Most Highly Valued and Highly Paid People in Your Industry"
 author: Daniel Priestley and Mike Reid
 cover: assets/img/book_covers/key_person_of_influence.jpg
-olid: 
-isbn: 
+olid:
+isbn:
 categories: ["non-fiction", "business & investing", "industries and professions", "human resources & personnel management", "knowledge capital"]
 tags:
 buy_link: https://www.amazon.ca/Key-Person-Influence-Revised-Five-Step/dp/178133109X

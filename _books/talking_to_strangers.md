@@ -3,8 +3,8 @@ layout: book-review
 title: "Talking to Strangers: What We Should Know about the People We Don't Know"
 author: Malcolm Gladwell
 cover: assets/img/book_covers/talking_to_strangers.jpg
-olid: 
-isbn: 
+olid:
+isbn:
 categories: ["non-fiction", "health, fitness, & dieting", "psychology & counselling", "social psychology & interactions"]
 tags:
 buy_link: https://www.amazon.ca/Talking-Strangers-Should-about-People/dp/0316299227

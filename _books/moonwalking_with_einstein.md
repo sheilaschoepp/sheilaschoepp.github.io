@@ -3,8 +3,8 @@ layout: book-review
 title: "Moonwalking with Einstein: The Art and Science of Remembering Everything"
 author: Joshua Foer
 cover: assets/img/book_covers/moonwalking_with_einstein.jpg
-olid: 
-isbn: 
+olid:
+isbn:
 categories: ["non-fiction", "medicine", "internal medicine", "neurology", "neuroscience"]
 tags:
 buy_link: https://www.amazon.ca/Moonwalking-Einstein-Science-Remembering-Everything/dp/0143120530

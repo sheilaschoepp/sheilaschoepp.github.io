@@ -3,8 +3,8 @@ layout: book-review
 title: "Four Thousand Weeks: Time Management for Mortals"
 author: Oliver Burkeman
 cover: assets/img/book_covers/four_thousand_weeks.jpg
-olid: 
-isbn: 
+olid:
+isbn:
 categories: ["non-fiction", "business & investing", "management & leadership", "management"]
 tags:
 buy_link: https://www.amazon.ca/Four-Thousand-Weeks-smash-hit-bestseller/dp/0735232482
