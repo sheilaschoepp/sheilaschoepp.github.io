@@ -1,19 +1,19 @@
 ---
 layout: book-review
-title: 'When the Body Says No: The Cost of Hidden Stress'
+title: "When the Body Says No: The Cost of Hidden Stress"
 author: Gabor Maté MD
 cover: assets/img/book_covers/when_the_body_says_no.jpg
 olid: # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
-categories: ['non-fiction', 'health, fitness, & dieting', 'personal health', 'stress', 'stress management']
-tags: 
+categories: ["non-fiction", "health, fitness, & dieting", "personal health", "stress", "stress management"]
+tags:
 buy_link: https://www.amazon.ca/When-Body-Says-No-Hidden/dp/B08Z9Z4G3V
 date: 2026-01-15
-started: 
-finished: 
+started:
+finished:
 released: 2021
 stars: 0
-goodreads_review: 
+goodreads_review:
 status: queued # Options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
