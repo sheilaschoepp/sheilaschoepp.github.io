@@ -8,11 +8,11 @@ isbn: # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: ['non-fiction', 'professional & technical', 'business management', 'management & leadership', 'information management']
 tags: 
 buy_link: https://www.amazon.ca/How-Take-Smart-Notes-Technique/dp/3982438802
-date: 2026-01-01
+date: 2026-01-02
 started: 
 finished: 
 released: 2024
-stars: 
+stars: 5
 goodreads_review: 
 status: finished # Options: abandoned, finished, interested, paused, queued, reading, reread
 ---

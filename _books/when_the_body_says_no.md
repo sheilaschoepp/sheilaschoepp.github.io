@@ -12,7 +12,7 @@ date: 2026-02-01
 started: 
 finished: 
 released: 2004
-stars: 
+stars: 0
 goodreads_review: 
 status: queued # Options: abandoned, finished, interested, paused, queued, reading, reread
 ---
