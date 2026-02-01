@@ -53,6 +53,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-on-writing-a-memoir-of-the-craft",
+          title: 'On Writing: A Memoir of the Craft',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/on_writing/";
+            },},{id: "books-scrum-the-art-of-doing-twice-the-work-in-half-the-time",
+          title: 'Scrum: The Art of Doing Twice the Work in Half the Time',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/scrum/";
+            },},{id: "books-skunk-works-a-personal-memoir-of-my-years-of-lockheed",
+          title: 'Skunk Works: A Personal Memoir of My Years of Lockheed',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/skunk_works/";
             },},{id: "books-difficult-conversations-how-to-discuss-what-matters-most",
           title: 'Difficult Conversations: How to Discuss What Matters Most',
           description: "",
