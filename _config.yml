@@ -11,12 +11,12 @@ contact_note:
 # You can even add a little note about which of these is the best way to reach you.
 description:
   > # a short overview of your site—used by search engines and social media (note: the ">" symbol means to ignore newlines until "footer_text:")
-  I am a Computing Science PhD student at the University of Alberta, exploring how foundation models can enhance reinforcement learning.
+  Ph.D. student in Computing Science at the University of Alberta, researching communication between foundation model (FM) agents and humans in cooperative decision-making tasks.
 footer_text: > # display custom text in the footer
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: artificial intelligence, AI, reinforcement learning, RL, large language model, LLM, vision language model, VLM, foundation model, FM, deep learning, DL, robots, robotics, university of alberta, academic, academia, research # add your own keywords or leave empty (comma-separated terms to improve search engine visibility)
+keywords: multi-agent systems, foundation models, human-AI interaction, reinforcement learning # add your own keywords or leave empty (comma-separated terms to improve search engine visibility)
 lang: en # the primary language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # favicon for the site (can be an emoji or the name of an image in assets/img/)
 
@@ -167,6 +167,8 @@ collections: # a method to group different types of content
   projects:
     output: true
   teachings:
+    output: true
+  services:
     output: true
 
 # -----------------------------------------------------------------------------
@@ -414,6 +416,7 @@ enable_tooltips: false # enables automatic tooltip links generated for each sect
 enable_darkmode: true # enables switching between light/dark modes
 enable_navbar_social: true # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
+enable_service_categories: true # enables categorization of services into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
