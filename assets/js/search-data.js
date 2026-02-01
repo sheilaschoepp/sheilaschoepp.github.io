@@ -73,6 +73,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_instant_ai_agency/";
+            },},{id: "books-the-molecule-of-more-how-a-single-chemical-in-your-brain-drives-love-sex-and-creativity-and-will-determine-the-fate-of-the-human-race",
+          title: 'The Molecule of More: How a Single Chemical in Your Brain Drives Love,...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_molecule_of_more/";
             },},{id: "books-awaken-the-giant-within-how-to-take-immediate-control-of-your-mental-emotional-physical-and-financial",
           title: 'Awaken the Giant Within: How to Take Immediate Control of Your Mental, Emotional,...',
           description: "",
