@@ -1,18 +1,18 @@
 ---
 layout: book-review
-title: "Blink: The Power of Thinking Without Thinking"
-author: Malcolm Gladwell
-cover: assets/img/book_covers/blink.jpg
+title: "Discipline Is Destiny: The Power of Self-Control"
+author: Ryan Holiday
+cover: assets/img/book_covers/discipline_is_destiny.jpg
 olid:
 isbn:
 categories: ["health, fitness & dieting", "psychology & counseling", "communication"]
 tags:
-buy_link: https://www.amazon.ca/Blink-Power-Thinking-Without/dp/0316010669
-date: 2025-09-20
+buy_link: https://www.amazon.ca/Discipline-Destiny-YORK-TIMES-BESTSELLER/dp/1788166345
+date: 2025-07-21
 started:
 finished:
-released: 2006
-stars: 4.4
+released: 2022
+stars: 4.6
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
