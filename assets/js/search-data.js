@@ -53,6 +53,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-the-para-method-simplify-organise-and-master-your-digital-life",
+          title: 'The PARA Method: Simplify, Organise and Master Your Digital Life',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_para_method/";
             },},{id: "books-the-human-mind-owner-39-s-manual-your-connection-to-the-universe-consciousness-and-non-human-intelligence",
           title: 'The Human Mind Owner&amp;#39;s Manual: Your Connection to the Universe, Consciousness, and Non-Human...',
           description: "",
@@ -103,6 +108,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/uncommon_sense_teaching/";
+            },},{id: "books-don-39-t-believe-everything-you-think-why-your-thinking-is-the-beginning-amp-end-of-suffering",
+          title: 'Don&amp;#39;t Believe Everything You Think: Why Your Thinking Is The Beginning &amp;amp; End...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/dont_believe_everything_you_think/";
             },},{id: "books-how-we-learn-why-brains-learn-better-than-any-machine-for-now",
           title: 'How We Learn: Why Brains Learn Better Than Any Machine ... for Now...',
           description: "",
