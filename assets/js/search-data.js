@@ -23,11 +23,36 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-deep-work-rules-for-focused-success-in-a-distracted-world",
+        },{id: "books-mastering-fear-a-navy-seal-39-s-guide",
+          title: 'Mastering Fear: A Navy SEAL&amp;#39;s Guide',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/mastering_fear/";
+            },},{id: "books-12-rules-for-life-an-antidote-to-chaos",
+          title: '12 Rules for Life: An Antidote to Chaos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/12_rules_for_life/";
+            },},{id: "books-deep-work-rules-for-focused-success-in-a-distracted-world",
           title: 'Deep Work: Rules for Focused Success in a Distracted World',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/deep_work/";
+            },},{id: "books-make-time-how-to-focus-on-what-matters-every-day",
+          title: 'Make Time: How to Focus on What Matters Every Day',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/make_time/";
+            },},{id: "books-stick-with-it-a-scientifically-proven-process-for-changing-your-life-for-good-ucla-expert-on-behavior-habits-and-transformation",
+          title: 'Stick with It: A Scientifically Proven Process for Changing Your Life―for Good –...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/stick_with_it/";
+            },},{id: "books-the-tipping-point-how-little-things-can-make-a-big-difference",
+          title: 'The Tipping Point: How Little Things Can Make a Big Difference',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_tipping_point/";
             },},{id: "books-the-book-of-why-the-new-science-of-cause-and-effect",
           title: 'The Book of Why: The New Science of Cause and Effect',
           description: "",
@@ -43,11 +68,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/dare_to_lead/";
-            },},{id: "books-unfu-k-yourself-get-out-of-your-head-and-into-your-life",
-          title: 'Unfu*k Yourself: Get Out of Your Head and into Your Life',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/unfuck_yourself/";
             },},{id: "books-becoming",
           title: 'Becoming',
           description: "",
@@ -143,6 +163,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_nature_of_personal_reality/";
+            },},{id: "books-the-first-20-hours-how-to-learn-anything-fast",
+          title: 'The First 20 Hours: How to Learn Anything . . . Fast!',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_first_20_hours/";
             },},{id: "books-think-again",
           title: 'Think Again',
           description: "",
