@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Workflow Chair
-description: Workflow chair for AAAI 2026.
+title: service 3
+description: with background image
 img: assets/img/12.jpg
 importance: 1
-category: professional
+category: teaching
 related_publications: true
 ---
 
