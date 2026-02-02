@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "The Elements of Style"
-author: William Strunk, Jr., E.B. White 
+author: William Strunk, Jr., E.B. White
 cover: assets/img/book_covers/the_elements_of_style.jpg
 olid:
 isbn:

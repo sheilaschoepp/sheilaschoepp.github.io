@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "How to Get a PhD: a Handbook for Students and Their Supervisors 7e"
-author: Estelle Phillips, Colin Johnson 
+author: Estelle Phillips, Colin Johnson
 cover: assets/img/book_covers/how_to_get_a_phd.jpg
 olid:
 isbn:
