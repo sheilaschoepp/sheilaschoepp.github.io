@@ -48,11 +48,41 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/psycho_cybernetics/";
+            },},{id: "books-behave-the-biology-of-humans-at-our-best-and-worst",
+          title: 'Behave: The Biology of Humans at Our Best and Worst',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/behave/";
+            },},{id: "books-side-hustle",
+          title: 'Side Hustle',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/side_hustle/";
+            },},{id: "books-the-body-a-guide-for-occupants",
+          title: 'The Body: A Guide for Occupants',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_body/";
             },},{id: "books-the-courage-to-be-disliked-the-japanese-phenomenon-that-shows-you-how-to-change-your-life-and-achieve-real-happiness",
           title: 'The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to...',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-willpower-rediscovering-the-greatest-human-strength",
+          title: 'Willpower: Rediscovering the Greatest Human Strength',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/willpower/";
+            },},{id: "books-100m-offers-how-to-make-offers-so-good-people-feel-stupid-saying-no",
+          title: '$100M Offers: How To Make Offers So Good People Feel Stupid Saying No...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/100m_offers/";
+            },},{id: "books-how-to-become-a-straight-a-student-the-unconventional-strategies-real-college-students-use-to-score-high-while-studying-less",
+          title: 'How to Become a Straight-A Student: The Unconventional Strategies Real College Students Use...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_become_a_straight_a_student/";
             },},{id: "books-feel-good-productivity-how-to-do-more-of-what-matters-to-you",
           title: 'Feel-Good Productivity: How to Do More of What Matters to You',
           description: "",
