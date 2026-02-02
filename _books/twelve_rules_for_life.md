@@ -2,7 +2,7 @@
 layout: book-review
 title: "12 Rules for Life: An Antidote to Chaos"
 author: Jordan B. Peterson
-cover: assets/img/book_covers/12_rules_for_life.jpg
+cover: assets/img/book_covers/twelve_rules_for_life.jpg
 olid:
 isbn:
 categories: ["health, fitness & dieting", "psychology & counseling", "applied psychology"]

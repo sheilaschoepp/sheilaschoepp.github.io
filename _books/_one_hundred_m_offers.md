@@ -2,7 +2,7 @@
 layout: book-review
 title: "$100M Offers: How To Make Offers So Good People Feel Stupid Saying No"
 author: Alex Hormozi
-cover: assets/img/book_covers/100m_offers.jpg
+cover: assets/img/book_covers/one_hundred_m_offers.jpg
 olid:
 isbn:
 categories: ["professional & technical", "business management", "marketing & sales", "marketing", "direct"]

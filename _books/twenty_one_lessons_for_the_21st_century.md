@@ -2,7 +2,7 @@
 layout: book-review
 title: "21 Lessons for the 21st Century"
 author: Yuval Noah Harari
-cover: assets/img/book_covers/21_lessons_for_the_21st_century.jpg
+cover: assets/img/book_covers/twenty_one_lessons_for_the_21st_century.jpg
 olid:
 isbn:
 categories: ["politics & social sciences", "social sciences", "anthropology", "cultural"]

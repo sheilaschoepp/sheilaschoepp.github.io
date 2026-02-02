@@ -2,7 +2,7 @@
 layout: book-review
 title: "$100M Leads: How to Get Strangers To Want To Buy Your Stuff"
 author: Alex Hormozi
-cover: assets/img/book_covers/100m_leads.jpg
+cover: assets/img/book_covers/one_hundred_m_leads.jpg
 olid:
 isbn:
 categories: ["professional & technical", "business management", "marketing & sales", "marketing", "direct"]
