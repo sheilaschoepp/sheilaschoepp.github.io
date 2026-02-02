@@ -23,7 +23,27 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-atomic-habits-an-easy-and-proven-way-to-build-good-habits-and-break-bad-ones",
+        },{id: "books-becoming",
+          title: 'Becoming',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/becoming/";
+            },},{id: "books-can-39-t-hurt-me-master-your-mind-and-defy-the-odds",
+          title: 'Can&amp;#39;t Hurt Me: Master Your Mind and Defy the Odds',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/cant_hurt_me/";
+            },},{id: "books-memory-rescue-supercharge-your-brain-reverse-memory-loss-and-remember-what-matters-most",
+          title: 'Memory Rescue: Supercharge Your Brain, Reverse Memory Loss, and Remember What Matters Most...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/memory_rescue/";
+            },},{id: "books-the-compound-effect-jumpstart-your-income-your-life-your-success",
+          title: 'The Compound Effect: Jumpstart Your Income, Your Life, Your Success',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_compound_effect/";
+            },},{id: "books-atomic-habits-an-easy-and-proven-way-to-build-good-habits-and-break-bad-ones",
           title: 'Atomic Habits: An Easy and Proven Way to Build Good Habits and Break...',
           description: "",
           section: "Books",handler: () => {
