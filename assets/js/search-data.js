@@ -23,7 +23,32 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-the-code-of-the-extraordinary-mind-10-unconventional-laws-to-redefine-your-life-and-succeed-on-your-own-terms",
+        },{id: "books-unlimited-memory-how-to-use-advanced-learning-strategies-to-learn-faster-remember-more-and-be-more-productive",
+          title: 'Unlimited Memory: How to Use Advanced Learning Strategies to Learn Faster, Remember More...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/unlimited_memory/";
+            },},{id: "books-the-art-of-thinking-clearly-the-international-bestseller-that-improves-decision-making-and-counters-faulty-reasoning-with-research-backed-good-sense",
+          title: 'The Art of Thinking Clearly: The International Bestseller That Improves Decision Making and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_art_of_thinking_clearly/";
+            },},{id: "books-thinking-fast-and-slow",
+          title: 'Thinking, Fast and Slow',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/thinking_fast_and_slow/";
+            },},{id: "books-limitless-upgrade-your-brain-learn-anything-faster-and-unlock-your-exceptional-life",
+          title: 'Limitless: Upgrade Your Brain, Learn Anything Faster, and Unlock Your Exceptional Life',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/limitless/";
+            },},{id: "books-the-10x-rule-the-only-difference-between-success-and-failure",
+          title: 'The 10X Rule: The Only Difference Between Success and Failure',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_10x_rule/";
+            },},{id: "books-the-code-of-the-extraordinary-mind-10-unconventional-laws-to-redefine-your-life-and-succeed-on-your-own-terms",
           title: 'The Code of the Extraordinary Mind: 10 Unconventional Laws to Redefine Your Life...',
           description: "",
           section: "Books",handler: () => {
