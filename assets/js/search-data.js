@@ -53,6 +53,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-dopamine-nation-finding-balance-in-the-age-of-indulgence",
+          title: 'Dopamine Nation: Finding Balance in the Age of Indulgence',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/dopamine_nation/";
+            },},{id: "books-why-we-sleep-unlocking-the-power-of-sleep-and-dreams",
+          title: 'Why We Sleep: Unlocking the Power of Sleep and Dreams',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/why_we_sleep/";
+            },},{id: "books-a-phd-is-not-enough-a-guide-to-survival-in-science",
+          title: 'A PhD Is Not Enough!: A Guide to Survival in Science',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/a_phd_is_not_enough/";
+            },},{id: "books-how-to-write-a-lot-a-practical-guide-to-productive-academic-writing",
+          title: 'How to Write a Lot: A Practical Guide to Productive Academic Writing',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_write_a_lot/";
             },},{id: "books-the-data-detective-ten-easy-rules-to-make-sense-of-statistics",
           title: 'The Data Detective: Ten Easy Rules to Make Sense of Statistics',
           description: "",
