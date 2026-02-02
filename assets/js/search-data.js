@@ -23,7 +23,32 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-becoming",
+        },{id: "books-deep-work-rules-for-focused-success-in-a-distracted-world",
+          title: 'Deep Work: Rules for Focused Success in a Distracted World',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/deep_work/";
+            },},{id: "books-the-book-of-why-the-new-science-of-cause-and-effect",
+          title: 'The Book of Why: The New Science of Cause and Effect',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_book_of_why/";
+            },},{id: "books-21-lessons-for-the-21st-century",
+          title: '21 Lessons for the 21st Century',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/21_lessons_for_the_21st_century/";
+            },},{id: "books-dare-to-lead-brave-work-tough-conversations-whole-hearts",
+          title: 'Dare to Lead: Brave Work. Tough Conversations. Whole Hearts.',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/dare_to_lead/";
+            },},{id: "books-unfu-k-yourself-get-out-of-your-head-and-into-your-life",
+          title: 'Unfu*k Yourself: Get Out of Your Head and into Your Life',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/unfuck_yourself/";
+            },},{id: "books-becoming",
           title: 'Becoming',
           description: "",
           section: "Books",handler: () => {
