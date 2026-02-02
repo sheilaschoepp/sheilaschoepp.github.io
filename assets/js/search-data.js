@@ -16,14 +16,39 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-bookshelf",
-          title: "bookshelf",
+        },{id: "nav-books",
+          title: "books",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-mastering-fear-a-navy-seal-39-s-guide",
+        },{id: "books-seven-habits-of-highly-effective-people-powerful-lessons-in-personal-change",
+          title: 'Seven Habits Of Highly Effective People: Powerful Lessons in Personal Change',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_7_habits_of_highly_effective_people/";
+            },},{id: "books-how-to-win-friends-and-influence-people-transform-your-relationships-work-and-life",
+          title: 'How to Win Friends and Influence People: Transform your Relationships, Work, and Life...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_win_friends_and_influence_people/";
+            },},{id: "books-stealing-fire-how-silicon-valley-the-navy-seals-and-maverick-scientists-are-revolutionizing-the-way-we-live-and-work",
+          title: 'Stealing Fire: How Silicon Valley, the Navy SEALs, and Maverick Scientists Are Revolutionizing...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/stealing_fire/";
+            },},{id: "books-outliers-the-story-of-success",
+          title: 'Outliers: The Story of Success',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/outliers/";
+            },},{id: "books-the-power-of-habit-why-we-do-what-we-do-in-life-and-business",
+          title: 'The Power of Habit: Why We Do What We do in Life and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_power_of_habit/";
+            },},{id: "books-mastering-fear-a-navy-seal-39-s-guide",
           title: 'Mastering Fear: A Navy SEAL&amp;#39;s Guide',
           description: "",
           section: "Books",handler: () => {
@@ -208,6 +233,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/entangled_minds/";
+            },},{id: "books-research-design-qualitative-quantitative-and-mixed-methods-approaches",
+          title: 'Research Design: Qualitative, Quantitative, and Mixed Methods Approaches',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/research_design/";
             },},{id: "books-neville-goddard-the-complete-reader",
           title: 'Neville Goddard: The Complete Reader',
           description: "",
@@ -248,6 +278,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/how_to_create_a_mind/";
+            },},{id: "books-advice-to-a-young-scientist",
+          title: 'Advice To A Young Scientist',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/advice_to_a_young_scientist/";
             },},{id: "books-psycho-cybernetics-updated-and-expanded",
           title: 'Psycho-Cybernetics: Updated and Expanded',
           description: "",
@@ -347,7 +382,22 @@ ninja.data = [{
           title: 'Storytelling with Data: A Data Visualization Guide for Business Professionals',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/storytelling_with_data/";
+              window.location.href = "/books/storytelling_with_data_1/";
+            },},{id: "books-storytelling-with-data-let-39-s-practice",
+          title: 'Storytelling with Data: Let&amp;#39;s Practice!',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/storytelling_with_data_2/";
+            },},{id: "books-the-elements-of-style",
+          title: 'The Elements of Style',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_elements_of_style/";
+            },},{id: "books-the-48-laws-of-power",
+          title: 'The 48 Laws of Power',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_48_laws_of_power/";
             },},{id: "books-dopamine-nation-finding-balance-in-the-age-of-indulgence",
           title: 'Dopamine Nation: Finding Balance in the Age of Indulgence',
           description: "",
@@ -363,6 +413,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/a_phd_is_not_enough/";
+            },},{id: "books-how-to-get-a-phd-a-handbook-for-students-and-their-supervisors-7e",
+          title: 'How to Get a PhD: a Handbook for Students and Their Supervisors 7e...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_get_a_phd/";
             },},{id: "books-how-to-write-a-lot-a-practical-guide-to-productive-academic-writing",
           title: 'How to Write a Lot: A Practical Guide to Productive Academic Writing',
           description: "",
@@ -478,6 +533,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/on_writing_well/";
+            },},{id: "books-reading-in-the-brain-the-new-science-of-how-we-read",
+          title: 'Reading in the Brain: The New Science of How We Read',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/reading_in_the_brain/";
             },},{id: "books-until-the-end-of-time-mind-matter-and-our-search-for-meaning-in-an-evolving-universe",
           title: 'Until the End of Time: Mind, Matter, and Our Search for Meaning in...',
           description: "",
