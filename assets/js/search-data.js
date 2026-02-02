@@ -53,6 +53,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-how-we-learn-why-brains-learn-better-than-any-machine-for-now",
+          title: 'How We Learn: Why Brains Learn Better Than Any Machine ... for Now...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_we_learn/";
+            },},{id: "books-on-writing-well-the-essential-guide-to-mastering-nonfiction-writing-and-effective-communication",
+          title: 'On Writing Well: The Essential Guide to Mastering Nonfiction Writing and Effective Communication...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/on_writing_well/";
+            },},{id: "books-factfulness-ten-reasons-we-39-re-wrong-about-the-world-and-why-things-are-better-than-you-think",
+          title: 'Factfulness: Ten Reasons We&amp;#39;re Wrong About the World--and Why Things Are Better Than...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/factfullness/";
+            },},{id: "books-a-brief-history-of-intelligence-why-the-evolution-of-the-brain-holds-the-key-to-the-future-of-ai",
+          title: 'A Brief History of Intelligence: Why the Evolution of the Brain Holds the...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/a_brief_history_of_intelligence/";
             },},{id: "books-a-thousand-brains-a-new-theory-of-intelligence",
           title: 'A Thousand Brains: A New Theory of Intelligence',
           description: "",
@@ -123,6 +143,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/awaken_the_giant_within/";
+            },},{id: "books-what-39-s-your-dream-find-your-passion-love-your-work-build-a-richer-life",
+          title: 'What&amp;#39;s Your Dream?: Find Your Passion. Love Your Work. Build a Richer Life....',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/whats_your_dream/";
             },},{id: "books-discipline-is-destiny-the-power-of-self-control",
           title: 'Discipline Is Destiny: The Power of Self-Control',
           description: "",
