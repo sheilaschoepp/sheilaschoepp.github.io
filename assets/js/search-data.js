@@ -43,6 +43,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/moonwalking_with_einstein/";
+            },},{id: "books-how-to-create-a-mind-the-secret-of-human-thought-revealed",
+          title: 'How to Create a Mind: The Secret of Human Thought Revealed',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_create_a_mind/";
             },},{id: "books-psycho-cybernetics-updated-and-expanded",
           title: 'Psycho-Cybernetics: Updated and Expanded',
           description: "",
@@ -88,11 +93,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-the-psychology-of-money-timeless-lessons-on-wealth-greed-and-happiness",
+          title: 'The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_psychology_of_money/";
             },},{id: "books-willpower-rediscovering-the-greatest-human-strength",
           title: 'Willpower: Rediscovering the Greatest Human Strength',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/willpower/";
+            },},{id: "books-zero-to-one-notes-on-start-ups-or-how-to-build-the-future",
+          title: 'Zero to One: Notes on Start Ups, or How to Build the Future...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/zero_to_one/";
+            },},{id: "books-100m-leads-how-to-get-strangers-to-want-to-buy-your-stuff",
+          title: '$100M Leads: How to Get Strangers To Want To Buy Your Stuff',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/100m_leads/";
             },},{id: "books-100m-offers-how-to-make-offers-so-good-people-feel-stupid-saying-no",
           title: '$100M Offers: How To Make Offers So Good People Feel Stupid Saying No...',
           description: "",
@@ -208,6 +228,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/steve_jobs/";
+            },},{id: "books-surrounded-by-idiots-the-four-types-of-human-behavior-and-how-to-effectively-communicate-with-each-in-business-and-in-life",
+          title: 'Surrounded by Idiots: The Four Types of Human Behavior and How to Effectively...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/surrounded_by_idiots/";
             },},{id: "books-uptime-a-practical-guide-to-personal-productivity-and-wellbeing",
           title: 'Uptime: A Practical Guide to Personal Productivity and Wellbeing',
           description: "",
