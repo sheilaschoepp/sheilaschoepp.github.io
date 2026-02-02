@@ -58,11 +58,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/learn_like_a_pro/";
+            },},{id: "books-mindshift-break-through-obstacles-to-learning-and-discover-your-hidden-potential",
+          title: 'Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/mindshift/";
             },},{id: "books-multipliers-revised-and-updated-unlocking-the-secrets-of-effective-leadership-to-maximize-team-potential",
           title: 'Multipliers, Revised and Updated: Unlocking The Secrets of Effective Leadership to Maximize Team...',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/multipliers/";
+            },},{id: "books-uncommon-sense-teaching-practical-insights-in-brain-science-to-help-students-learn",
+          title: 'Uncommon Sense Teaching: Practical Insights in Brain Science to Help Students Learn',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/uncommon_sense_teaching/";
             },},{id: "books-how-we-learn-why-brains-learn-better-than-any-machine-for-now",
           title: 'How We Learn: Why Brains Learn Better Than Any Machine ... for Now...',
           description: "",
