@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "Peak: Unleashing Your Inner Champion Through Revolutionary Methods for Skill Acquisition and Performance Enhancement in Work, Sports, and Life"
-author: Anders Ericsson, Robert Pool 
+author: Anders Ericsson, Robert Pool
 cover: assets/img/book_covers/peak.jpg
 olid:
 isbn:
