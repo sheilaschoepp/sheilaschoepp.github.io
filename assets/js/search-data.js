@@ -53,16 +53,41 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-the-data-detective-ten-easy-rules-to-make-sense-of-statistics",
+          title: 'The Data Detective: Ten Easy Rules to Make Sense of Statistics',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_data_detective/";
             },},{id: "books-how-to-read-a-book",
           title: 'How to Read a Book',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/how_to_read_a_book/";
+            },},{id: "books-creativity-inc-the-expanded-edition-overcoming-the-unseen-forces-that-stand-in-the-way-of-true-inspiration",
+          title: 'Creativity, Inc. (The Expanded Edition): Overcoming the Unseen Forces That Stand in the...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/creativity_inc/";
             },},{id: "books-how-we-learn-the-surprising-truth-about-when-where-and-why-it-happens",
           title: 'How We Learn: The Surprising Truth About When, Where, and Why It Happens...',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/how_we_learn_2/";
+            },},{id: "books-outsmart-your-brain-why-learning-is-hard-and-how-you-can-make-it-easy",
+          title: 'Outsmart Your Brain: Why Learning is Hard and How You Can Make It...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/outsmart_your_brain/";
+            },},{id: "books-peak-unleashing-your-inner-champion-through-revolutionary-methods-for-skill-acquisition-and-performance-enhancement-in-work-sports-and-life",
+          title: 'Peak: Unleashing Your Inner Champion Through Revolutionary Methods for Skill Acquisition and Performance...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/peak/";
+            },},{id: "books-the-talent-code-greatness-isn-39-t-born-it-39-s-grown-here-39-s-how",
+          title: 'The Talent Code: Greatness Isn&amp;#39;t Born. It&amp;#39;s Grown. Here&amp;#39;s How.',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_talent_code/";
             },},{id: "books-the-para-method-simplify-organise-and-master-your-digital-life",
           title: 'The PARA Method: Simplify, Organise and Master Your Digital Life',
           description: "",
