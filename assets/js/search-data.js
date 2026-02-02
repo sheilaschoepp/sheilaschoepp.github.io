@@ -343,16 +343,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/zero_to_one/";
-            },},{id: "books-100m-leads-how-to-get-strangers-to-want-to-buy-your-stuff",
-          title: '$100M Leads: How to Get Strangers To Want To Buy Your Stuff',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/100m_leads/";
-            },},{id: "books-100m-offers-how-to-make-offers-so-good-people-feel-stupid-saying-no",
-          title: '$100M Offers: How To Make Offers So Good People Feel Stupid Saying No...',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/100m_offers/";
             },},{id: "books-how-to-become-a-straight-a-student-the-unconventional-strategies-real-college-students-use-to-score-high-while-studying-less",
           title: 'How to Become a Straight-A Student: The Unconventional Strategies Real College Students Use...',
           description: "",
@@ -468,11 +458,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_human_mind_owners_manual/";
-            },},{id: "books-elon-musk-walter-isaacson",
-          title: 'Elon Musk: Walter Isaacson',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/elon_musk/";
             },},{id: "books-grit",
           title: 'Grit',
           description: "",
