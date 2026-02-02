@@ -2,7 +2,7 @@
 layout: book-review
 title: "How We Learn: Why Brains Learn Better Than Any Machine ... for Now"
 author: Stanislas Dehaene
-cover: assets/img/book_covers/how_we_learn.jpg
+cover: assets/img/book_covers/how_we_learn_1.jpg
 olid:
 isbn:
 categories: ["medicine", "internal medicine", "neurology", "neuroscience"]
