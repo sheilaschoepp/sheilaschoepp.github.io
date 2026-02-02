@@ -7,7 +7,7 @@ olid:
 isbn:
 categories: ["biographies & memoirs", "community & culture", "black & african american"]
 tags:
-buy_link: https://www.amazon.ca/Becoming-Michelle-Obama/dp/1524763136
+buy_link: https://www.amazon.ca/Becoming-Michelle-Obama/dp/1524763144
 date: 2018-12-21
 started:
 finished:
