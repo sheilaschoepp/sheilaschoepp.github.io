@@ -53,6 +53,26 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-feel-good-productivity-how-to-do-more-of-what-matters-to-you",
+          title: 'Feel-Good Productivity: How to Do More of What Matters to You',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/feel_good_productivity/";
+            },},{id: "books-mindset-the-new-psychology-of-success",
+          title: 'Mindset: The New Psychology of Success',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/mindset/";
+            },},{id: "books-the-coming-wave-ai-power-and-our-future-the-instant-sunday-times-bestseller-from-the-ultimate-ai-insider",
+          title: 'The Coming Wave: AI, Power and Our Future: The instant Sunday Times bestseller...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_coming_wave/";
+            },},{id: "books-storytelling-with-data-a-data-visualization-guide-for-business-professionals",
+          title: 'Storytelling with Data: A Data Visualization Guide for Business Professionals',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/storytelling_with_data/";
             },},{id: "books-dopamine-nation-finding-balance-in-the-age-of-indulgence",
           title: 'Dopamine Nation: Finding Balance in the Age of Indulgence',
           description: "",
