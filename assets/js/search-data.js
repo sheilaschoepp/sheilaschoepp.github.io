@@ -53,6 +53,36 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-the-human-mind-owner-39-s-manual-your-connection-to-the-universe-consciousness-and-non-human-intelligence",
+          title: 'The Human Mind Owner&amp;#39;s Manual: Your Connection to the Universe, Consciousness, and Non-Human...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_human_mind_owners_manual/";
+            },},{id: "books-elon-musk-walter-isaacson",
+          title: 'Elon Musk: Walter Isaacson',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/elon_musk/";
+            },},{id: "books-grit",
+          title: 'Grit',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/grit/";
+            },},{id: "books-steve-jobs",
+          title: 'Steve Jobs',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/steve_jobs/";
+            },},{id: "books-uptime-a-practical-guide-to-personal-productivity-and-wellbeing",
+          title: 'Uptime: A Practical Guide to Personal Productivity and Wellbeing',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/uptime/";
+            },},{id: "books-what-if-2-additional-serious-scientific-answers-to-absurd-hypothetical-questions",
+          title: 'What If? 2: Additional Serious Scientific Answers to Absurd Hypothetical Questions',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/what_if_2/";
             },},{id: "books-learn-like-a-pro-science-based-tools-to-become-better-at-anything",
           title: 'Learn Like a Pro: Science-Based Tools to Become Better at Anything',
           description: "",
