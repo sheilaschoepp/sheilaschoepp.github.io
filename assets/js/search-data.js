@@ -53,11 +53,31 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/behave/";
+            },},{id: "books-how-to-talk-to-anyone-92-little-tricks-for-big-success-in-relationships",
+          title: 'How to Talk to Anyone: 92 Little Tricks for Big Success in Relationships...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_talk_to_anyone/";
+            },},{id: "books-lifespan-why-we-age-and-why-we-don-39-t-have-to",
+          title: 'Lifespan: Why We Age―and Why We Don&amp;#39;t Have To',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/lifespan/";
+            },},{id: "books-read-people-like-a-book-how-to-analyze-understand-and-predict-people-s-emotions-thoughts-intentions-and-behaviors",
+          title: 'Read People Like a Book: How to Analyze, Understand, and Predict People’s Emotions,...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/read_people_like_a_book/";
             },},{id: "books-side-hustle",
           title: 'Side Hustle',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/side_hustle/";
+            },},{id: "books-the-5am-club-own-your-morning-elevate-your-life",
+          title: 'The 5AM Club: Own Your Morning. Elevate Your Life.',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_5am_club/";
             },},{id: "books-the-body-a-guide-for-occupants",
           title: 'The Body: A Guide for Occupants',
           description: "",
