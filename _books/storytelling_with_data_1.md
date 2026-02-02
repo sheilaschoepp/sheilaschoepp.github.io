@@ -2,7 +2,7 @@
 layout: book-review
 title: "Storytelling with Data: A Data Visualization Guide for Business Professionals"
 author: Cole Nussbaumer Knaflic
-cover: assets/img/book_covers/storytelling_with_data.jpg
+cover: assets/img/book_covers/storytelling_with_data_1.jpg
 olid:
 isbn:
 categories: ["professional & technical", "business management", "management & leadership", "information management"]
