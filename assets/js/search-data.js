@@ -53,6 +53,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-how-to-read-a-book",
+          title: 'How to Read a Book',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_to_read_a_book/";
+            },},{id: "books-how-we-learn-the-surprising-truth-about-when-where-and-why-it-happens",
+          title: 'How We Learn: The Surprising Truth About When, Where, and Why It Happens...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/how_we_learn_2/";
             },},{id: "books-the-para-method-simplify-organise-and-master-your-digital-life",
           title: 'The PARA Method: Simplify, Organise and Master Your Digital Life',
           description: "",
@@ -117,7 +127,7 @@ ninja.data = [{
           title: 'How We Learn: Why Brains Learn Better Than Any Machine ... for Now...',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/how_we_learn/";
+              window.location.href = "/books/how_we_learn_1/";
             },},{id: "books-on-writing-well-the-essential-guide-to-mastering-nonfiction-writing-and-effective-communication",
           title: 'On Writing Well: The Essential Guide to Mastering Nonfiction Writing and Effective Communication...',
           description: "",
