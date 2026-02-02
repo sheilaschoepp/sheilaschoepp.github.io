@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-books",
+          title: "books",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/books/";
+          },
         },{id: "books-seven-habits-of-highly-effective-people-powerful-lessons-in-personal-change",
           title: 'Seven Habits Of Highly Effective People: Powerful Lessons in Personal Change',
           description: "",
@@ -721,6 +728,26 @@ ninja.data = [{
           description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{id: "travels-travel-1",
+          title: 'travel 1',
+          description: "with background image",
+          section: "Travels",handler: () => {
+              window.location.href = "/travels/travel_1/";
+            },},{id: "travels-travel-2",
+          title: 'travel 2',
+          description: "a project with a background image and giscus comments",
+          section: "Travels",handler: () => {
+              window.location.href = "/travels/travel_2/";
+            },},{id: "travels-travel-3-with-very-long-name",
+          title: 'travel 3 with very long name',
+          description: "a project that redirects to another website",
+          section: "Travels",handler: () => {
+              window.location.href = "/travels/travel_3/";
+            },},{id: "travels-travel-4",
+          title: 'travel 4',
+          description: "another without an image",
+          section: "Travels",handler: () => {
+              window.location.href = "/travels/travel_4/";
             },},{
         id: 'social-email',
         title: 'email',
