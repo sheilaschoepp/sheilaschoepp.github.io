@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-books",
-          title: "books",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/books/";
-          },
         },{id: "books-seven-habits-of-highly-effective-people-powerful-lessons-in-personal-change",
           title: 'Seven Habits Of Highly Effective People: Powerful Lessons in Personal Change',
           description: "",
