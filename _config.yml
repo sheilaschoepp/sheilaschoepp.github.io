@@ -168,7 +168,7 @@ collections: # a method to group different types of content
     output: true
   teachings:
     output: true
-  services:
+  travels:
     output: true
 
 # -----------------------------------------------------------------------------
