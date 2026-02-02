@@ -8,7 +8,7 @@ isbn:
 categories: ["professional & technical", "professional science", "behavioural sciences", "cognitive psychology"]
 tags:
 buy_link: https://www.amazon.ca/dp/B002SR2Q2I
-date: YYYY-MM-DD
+date: 2024-10-31
 started:
 finished:
 released: YYYY
