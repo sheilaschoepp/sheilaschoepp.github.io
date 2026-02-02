@@ -58,6 +58,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/feel_good_productivity/";
+            },},{id: "books-hidden-potential-the-science-of-achieving-greater-things",
+          title: 'Hidden Potential: The Science of Achieving Greater Things',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/hidden_potential/";
             },},{id: "books-mindset-the-new-psychology-of-success",
           title: 'Mindset: The New Psychology of Success',
           description: "",
