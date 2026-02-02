@@ -53,6 +53,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_courage_to_be_disliked/";
+            },},{id: "books-learn-like-a-pro-science-based-tools-to-become-better-at-anything",
+          title: 'Learn Like a Pro: Science-Based Tools to Become Better at Anything',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/learn_like_a_pro/";
+            },},{id: "books-multipliers-revised-and-updated-unlocking-the-secrets-of-effective-leadership-to-maximize-team-potential",
+          title: 'Multipliers, Revised and Updated: Unlocking The Secrets of Effective Leadership to Maximize Team...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/multipliers/";
             },},{id: "books-how-we-learn-why-brains-learn-better-than-any-machine-for-now",
           title: 'How We Learn: Why Brains Learn Better Than Any Machine ... for Now...',
           description: "",
@@ -63,6 +73,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/on_writing_well/";
+            },},{id: "books-until-the-end-of-time-mind-matter-and-our-search-for-meaning-in-an-evolving-universe",
+          title: 'Until the End of Time: Mind, Matter, and Our Search for Meaning in...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/until_the_end_of_time/";
+            },},{id: "books-win-every-argument-the-art-of-debating-persuading-and-public-speaking",
+          title: 'Win Every Argument: The Art of Debating, Persuading, and Public Speaking',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/win_every_argument/";
             },},{id: "books-factfulness-ten-reasons-we-39-re-wrong-about-the-world-and-why-things-are-better-than-you-think",
           title: 'Factfulness: Ten Reasons We&amp;#39;re Wrong About the World--and Why Things Are Better Than...',
           description: "",
