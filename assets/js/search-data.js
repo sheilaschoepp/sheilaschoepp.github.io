@@ -23,7 +23,32 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-the-5-love-languages-the-secret-to-love-that-lasts",
+        },{id: "books-algorithms-to-live-by-the-computer-science-of-human-decisions",
+          title: 'Algorithms to Live By: The Computer Science of Human Decisions',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/algorithms_to_live_by/";
+            },},{id: "books-beyond-order",
+          title: 'Beyond Order',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/beyond_order/";
+            },},{id: "books-relentless-from-good-to-great-to-unstoppable",
+          title: 'Relentless: From Good to Great to Unstoppable',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/relentless/";
+            },},{id: "books-rich-dad-poor-dad-what-the-rich-teach-their-kids-about-money-that-the-poor-and-middle-class-do-not",
+          title: 'Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/rich_dad_poor_dad/";
+            },},{id: "books-your-brain-at-work-strategies-for-overcoming-distraction-regaining-focus-and-working-smarter-all-day-long",
+          title: 'Your Brain at Work: Strategies for Overcoming Distraction, Regaining Focus, and Working Smarter...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/your_brain_at_work/";
+            },},{id: "books-the-5-love-languages-the-secret-to-love-that-lasts",
           title: 'The 5 Love Languages: The Secret to Love That Lasts',
           description: "",
           section: "Books",handler: () => {
