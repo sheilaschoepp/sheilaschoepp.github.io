@@ -23,7 +23,37 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-algorithms-to-live-by-the-computer-science-of-human-decisions",
+        },{id: "books-the-code-of-the-extraordinary-mind-10-unconventional-laws-to-redefine-your-life-and-succeed-on-your-own-terms",
+          title: 'The Code of the Extraordinary Mind: 10 Unconventional Laws to Redefine Your Life...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_code_of_the_extraordinary_mind/";
+            },},{id: "books-the-one-thing-the-surprisingly-simple-truth-about-extraordinary-results",
+          title: 'The ONE Thing: The Surprisingly Simple Truth About Extraordinary Results',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_one_thing/";
+            },},{id: "books-ultralearning-accelerate-your-career-master-hard-skills-and-outsmart-the-competition",
+          title: 'Ultralearning: Accelerate Your Career, Master Hard Skills and Outsmart the Competition',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/ultralearning/";
+            },},{id: "books-the-biology-of-belief-unleashing-the-power-of-consciousness-matter-amp-miracles",
+          title: 'The Biology of Belief: Unleashing the Power of Consciousness, Matter &amp;amp; Miracles',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_biology_of_belief/";
+            },},{id: "books-the-nature-of-personal-reality-specific-practical-techniques-for-solving-everyday-problems-and-enriching-the-life-you-know",
+          title: 'The Nature of Personal Reality: Specific, Practical Techniques for Solving Everyday Problems and...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_nature_of_personal_reality/";
+            },},{id: "books-think-again",
+          title: 'Think Again',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/think_again/";
+            },},{id: "books-algorithms-to-live-by-the-computer-science-of-human-decisions",
           title: 'Algorithms to Live By: The Computer Science of Human Decisions',
           description: "",
           section: "Books",handler: () => {
