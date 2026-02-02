@@ -14,7 +14,7 @@ finished:
 released: YYYY
 stars:
 goodreads_review:
-status: # options: abandoned, finished, interested, paused, queued, reading, reread
+status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--
