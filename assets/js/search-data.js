@@ -23,7 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-cosmos",
+        },{id: "books-atomic-habits-an-easy-and-proven-way-to-build-good-habits-and-break-bad-ones",
+          title: 'Atomic Habits: An Easy and Proven Way to Build Good Habits and Break...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/atomic_habits/";
+            },},{id: "books-cosmos",
           title: 'Cosmos',
           description: "",
           section: "Books",handler: () => {
@@ -43,6 +48,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/unlimited_memory/";
+            },},{id: "books-the-alchemist-a-fable-about-following-your-dream",
+          title: 'The Alchemist: A Fable About Following Your Dream',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_alchemist/";
             },},{id: "books-the-art-of-thinking-clearly-the-international-bestseller-that-improves-decision-making-and-counters-faulty-reasoning-with-research-backed-good-sense",
           title: 'The Art of Thinking Clearly: The International Bestseller That Improves Decision Making and...',
           description: "",
