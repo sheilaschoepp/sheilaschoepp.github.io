@@ -23,7 +23,17 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-neville-goddard-the-complete-reader",
+        },{id: "books-the-5-love-languages-the-secret-to-love-that-lasts",
+          title: 'The 5 Love Languages: The Secret to Love That Lasts',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_five_love_languages/";
+            },},{id: "books-entangled-minds-extrasensory-experiences-in-a-quantum-reality",
+          title: 'Entangled Minds: Extrasensory Experiences in a Quantum Reality',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/entangled_minds/";
+            },},{id: "books-neville-goddard-the-complete-reader",
           title: 'Neville Goddard: The Complete Reader',
           description: "",
           section: "Books",handler: () => {
@@ -33,6 +43,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/building_a_second_brain/";
+            },},{id: "books-the-happiness-advantage-how-a-positive-brain-fuels-success-in-work-and-life",
+          title: 'The Happiness Advantage: How a Positive Brain Fuels Success in Work and Life...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_happiness_advantage/";
             },},{id: "books-how-to-take-smart-notes-one-simple-technique-to-boost-writing-learning-and-thinking",
           title: 'How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and...',
           description: "",
@@ -43,6 +58,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/moonwalking_with_einstein/";
+            },},{id: "books-a-mind-for-numbers-how-to-excel-at-math-and-science-even-if-you-flunked-algebra",
+          title: 'A Mind for Numbers: How to Excel at Math and Science (Even If...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/a_mind_for_numbers/";
+            },},{id: "books-remember-it-the-names-of-people-you-meet-all-of-your-passwords-where-you-left-your-keys-and-everything-else-you-tend-to-forget",
+          title: 'Remember It!: The Names of People You Meet, All of Your Passwords, Where...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/remember_it/";
             },},{id: "books-how-to-create-a-mind-the-secret-of-human-thought-revealed",
           title: 'How to Create a Mind: The Secret of Human Thought Revealed',
           description: "",
