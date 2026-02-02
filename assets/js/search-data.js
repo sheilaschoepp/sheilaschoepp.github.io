@@ -23,7 +23,22 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-unlimited-memory-how-to-use-advanced-learning-strategies-to-learn-faster-remember-more-and-be-more-productive",
+        },{id: "books-cosmos",
+          title: 'Cosmos',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/cosmos/";
+            },},{id: "books-the-4-hour-workweek-expanded-and-updated-expanded-and-updated-with-over-100-new-pages-of-cutting-edge-content",
+          title: 'The 4-Hour Workweek, Expanded and Updated: Expanded and Updated, With Over 100 New...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_four_hour_workweek/";
+            },},{id: "books-e-squared-nine-do-it-yourself-energy-experiments-that-prove-your-thoughts-create-your-reality",
+          title: 'E-Squared: Nine Do-It-Yourself Energy Experiments That Prove Your Thoughts Create Your Reality',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/e_squared/";
+            },},{id: "books-unlimited-memory-how-to-use-advanced-learning-strategies-to-learn-faster-remember-more-and-be-more-productive",
           title: 'Unlimited Memory: How to Use Advanced Learning Strategies to Learn Faster, Remember More...',
           description: "",
           section: "Books",handler: () => {
