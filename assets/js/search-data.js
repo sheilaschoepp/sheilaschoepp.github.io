@@ -57,7 +57,7 @@ ninja.data = [{
           title: '12 Rules for Life: An Antidote to Chaos',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/12_rules_for_life/";
+              window.location.href = "/books/twelve_rules_for_life/";
             },},{id: "books-deep-work-rules-for-focused-success-in-a-distracted-world",
           title: 'Deep Work: Rules for Focused Success in a Distracted World',
           description: "",
@@ -87,7 +87,7 @@ ninja.data = [{
           title: '21 Lessons for the 21st Century',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/21_lessons_for_the_21st_century/";
+              window.location.href = "/books/twenty_one_lessons_for_the_21st_century/";
             },},{id: "books-dare-to-lead-brave-work-tough-conversations-whole-hearts",
           title: 'Dare to Lead: Brave Work. Tough Conversations. Whole Hearts.',
           description: "",
