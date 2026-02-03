@@ -233,6 +233,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/entangled_minds/";
+            },},{id: "books-advice-for-a-young-investigator",
+          title: 'Advice for a Young Investigator',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/advice_for_a_young_investigator/";
             },},{id: "books-research-design-qualitative-quantitative-and-mixed-methods-approaches",
           title: 'Research Design: Qualitative, Quantitative, and Mixed Methods Approaches',
           description: "",
