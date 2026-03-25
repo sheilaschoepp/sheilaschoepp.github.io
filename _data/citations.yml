@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-03-06'
+  last_updated: '2026-03-25'
 papers:
   uT_fklUAAAAJ:d1gkVwhDpl0C:
     citations: 4
     title: Enhancing Hardware Fault Tolerance in Machines with Reinforcement Learning Policy Gradient Algorithms
     year: '2024'
   uT_fklUAAAAJ:qjMakFHDy7sC:
-    citations: 10
+    citations: 11
     title: The Evolving Landscape of LLM-and VLM-Integrated Reinforcement Learning
     year: '2025'
   uT_fklUAAAAJ:u5HHmVD_uO8C:
