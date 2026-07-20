@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-10'
+  last_updated: '2026-07-20'
 papers:
   uT_fklUAAAAJ:UeHWp8X0CEIC:
-    citations: 10
+    citations: 12
     title: 'AI-Assisted Peer Review at Scale: The AAAI-26 AI Review Pilot'
     year: '2026'
   uT_fklUAAAAJ:d1gkVwhDpl0C:
@@ -10,7 +10,7 @@ papers:
     title: Enhancing Hardware Fault Tolerance in Machines with Reinforcement Learning Policy Gradient Algorithms
     year: '2024'
   uT_fklUAAAAJ:qjMakFHDy7sC:
-    citations: 16
+    citations: 17
     title: The Evolving Landscape of LLM-and VLM-Integrated Reinforcement Learning
     year: '2025'
   uT_fklUAAAAJ:u5HHmVD_uO8C:
