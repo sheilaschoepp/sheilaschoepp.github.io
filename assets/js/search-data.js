@@ -223,6 +223,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/your_brain_at_work/";
+            },},{id: "books-make-it-stick-the-science-of-successful-learning",
+          title: 'Make It Stick: The Science of Successful Learning',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/make_it_stick/";
             },},{id: "books-the-5-love-languages-the-secret-to-love-that-lasts",
           title: 'The 5 Love Languages: The Secret to Love That Lasts',
           description: "",
@@ -313,11 +318,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/side_hustle/";
-            },},{id: "books-the-5am-club-own-your-morning-elevate-your-life",
-          title: 'The 5AM Club: Own Your Morning. Elevate Your Life.',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_5am_club/";
             },},{id: "books-the-body-a-guide-for-occupants",
           title: 'The Body: A Guide for Occupants',
           description: "",
@@ -537,7 +537,7 @@ ninja.data = [{
           title: 'Factfulness: Ten Reasons We&amp;#39;re Wrong About the World--and Why Things Are Better Than...',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/factfullness/";
+              window.location.href = "/books/factfulness/";
             },},{id: "books-a-brief-history-of-intelligence-why-the-evolution-of-the-brain-holds-the-key-to-the-future-of-ai",
           title: 'A Brief History of Intelligence: Why the Evolution of the Brain Holds the...',
           description: "",
@@ -653,11 +653,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/four_thousand_weeks/";
-            },},{id: "books-make-it-stick-the-science-of-successful-learning",
-          title: 'Make It Stick: The Science of Successful Learning',
+            },},{id: "books-the-craft-of-research",
+          title: 'The Craft of Research',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/make_it_stick/";
+              window.location.href = "/books/the_craft_of_research/";
+            },},{id: "books-secrets-of-six-figure-women-surprising-strategies-to-up-your-earnings-and-change-your-life",
+          title: 'Secrets of Six-Figure Women: Surprising Strategies to Up Your Earnings and Change Your...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/secrets_of_six_figure_women/";
+            },},{id: "books-the-5am-club-own-your-morning-elevate-your-life",
+          title: 'The 5AM Club: Own Your Morning. Elevate Your Life.',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_5am_club/";
             },},{id: "books-research-design-qualitative-quantitative-and-mixed-methods-approaches",
           title: 'Research Design: Qualitative, Quantitative, and Mixed Methods Approaches',
           description: "",
@@ -678,6 +688,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_anxious_achiever/";
+            },},{id: "books-dear-ijeawele-or-a-feminist-manifesto-in-fifteen-suggestions",
+          title: 'Dear Ijeawele, or A Feminist Manifesto in Fifteen Suggestions',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/dear_ijeawele/";
             },},{id: "books-emotional-agility-get-unstuck-embrace-change-and-thrive-in-work-and-life",
           title: 'Emotional Agility: Get Unstuck, Embrace Change, and Thrive in Work and Life',
           description: "",
