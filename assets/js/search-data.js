@@ -238,11 +238,6 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/advice_for_a_young_investigator/";
-            },},{id: "books-research-design-qualitative-quantitative-and-mixed-methods-approaches",
-          title: 'Research Design: Qualitative, Quantitative, and Mixed Methods Approaches',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/research_design/";
             },},{id: "books-neville-goddard-the-complete-reader",
           title: 'Neville Goddard: The Complete Reader',
           description: "",
@@ -663,6 +658,36 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/make_it_stick/";
+            },},{id: "books-research-design-qualitative-quantitative-and-mixed-methods-approaches",
+          title: 'Research Design: Qualitative, Quantitative, and Mixed Methods Approaches',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/research_design/";
+            },},{id: "books-we-should-all-be-feminists",
+          title: 'We Should All Be Feminists',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/we_should_all_be_feminists/";
+            },},{id: "books-why-machines-learn-the-elegant-math-behind-modern-ai",
+          title: 'Why Machines Learn: The Elegant Math Behind Modern AI',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/why_machines_learn/";
+            },},{id: "books-the-anxious-achiever-turn-your-biggest-fears-into-your-leadership-superpower",
+          title: 'The Anxious Achiever: Turn Your Biggest Fears into Your Leadership Superpower',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_anxious_achiever/";
+            },},{id: "books-emotional-agility-get-unstuck-embrace-change-and-thrive-in-work-and-life",
+          title: 'Emotional Agility: Get Unstuck, Embrace Change, and Thrive in Work and Life',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/emotional_agility/";
+            },},{id: "books-boundaries-when-to-say-yes-how-to-say-no-to-take-control-of-your-life",
+          title: 'Boundaries: When to Say Yes, How to Say No to Take Control of...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/boundaries/";
             },},{id: "books-no-more-mr-nice-guy",
           title: 'No More Mr. Nice Guy',
           description: "",
