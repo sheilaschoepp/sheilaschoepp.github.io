@@ -11,7 +11,7 @@ buy_link: https://www.amazon.ca/No-More-Mr-Nice-Guy/dp/9391560407
 date: 2026-07-19
 started:
 finished:
-released: 2010
+released: 2022
 stars: 4.6
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread

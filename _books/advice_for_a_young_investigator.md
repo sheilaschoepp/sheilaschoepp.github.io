@@ -11,7 +11,7 @@ buy_link: https://www.amazon.ca/Advice-Young-Investigator-Santiago-Ram%C3%B3n/dp
 date: 2022-07-02
 started:
 finished:
-released: YYYY
+released: 2004
 stars: 4.6
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread

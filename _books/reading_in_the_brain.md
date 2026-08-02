@@ -7,12 +7,12 @@ olid:
 isbn:
 categories: ["professional & technical", "professional science", "behavioural sciences", "cognitive psychology"]
 tags:
-buy_link: https://www.amazon.ca/dp/B002SR2Q2I
+buy_link: https://www.amazon.ca/Reading-Brain-New-Science-Read/dp/0143118056
 date: 2024-10-31
 started:
 finished:
-released: YYYY
-stars:
+released: 2010
+stars: 4.6
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---

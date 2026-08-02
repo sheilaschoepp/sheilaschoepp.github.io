@@ -2,7 +2,7 @@
 layout: book-review
 title: "Factfulness: Ten Reasons We're Wrong About the World--and Why Things Are Better Than You Think"
 author: Hans Rosling, Anna Rosling Rönnlund, Ola Rosling
-cover: assets/img/book_covers/factfullness.jpg
+cover: assets/img/book_covers/factfulness.jpg
 olid:
 isbn:
 categories: ["health, fitness & dieting", "personal health", "stress", "stress management"]

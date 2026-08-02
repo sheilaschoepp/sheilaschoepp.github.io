@@ -11,8 +11,8 @@ buy_link: https://www.amazon.ca/First-20-Hours-Learn-Anything/dp/1591846943
 date: 2021-01-12
 started:
 finished:
-released: YYYY
-stars:
+released: 2014
+stars: 4.1
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
 ---

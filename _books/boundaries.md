@@ -11,7 +11,7 @@ buy_link: https://www.amazon.ca/Boundaries-Updated-Expanded-When-Control-ebook/d
 date: 2026-07-19
 started:
 finished:
-released: 2018
+released: 2017
 stars: 4.5
 goodreads_review:
 status: interested # options: abandoned, finished, interested, paused, queued, reading, reread

@@ -8,7 +8,7 @@ isbn:
 categories: ["professional & technical", "business management", "management & leadership", "leadership"]
 tags:
 buy_link: https://www.amazon.ca/AM-Your-Morning-Elevate-Life/dp/1443460311
-date: 2023-11-12
+date: 2026-05-30
 started:
 finished:
 released: 2019
