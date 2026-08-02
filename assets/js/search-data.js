@@ -663,6 +663,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/make_it_stick/";
+            },},{id: "books-no-more-mr-nice-guy",
+          title: 'No More Mr. Nice Guy',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/no_more_mr_nice_guy/";
+            },},{id: "books-never-finished-unshackle-your-mind-and-win-the-war-within",
+          title: 'Never Finished: Unshackle Your Mind and Win the War Within',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/never_finished/";
             },},{id: "news-began-serving-as-a-workflow-chair-for-aaai-2026-may-2025-january-2026",
           title: 'Began serving as a workflow chair for AAAI 2026 (May 2025 - January...',
           description: "",
