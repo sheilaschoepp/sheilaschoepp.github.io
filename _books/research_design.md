@@ -5,16 +5,16 @@ author: John W. Creswell, J. David Creswell
 cover: assets/img/book_covers/research_design.jpg
 olid:
 isbn:
-categories: ["textbooks"]
+categories: ["politics & social sciences", "social sciences", "methodology"]
 tags:
-buy_link: https://www.amazon.ca/Research-Design-Qualitative-Quantitative-Approaches/dp/1506386709
-date: 2022-07-02
+buy_link: https://www.amazon.ca/Research-Design-Qualitative-Quantitative-Approaches/dp/1071817949
+date: 2026-07-07
 started:
 finished:
-released: 2018
+released: 2022
 stars: 4.5
 goodreads_review:
-status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
+status: queued # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--
