@@ -14,7 +14,7 @@ finished:
 released: 2018
 stars: 4.7
 goodreads_review:
-status: interested # options: abandoned, finished, interested, paused, queued, reading, reread
+status: reading # options: abandoned, finished, interested, paused, queued, reading, reread
 ---
 
 <!--
