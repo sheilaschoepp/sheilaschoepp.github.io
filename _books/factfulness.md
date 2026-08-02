@@ -8,7 +8,7 @@ isbn:
 categories: ["health, fitness & dieting", "personal health", "stress", "stress management"]
 tags:
 buy_link: https://www.amazon.ca/Factfulness-Reasons-World-Things-Better/dp/1250123828
-date: 2024-11-20 # todo: incorrect date
+date: 2024-11-20
 started:
 finished:
 released: 2020

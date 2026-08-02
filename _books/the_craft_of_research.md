@@ -1,7 +1,7 @@
 ---
 layout: book-review
 title: "The Craft of Research"
-author: Wayne C. Booth, Gregory G. Colomb
+author: Wayne C. Booth, Gregory G. Colomb, Joseph M. Williams, Joseph Bizup, William T. FitzGerald
 cover: assets/img/book_covers/the_craft_of_research.jpg
 olid:
 isbn:
