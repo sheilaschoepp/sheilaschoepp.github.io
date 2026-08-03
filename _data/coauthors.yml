@@ -2,6 +2,10 @@
   - firstname: ["Fatemeh", "F."]
     url: https://fatemehab.github.io/
 
+"biswas":
+  - firstname: ["Joydeep", "J."]
+    url: https://www.joydeepb.com/
+
 "cao":
   - firstname: ["Yingyue", "Y."]
     url: https://scholar.google.ca/citations?user=s8SwPGkAAAAJ # https://www.linkedin.com/in/yingyue-cao-2b2724234/
@@ -10,9 +14,29 @@
   - firstname: ["Shadan", "S."]
     url: https://shadangolestan.github.io/
 
+"hu":
+  - firstname: ["Zichao", "Z."]
+    url: https://www.zichaohu.com/
+
 "jafaripour":
   - firstname: ["Masoud", "M."]
     url: https://sites.google.com/view/masoud-jafaripoor/
+
+"jenkins":
+  - firstname: ["Odest Chadwicke", "Odest", "O. C."]
+    url: https://web.eecs.umich.edu/~ocj/
+
+"joseph":
+  - firstname: ["Sebastian", "S."]
+    url: https://sebajoe.github.io/
+
+"lease":
+  - firstname: ["Matthew", "M."]
+    url: https://mattlease.com/
+
+"li":
+  - firstname: ["Junyi Jessy", "Junyi", "J. J."]
+    url: https://jessyli.com/
 
 "miwa":
   - firstname: ["Shotaro", "S."]
@@ -21,6 +45,14 @@
 "mitsuka":
   - firstname: ["Yoshihiro", "Y."]
     url: https://scholar.google.com/citations?user=j9S4_fYAAAAJ
+
+"opipari":
+  - firstname: ["Anthony", "A."]
+    url: https://topipari.com/
+
+"stone":
+  - firstname: ["Peter", "P."]
+    url: https://www.cs.utexas.edu/~pstone/
 
 "sufiyan":
   - firstname: ["Zahin", "Z."]
@@ -34,6 +66,14 @@
   - firstname: ["Matthew", "Matthew E.", "M. E."]
     url: https://drmatttaylor.net/
 
+"vasan":
+  - firstname: ["Gautham", "G."]
+    url: https://gauthamvasan.github.io/
+
+"wagstaff":
+  - firstname: ["Kiri L.", "Kiri", "K. L."]
+    url: https://www.wkiri.com/
+
 "yang":
   - firstname: ["Tianpei", "T."]
     url: https://tianpeiyang.github.io/
@@ -41,3 +81,7 @@
 "zaiane":
   - firstname: ["Osmar", "Osmar R.", "O. R."]
     url: https://webdocs.cs.ualberta.ca/~zaiane/
+
+"zhang":
+  - firstname: ["Arthur", "A."]
+    url: https://www.arthurkzhang.com/
