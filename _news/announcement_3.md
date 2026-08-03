@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, "AI-Assisted Peer Review at Scale: The AAAI-26 AI Review Pilot", is now available on arXiv.
+Our paper, "[AI-Assisted Peer Review at Scale: The AAAI-26 AI Review Pilot](https://arxiv.org/abs/2604.13940)", is now available on arXiv.

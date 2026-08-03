@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented our paper, "The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning", at IJCAI 2025.
+Presented our paper, "[The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning](https://www.ijcai.org/proceedings/2025/1181)", at IJCAI 2025.
