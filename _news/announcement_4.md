@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-07-02 12:00:00+0800
+date: 2026-01-20 08:00:00+0800
 inline: true
 related_posts: false
 ---
 
-Gave a talk in Amii's AI Seminar series at the University of Alberta.
+Attended AAAI 2026 in Singapore (January 20 - 27, 2026).

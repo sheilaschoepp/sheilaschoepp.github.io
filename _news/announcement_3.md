@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-08-16 08:00:00+0800
+date: 2026-04-15 12:00:00-0600
 inline: true
-related_posts: true
+related_posts: false
 ---
 
-Attended IJCAI 2025 in Montreal, Canada (August 16 - 22, 2025).
+Our paper, "AI-Assisted Peer Review at Scale: The AAAI-26 AI Review Pilot", is now available on arXiv.

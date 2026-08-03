@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-07-05 11:14:49-0600
+date: 2025-08-16 08:00:00+0800
 inline: true
-related_posts: false
+related_posts: true
 ---
 
-Released a Zettelkasten-flavoured implementation of Andrej Karpathy's [LLM wiki](https://github.com/sheilaschoepp/llm-wiki), which I continue to expand and refine.
+Attended IJCAI 2025 in Montreal, Canada (August 16 - 22, 2025).

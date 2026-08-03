@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-05-01 08:00:00+0800
+date: 2025-08-21 15:00:00-0600
 inline: true
 related_posts: false
 ---
 
-Began serving as a workflow chair for AAAI 2026 (May 2025 - January 2026).
+Presented our paper, "The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning", at IJCAI 2025.

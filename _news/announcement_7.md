@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-06-29 12:00:00-0600
+date: 2025-07-02 12:00:00+0800
 inline: true
 related_posts: false
 ---
 
-Passed my candidacy exam and became a Ph.D. candidate.
+Gave a talk in Amii's AI Seminar series at the University of Alberta.
