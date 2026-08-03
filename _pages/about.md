@@ -27,4 +27,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Ph.D. student in Computing Science at the University of Alberta, researching communication between foundation model (FM) agents and humans in cooperative decision-making tasks.
+Ph.D. candidate in Computing Science at the University of Alberta, researching communication between foundation model (FM) agents and humans in cooperative decision-making tasks.
