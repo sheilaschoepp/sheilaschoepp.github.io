@@ -17,9 +17,25 @@ layout: page
       {% for resource in page.resources %}
         <li>
           {% if resource.url contains '://' %}
-            <a class="talk-resource" href="{{ resource.url | escape }}">{{ resource.label | escape }}</a>
+            <a
+              class="talk-resource"
+              href="{{ resource.url | escape }}"
+              {% if resource.label == 'Slides' %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
+            >
+              {{- resource.label | escape -}}
+            </a>
           {% else %}
-            <a class="talk-resource" href="{{ resource.url | relative_url }}">{{ resource.label | escape }}</a>
+            <a
+              class="talk-resource"
+              href="{{ resource.url | relative_url }}"
+              {% if resource.label == 'Slides' %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
+            >
+              {{- resource.label | escape -}}
+            </a>
           {% endif %}
         </li>
       {% endfor %}
