@@ -33,17 +33,4 @@ tracks:
         display: "May 5, 2026"
         decision: true
         previous_edition: 2026
-  - name: "Workshop proposals"
-    source: "https://rl-conference.cc/2026/call_for_workshops.html"
-    deadlines:
-      - label: "Proposal"
-        date: null
-        display: "Mar 13, 2026"
-        decision: false
-        previous_edition: 2026
-      - label: "Decision"
-        date: null
-        display: "Apr 3, 2026"
-        decision: true
-        previous_edition: 2026
 ---

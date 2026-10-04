@@ -18,7 +18,6 @@ sources:
   - "https://rldm.org/call-for-tutorials-2025/"
 tracks:
   - name: "Extended abstracts"
-    note: "Extended-abstract meeting with no separate paper deadline."
     deadlines:
       - label: "Extended abstract"
         date: null
@@ -29,28 +28,4 @@ tracks:
         display: "Feb 26, 2027"
         decision: true
     source: "https://rldm.org/call-for-abstracts-2027/"
-  - name: "Workshop proposals"
-    deadlines:
-      - label: "Proposal"
-        date: null
-        display: "Dec 10, 2024"
-        decision: false
-        previous_edition: 2025
-      - label: "Decision"
-        date: null
-        display: "Jan 10, 2025"
-        decision: true
-        previous_edition: 2025
-  - name: "Tutorial nominations"
-    source: "https://rldm.org/call-for-tutorials-2025/"
-    deadlines:
-      - label: "Nomination"
-        date: null
-        display: "Dec 20, 2024"
-        decision: false
-        previous_edition: 2025
-      - label: "Decision"
-        date: null
-        display: "N/A"
-        decision: true
 ---

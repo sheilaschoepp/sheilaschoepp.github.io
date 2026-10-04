@@ -43,8 +43,10 @@ directly, or `display: N/A` if unavailable.
 Keep the main paper track first. Its abstract or paper-registration deadline
 determines the conference's open/closed badge; if neither exists, use the paper
 submission or commitment deadline. An unavailable or historical required gate
-shows `Details pending`. Later workshop, tutorial, and other deadlines remain
-visible and affect deadline sorting, but cannot reopen a closed main track.
+shows `Details pending`. Later deadlines cannot reopen a closed main track.
+
+Keep the cards compact: list the main paper deadlines and decisions. Omit
+extra program categories and explanatory commentary unless requested.
 
 For historical references, set `date: null`, keep the actual old date in
 `display`, and add `previous_edition: 2026` (using the relevant edition year).
@@ -54,8 +56,7 @@ optional `source` links its title to the official call or dates page.
 
 Use `decision: true` for author notifications, and name submission tracks or
 rounds accurately. Do not treat an ARR commitment deadline as a new submission
-deadline. Preserve track notes only for useful submission requirements or
-eligibility details. `timezone` records the announced deadline timezone; use
+deadline. `timezone` records the announced deadline timezone; use
 `Unconfirmed` when the official source does not state one.
 
 `tags` controls the research-area filters. The starting labels include `AP`
