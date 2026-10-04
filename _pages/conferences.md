@@ -21,7 +21,7 @@ nav_order: 3
 {% endfor %}
 {% assign filter_tags = filter_tags | uniq | sort %}
 
-<div class="conference-deadlines">
+<div class="conference-deadlines" id="conference-browser">
   <div class="conf-toolbar">
     {% include site_filter.liquid id='conf-search' label='Search conferences or locations' %}
     <div class="conf-tag-filters" role="group" aria-label="Filter by research area">
@@ -56,19 +56,23 @@ nav_order: 3
       {% assign conference_tags = conference.tags %}
       {% assign search_blob = conference.shortname | append: ' ' | append: conference.name | append: ' ' | append: conference.location | downcase %}
       <article class="conf-card hoverable" data-name="{{ conference.shortname | escape }}" data-tags="{{ conference_tags | join: ',' | escape }}" data-search="{{ search_blob | escape }}" data-start="{{ conference.start_date | escape }}">
-        <div class="conf-card-top">
-          <div class="conf-tags">
-            {% for tag in conference_tags %}
-              <span class="conf-tag">{{ tag | escape }}</span>
-            {% endfor %}
+        <div class="conf-card-header">
+          <div class="conf-card-header-content">
+            <div class="conf-card-top">
+              <div class="conf-tags">
+                {% for tag in conference_tags %}
+                  <span class="conf-tag">{{ tag | escape }}</span>
+                {% endfor %}
+              </div>
+              <span class="conf-status-badge" data-role="status"></span>
+            </div>
+            <h3 class="conf-card-title"><a href="{{ conference.website | escape }}" target="_blank" rel="noopener noreferrer">{{ conference.shortname | escape }}</a></h3>
+            <p class="conf-card-name">{{ conference.name | escape }}</p>
+            <div class="conf-card-meta">
+              <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ conference.location | escape }}</span>
+              <span><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>{{ conference.dates | escape }}</span>
+            </div>
           </div>
-          <span class="conf-status-badge" data-role="status"></span>
-        </div>
-        <h3 class="conf-card-title"><a href="{{ conference.website | escape }}" target="_blank" rel="noopener noreferrer">{{ conference.shortname | escape }}</a></h3>
-        <p class="conf-card-name">{{ conference.name | escape }}</p>
-        <div class="conf-card-meta">
-          <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ conference.location | escape }}</span>
-          <span><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>{{ conference.dates | escape }}</span>
         </div>
         <div class="conf-tracks">
           {% for track in conference.tracks %}
@@ -76,7 +80,6 @@ nav_order: 3
               <div class="conf-track-name">
                 {% if track.source %}<a href="{{ track.source | escape }}" target="_blank" rel="noopener noreferrer">{{ track.name | escape }}</a>{% else %}{{ track.name | escape }}{% endif %}
               </div>
-              {% if track.note %}<div class="conf-track-note">{{ track.note | escape }}</div>{% endif %}
               {% for deadline in track.deadlines %}
                 <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>
                   <span class="conf-deadline-label">{{ deadline.label | escape }}</span>
@@ -92,8 +95,10 @@ nav_order: 3
             </div>
           {% endfor %}
         </div>
-        <p class="conf-track-note">Deadline time zone: {{ conference.timezone | escape }}</p>
-        <a class="conf-card-link" href="{{ conference.website | escape }}" target="_blank" rel="noopener noreferrer">Visit website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        <div class="conf-card-footer">
+          <p class="conf-card-timezone">Deadline time zone: {{ conference.timezone | escape }}</p>
+          <a class="conf-card-link" href="{{ conference.website | escape }}" target="_blank" rel="noopener noreferrer">Visit website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
       </article>
     {% endfor %}
   </div>

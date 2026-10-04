@@ -66,18 +66,6 @@ function deadlineSortKey(row, now) {
   return deadlineState(row, now) === "upcoming" ? publishedDay(row) : Infinity;
 }
 
-function mainSubmissionGate(card) {
-  const mainTrack = card.querySelector(".conf-track");
-  const rows = mainTrack ? [...mainTrack.querySelectorAll('.conf-deadline-row[data-kind="submission"]')] : [];
-  const label = (row) => row.querySelector(".conf-deadline-label").textContent.trim();
-  return (
-    rows.find((row) => /abstract/i.test(label(row))) ||
-    rows.find((row) => /^(?:paper\s+)?registration$/i.test(label(row))) ||
-    rows.find((row) => /paper|submission|commitment/i.test(label(row))) ||
-    rows[0]
-  );
-}
-
 function updateCard(card, now) {
   const submissions = [...card.querySelectorAll('.conf-deadline-row[data-kind="submission"]')].filter((row) => !row.dataset.previousEdition);
   for (const row of card.querySelectorAll(".conf-deadline-row")) {
@@ -95,13 +83,24 @@ function updateCard(card, now) {
     }
   }
   card.dataset.sortKey = String(Math.min(...submissions.map((row) => deadlineSortKey(row, now))));
-  const gate = mainSubmissionGate(card);
-  const state = deadlineState(gate, now);
+  const states = submissions.map((row) => deadlineState(row, now));
+  const upcoming = states.includes("upcoming");
+  const closed = states.length > 0 && states.every((state) => state === "passed");
   const badge = card.querySelector('[data-role="status"]');
   badge.classList.remove("status-open", "status-urgent", "status-closed");
-  const urgent = deadlineIsUrgent(gate, now);
-  badge.textContent = state === "upcoming" ? (urgent ? "Closing soon" : "Upcoming") : state === "passed" ? "Closed" : "Details pending";
-  badge.classList.add(state === "upcoming" ? (urgent ? "status-urgent" : "status-open") : "status-closed");
+  const urgent = submissions.some((row) => deadlineIsUrgent(row, now));
+  badge.textContent = upcoming ? (urgent ? "Closing soon" : "Upcoming") : closed ? "Closed" : "Details pending";
+  badge.classList.add(upcoming ? (urgent ? "status-urgent" : "status-open") : "status-closed");
+}
+
+function alignCardHeaders(grid) {
+  const headers = [...grid.querySelectorAll(".conf-card:not(.is-filtered-out) .conf-card-header-content")];
+  if (!headers.length) {
+    grid.style.removeProperty("--conf-header-height");
+    return;
+  }
+  const height = `${Math.ceil(Math.max(...headers.map((header) => header.getBoundingClientRect().height)))}px`;
+  if (grid.style.getPropertyValue("--conf-header-height") !== height) grid.style.setProperty("--conf-header-height", height);
 }
 
 function init() {
@@ -112,6 +111,15 @@ function init() {
   sort.value = "deadline";
   const empty = document.getElementById("conf-empty-state");
   const activeTags = new Set();
+  let headerFrame = null;
+
+  function scheduleHeaderAlignment() {
+    if (headerFrame !== null) return;
+    headerFrame = requestAnimationFrame(() => {
+      headerFrame = null;
+      alignCardHeaders(grid);
+    });
+  }
 
   function refresh() {
     const cards = [...grid.querySelectorAll(".conf-card")];
@@ -131,6 +139,7 @@ function init() {
     });
     cards.forEach((card) => grid.append(card));
     empty.hidden = count !== 0;
+    scheduleHeaderAlignment();
   }
 
   search.addEventListener("input", refresh);
@@ -145,6 +154,18 @@ function init() {
       refresh();
     });
   });
+
+  if (typeof ResizeObserver !== "undefined") {
+    let gridWidth;
+    const observer = new ResizeObserver(([entry]) => {
+      if (entry.contentRect.width === gridWidth) return;
+      gridWidth = entry.contentRect.width;
+      scheduleHeaderAlignment();
+    });
+    observer.observe(grid);
+  }
+  window.addEventListener("resize", scheduleHeaderAlignment);
+  if (document.fonts) document.fonts.ready.then(scheduleHeaderAlignment);
 
   refresh();
   setInterval(refresh, 60000);

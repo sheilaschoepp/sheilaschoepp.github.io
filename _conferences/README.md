@@ -40,14 +40,17 @@ or minutes. The date stays upcoming until that day has ended everywhere.
 Do not add explanatory notes about missing cutoff times. Show a decision date
 directly, or `display: N/A` if unavailable.
 
-Keep the main paper track first and name it `Main track` consistently. Its
-abstract or paper-registration deadline determines the conference's open/closed
-badge; if neither exists, use the paper
-submission or commitment deadline. An unavailable or historical required gate
-shows `Details pending`. Later deadlines cannot reopen a closed main track.
+Keep the main paper track first and name it `Main track` consistently. The
+badge considers submission deadlines across all current tracks: any upcoming
+deadline keeps the card open, with `Closing soon` for a deadline within seven
+days. Show `Closed` only when all current submission deadlines have passed.
+Unresolved deadlines with none upcoming show `Details pending`. Decisions and
+previous-edition reference dates do not determine the badge.
 
-Keep the cards compact: list the main paper deadlines and decisions. Omit
-extra program categories and explanatory commentary unless requested.
+Keep the cards compact: list the main paper deadlines and decisions, plus a
+small selection of important paper tracks, such as AAMAS's AAAI Fast Track.
+Omit exhaustive program categories and explanatory commentary. Use a specific
+official call for every linked track.
 
 For historical references, set `date: null`, keep the actual old date in
 `display`, and add `previous_edition: 2026` (using the relevant edition year).
