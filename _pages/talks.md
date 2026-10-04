@@ -64,7 +64,7 @@ published: true
               <li class="talk-appearance" data-talk-search="{{ search_text | strip | escape }}">
                 <div class="talk-appearance-details">
                   <span class="talk-appearance-venue">{{ talk.venue | escape }}</span>
-                  <time class="talk-appearance-date" datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%b %-d, %Y' }}</time>
+                  <time class="talk-appearance-date" datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%B %-d, %Y' }}</time>
                 </div>
                 <div class="talk-appearance-actions">
                   <a class="talk-action" href="{{ talk.url | relative_url }}"><i class="fa-solid fa-align-left" aria-hidden="true"></i> Abstract</a>
