@@ -13,7 +13,13 @@ published: true
 {% assign talks = site.pages | where: 'talk', true | sort: 'date' | reverse %}
 {% assign talk_groups = talks | group_by: 'title' %}
 
-<div class="talk-groups">
+<form class="talk-search" id="talk-search" role="search" aria-label="Filter talks" hidden>
+  {% include site_filter.liquid id='talk-search-input' label='Search talks by topic, event, year, or abstract' controls='talk-groups' %}
+</form>
+<p class="talk-search-status" id="talk-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<p class="talk-search-empty" id="talk-search-empty" hidden>No talks match your search. Try a different topic, event, or year.</p>
+
+<div class="talk-groups" id="talk-groups">
   {% for group in talk_groups %}
     {% assign newest_talk = group.items | first %}
     {% assign oldest_talk = group.items | last %}
@@ -31,7 +37,8 @@ published: true
       </div>
       <ol class="talk-appearances">
         {% for talk in group.items %}
-          <li class="talk-appearance">
+          {% capture search_text %}{{ talk.title }} {{ talk.venue }} {{ talk.note }} {{ talk.date | date: '%B %b %-d %Y' }} {{ talk.date | date: '%Y-%m-%d' }} {{ talk.content | markdownify | strip_html }}{% endcapture %}
+          <li class="talk-appearance" data-talk-search="{{ search_text | strip | escape }}">
             <a class="talk-appearance-venue" href="{{ talk.url | relative_url }}">{{ talk.venue | escape }}</a>
             <div class="talk-appearance-actions">
               <a class="talk-action" href="{{ talk.url | relative_url }}"><i class="fa-solid fa-align-left" aria-hidden="true"></i> Abstract</a>
@@ -54,3 +61,5 @@ published: true
 </div>
 
 {% include document_viewer.liquid %}
+
+<script src="{{ '/assets/js/talk-search.js' | relative_url | bust_file_cache }}" type="module"></script>

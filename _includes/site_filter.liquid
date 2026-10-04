@@ -1,0 +1,14 @@
+<div class="site-filter">
+  <label class="sr-only" for="{{ include.id | escape }}">{{ include.label | escape }}</label>
+  <i class="fa-solid fa-magnifying-glass site-filter-icon" aria-hidden="true"></i>
+  <input
+    type="text"
+    id="{{ include.id | escape }}"
+    class="search bibsearch-form-input"
+    spellcheck="false"
+    autocomplete="off"
+    {% if include.controls %}
+      aria-controls="{{ include.controls | escape }}"
+    {% endif %}
+  >
+</div>

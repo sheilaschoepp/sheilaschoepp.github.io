@@ -6,6 +6,39 @@
   visibility: visible;
 }
 
+// Keep every page filter aligned with the publication search field.
+.site-filter {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  min-width: 0;
+
+  .bibsearch-form-input {
+    display: block;
+    margin: 0;
+    padding-left: 2.4rem;
+    font-weight: 400;
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 3px;
+    }
+  }
+}
+
+.site-filter-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.8rem;
+  width: 1em;
+  transform: translateY(-50%);
+  color: var(--global-newsletter-text-color);
+  font-size: 0.875rem;
+  text-align: center;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
 // Publication panels animate max-height via .open; Tailwind's .hidden utility
 // must not remove them from layout when their abstract/BibTeX buttons are used.
 .publications ol.bibliography li .hidden {

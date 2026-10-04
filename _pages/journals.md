@@ -12,11 +12,7 @@ nav: false
 
 <div class="conference-deadlines" id="journal-browser">
   <div class="conf-toolbar" hidden>
-    <div class="conf-search-wrap">
-      <label class="sr-only" for="conf-search">Search journals, topics, or publishers</label>
-      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-      <input type="search" id="conf-search" spellcheck="false" autocomplete="off" placeholder="Search journals or topics">
-    </div>
+    {% include site_filter.liquid id='conf-search' label='Search journals, topics, or publishers' %}
     <div class="conf-tag-filters" role="group" aria-label="Filter by access">
       <button type="button" class="conf-tag-btn" data-access="open" aria-pressed="false"><i class="fa-solid fa-lock-open" aria-hidden="true"></i> Open access</button>
       <button type="button" class="conf-tag-btn" data-access="hybrid" aria-pressed="false"><i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i> Hybrid</button>

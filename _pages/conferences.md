@@ -23,11 +23,7 @@ nav_order: 3
 
 <div class="conference-deadlines">
   <div class="conf-toolbar">
-    <div class="conf-search-wrap">
-      <label class="sr-only" for="conf-search">Search conferences or locations</label>
-      <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-      <input type="search" id="conf-search" spellcheck="false" autocomplete="off" placeholder="Search conferences or locations">
-    </div>
+    {% include site_filter.liquid id='conf-search' label='Search conferences or locations' %}
     <div class="conf-tag-filters" role="group" aria-label="Filter by research area">
       {% for tag in filter_tags %}
         {% assign tag_name = tag %}

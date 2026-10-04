@@ -34,38 +34,7 @@ html[data-theme="dark"] .conference-deadlines {
   border-bottom: 1px solid var(--global-divider-color);
 }
 
-.conference-deadlines .conf-search-wrap {
-  position: relative;
-  max-width: 28rem;
-  min-width: 0;
-}
-
-.conference-deadlines .conf-search-wrap i {
-  position: absolute;
-  left: 0.9rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--conf-muted-color);
-  pointer-events: none;
-}
-
-.conference-deadlines #conf-search {
-  width: 100%;
-  min-height: 2.75rem;
-  padding: 0.6rem 0.9rem 0.6rem 2.5rem;
-  border: 1px solid var(--conf-border-color);
-  border-radius: 8px;
-  background: var(--global-card-bg-color);
-  color: var(--global-text-color);
-  font: inherit;
-}
-
-.conference-deadlines #conf-search::placeholder {
-  color: var(--conf-muted-color);
-  opacity: 1;
-}
-
-.conference-deadlines :is(input, select, button, a):focus-visible {
+.conference-deadlines :is(select, button, a):focus-visible {
   outline: 2px solid var(--global-theme-color);
   outline-offset: 3px;
 }
@@ -393,10 +362,6 @@ html[data-theme="dark"] .conference-deadlines {
   .conference-deadlines .conf-toolbar {
     grid-template-columns: minmax(0, 1fr);
     gap: 0.85rem;
-  }
-
-  .conference-deadlines .conf-search-wrap {
-    max-width: none;
   }
 
   .conference-deadlines .conf-sort-wrap {

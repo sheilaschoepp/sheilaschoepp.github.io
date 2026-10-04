@@ -1,5 +1,38 @@
 /* Grouped talks and detail pages use the site's light and dark theme colors. */
 
+.talk-search {
+  margin: 0;
+}
+
+.talk-search-status {
+  margin: 0.65rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.talk-search-status:empty {
+  margin: 0;
+}
+
+.talk-search-empty {
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 0.75rem;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+}
+
+.talk-search[hidden],
+.talk-search [hidden],
+.talk-search-status[hidden],
+.talk-search-empty[hidden],
+.talk-group[hidden],
+.talk-appearance[hidden] {
+  display: none !important;
+}
+
 .talk-groups {
   display: grid;
   gap: 1.5rem;
@@ -68,10 +101,11 @@
   gap: 1rem;
   padding: 0.9rem 0;
   margin: 0;
+  border-top: 0;
   list-style: none;
 }
 
-.talk-appearance + .talk-appearance {
+.talk-appearance:not([hidden]) ~ .talk-appearance:not([hidden]) {
   border-top: 1px solid var(--global-divider-color);
 }
 
