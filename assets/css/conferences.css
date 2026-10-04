@@ -1,7 +1,7 @@
 /* Adapted from https://github.com/pulkitverma25/pulkitverma25.github.io.
  * Copyright (c) 2022 Maruan Al-Shedivat.
  * MIT; permission notice in repository LICENSE.
- * Styles are scoped to this page and use the existing al-folio theme colors.
+ * Shared conference and journal cards use the existing al-folio theme colors.
  */
 
 .conference-deadlines {
@@ -79,33 +79,18 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 .conference-deadlines .conf-tag-btn {
-  border: 1px solid var(--conf-border-color);
-  background: var(--global-card-bg-color);
-  color: var(--conf-muted-color);
-  border-radius: 999px;
-  min-height: 2.25rem;
-  min-width: 2.75rem;
-  padding: 0.4rem 0.85rem;
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 1.25;
+  min-height: 1.5rem;
+  min-width: 2rem;
+  margin: 0;
   cursor: pointer;
   transition:
     background-color 0.15s ease,
-    border-color 0.15s ease;
-}
-
-.conference-deadlines .conf-tag-btn:hover {
-  border-color: var(--global-theme-color);
-  background: var(--conf-tag-background);
-  color: var(--conf-accent-color);
+    color 0.15s ease;
 }
 
 .conference-deadlines .conf-tag-btn.is-active {
-  background: var(--conf-tag-background);
-  border-color: var(--global-theme-color);
-  color: var(--conf-accent-color);
-  box-shadow: inset 0 0 0 1px var(--global-theme-color);
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
 }
 
 .conference-deadlines .conf-sort-wrap {
@@ -305,6 +290,32 @@ html[data-theme="dark"] .conference-deadlines {
   line-height: 1.5;
 }
 
+.conference-deadlines .conf-metrics {
+  margin: 0 0 0.85rem;
+}
+
+.conference-deadlines .conf-metric-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.conference-deadlines .conf-metric-row dt {
+  color: var(--conf-muted-color);
+  font-weight: 400;
+}
+
+.conference-deadlines .conf-metric-row dd {
+  margin: 0;
+  font-weight: 500;
+  text-align: right;
+}
+
 .conference-deadlines .conf-submission-closed,
 .conference-deadlines .conf-notifications-sent {
   display: flex;
@@ -365,11 +376,8 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 .conference-deadlines .conf-card-link {
-  color: var(--conf-accent-color);
   margin-top: auto;
-  padding-top: 0.35rem;
-  font-size: 0.85rem;
-  font-weight: 500;
+  align-self: flex-start;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
