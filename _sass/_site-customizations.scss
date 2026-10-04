@@ -39,10 +39,31 @@
   pointer-events: none;
 }
 
+// Give each publication the same card treatment as a talk topic.
+.publications ol.bibliography > li {
+  min-width: 0;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 1rem;
+  background: var(--global-card-bg-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.035);
+}
+
+@media (max-width: 650px) {
+  .publications ol.bibliography > li {
+    padding: 1.15rem;
+  }
+}
+
 // Publication panels animate max-height via .open; Tailwind's .hidden utility
 // must not remove them from layout when their abstract/BibTeX buttons are used.
 .publications ol.bibliography li .hidden {
   display: block;
+}
+
+.publications ol.bibliography li div.abstract.hidden:not(.open) {
+  border-color: transparent;
 }
 
 // Publication previews precede the venue badges; long venue labels wrap.
