@@ -1,7 +1,9 @@
 /* Grouped talks and detail pages use the site's light and dark theme colors. */
 
 .talk-search {
+  padding-bottom: 1.5rem;
   margin: 0;
+  border-bottom: 1px solid var(--global-divider-color);
 }
 
 .talk-search-status {
@@ -28,26 +30,15 @@
 .talk-search [hidden],
 .talk-search-status[hidden],
 .talk-search-empty[hidden],
-.talk-year[hidden],
 .talk-group[hidden],
 .talk-appearance[hidden] {
   display: none !important;
 }
 
-.talk-year-title {
-  padding-top: 1rem;
-  margin: 2rem 0 1rem;
-  border-top: 1px solid var(--global-divider-color);
-  color: var(--global-divider-color);
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  text-align: right;
-}
-
 .talk-groups {
   display: grid;
   gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .talk-group {
