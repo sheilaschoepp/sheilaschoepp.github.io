@@ -35,16 +35,18 @@ published: true
       <div class="row">
         <div class="talk-group-media col col-sm-2">
           {% if thumbnail_talk %}
-            <img
-              class="talk-group-thumbnail preview z-depth-1 rounded"
-              src="{{ thumbnail_talk.thumbnail | relative_url | bust_file_cache | escape }}"
-              alt="{{ thumbnail_talk.thumbnail_alt | default: group.name | escape }}"
-              {% if thumbnail_talk.thumbnail_width %}width="{{ thumbnail_talk.thumbnail_width }}"{% endif %}
-              {% if thumbnail_talk.thumbnail_height %}height="{{ thumbnail_talk.thumbnail_height }}"{% endif %}
-              loading="lazy"
-              decoding="async"
-              data-talk-zoomable
-            >
+            <figure>
+              <img
+                class="talk-group-thumbnail preview z-depth-1 rounded"
+                src="{{ thumbnail_talk.thumbnail | relative_url | bust_file_cache | escape }}"
+                alt="{{ thumbnail_talk.thumbnail_alt | default: group.name | escape }}"
+                {% if thumbnail_talk.thumbnail_width %}width="{{ thumbnail_talk.thumbnail_width }}"{% endif %}
+                {% if thumbnail_talk.thumbnail_height %}height="{{ thumbnail_talk.thumbnail_height }}"{% endif %}
+                loading="lazy"
+                decoding="async"
+                data-talk-zoomable
+              >
+            </figure>
           {% else %}
             <div class="talk-group-icon" aria-hidden="true"><i class="fa-solid fa-fw {{ newest_talk.icon | default: 'fa-microphone' | escape }}"></i></div>
           {% endif %}
