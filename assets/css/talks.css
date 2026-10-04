@@ -140,20 +140,25 @@
 }
 
 .talk-appearance-actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0;
   min-width: 0;
+  line-height: 1.5;
 }
 
-.talk-action,
+.talk-action {
+  /* Match the publication buttons' inline alignment below the venue text. */
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .talk-resource {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
+}
+
+.talk-action,
+.talk-resource {
   text-decoration: none;
   white-space: nowrap;
 }
