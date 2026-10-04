@@ -31,17 +31,18 @@ nav_order: 3
     <div class="conf-tag-filters" role="group" aria-label="Filter by research area">
       {% for tag in filter_tags %}
         {% assign tag_name = tag %}
+        {% assign tag_icon = 'fa-tag' %}
         {% case tag %}
-          {% when 'AP' %}{% assign tag_name = 'Automated planning' %}
-          {% when 'CV' %}{% assign tag_name = 'Computer vision' %}
-          {% when 'HCI' %}{% assign tag_name = 'Human-computer interaction' %}
-          {% when 'KR' %}{% assign tag_name = 'Knowledge representation' %}
-          {% when 'ML' %}{% assign tag_name = 'Machine learning' %}
-          {% when 'NLP' %}{% assign tag_name = 'Natural language processing' %}
-          {% when 'RL' %}{% assign tag_name = 'Reinforcement learning' %}
-          {% when 'RO' %}{% assign tag_name = 'Robotics' %}
+          {% when 'AP' %}{% assign tag_name = 'Automated planning' %}{% assign tag_icon = 'fa-route' %}
+          {% when 'CV' %}{% assign tag_name = 'Computer vision' %}{% assign tag_icon = 'fa-eye' %}
+          {% when 'HCI' %}{% assign tag_name = 'Human-computer interaction' %}{% assign tag_icon = 'fa-hand-pointer' %}
+          {% when 'KR' %}{% assign tag_name = 'Knowledge representation' %}{% assign tag_icon = 'fa-diagram-project' %}
+          {% when 'ML' %}{% assign tag_name = 'Machine learning' %}{% assign tag_icon = 'fa-brain' %}
+          {% when 'NLP' %}{% assign tag_name = 'Natural language processing' %}{% assign tag_icon = 'fa-comments' %}
+          {% when 'RL' %}{% assign tag_name = 'Reinforcement learning' %}{% assign tag_icon = 'fa-arrow-rotate-right' %}
+          {% when 'RO' %}{% assign tag_name = 'Robotics' %}{% assign tag_icon = 'fa-robot' %}
         {% endcase %}
-        <button type="button" class="conf-tag-btn" data-tag="{{ tag | escape }}" title="{{ tag_name | escape }}" aria-label="{{ tag_name | escape }}" aria-pressed="false">{{ tag | escape }}</button>
+        <button type="button" class="conf-tag-btn" data-tag="{{ tag | escape }}" title="{{ tag_name | escape }}" aria-label="{{ tag_name | escape }}" aria-pressed="false"><i class="fa-solid {{ tag_icon }}" aria-hidden="true"></i> {{ tag | escape }}</button>
       {% endfor %}
     </div>
     <div class="conf-sort-wrap">

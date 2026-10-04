@@ -24,10 +24,12 @@
   }
 }
 
-// Share compact resource buttons across publications and talks.
+// Share compact resource buttons across publications, talks, and resource lists.
 .publications ol.bibliography li .links a.btn,
 .talk-action,
-.talk-resource {
+.talk-resource,
+.conference-deadlines .conf-tag-btn,
+.conference-deadlines .conf-card-link {
   color: var(--global-text-color);
   background-color: var(--global-divider-color);
   border: 0;
