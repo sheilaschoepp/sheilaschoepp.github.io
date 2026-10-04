@@ -36,8 +36,8 @@ layout: page
             <a
               class="talk-resource"
               href="{{ resource.url | escape }}"
-              {% if resource.label == 'Slides' %}
-                data-slides-viewer data-slides-title="{{ page.title | escape }}"
+              {% if resource.label == 'Slides' or resource.label == 'Poster' %}
+                data-document-viewer data-document-label="{{ resource.label | escape }}" data-document-title="{{ page.title | escape }}"
               {% endif %}
             >
               <i class="fa-solid {{ resource_icon }}" aria-hidden="true"></i> {{ resource.label | escape }}
@@ -46,8 +46,8 @@ layout: page
             <a
               class="talk-resource"
               href="{{ resource.url | relative_url }}"
-              {% if resource.label == 'Slides' %}
-                data-slides-viewer data-slides-title="{{ page.title | escape }}"
+              {% if resource.label == 'Slides' or resource.label == 'Poster' %}
+                data-document-viewer data-document-label="{{ resource.label | escape }}" data-document-title="{{ page.title | escape }}"
               {% endif %}
             >
               <i class="fa-solid {{ resource_icon }}" aria-hidden="true"></i> {{ resource.label | escape }}
@@ -66,4 +66,4 @@ layout: page
   <a class="talk-back" href="{{ '/talks/' | relative_url }}">&larr; All talks</a>
 </article>
 
-{% include talk_slides_viewer.liquid %}
+{% include document_viewer.liquid %}

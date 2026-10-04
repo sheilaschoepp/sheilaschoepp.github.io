@@ -39,7 +39,7 @@ published: true
                 {% if resource.label == 'Video' or resource.label == 'Slides' %}
                   {% assign resource_url = resource.url %}
                   {% unless resource_url contains '://' %}{% assign resource_url = resource_url | relative_url %}{% endunless %}
-                  <a class="talk-action" href="{{ resource_url | escape }}"{% if resource.label == 'Slides' %} data-slides-viewer data-slides-title="{{ talk.title | escape }}"{% endif %}>
+                  <a class="talk-action" href="{{ resource_url | escape }}"{% if resource.label == 'Slides' %} data-document-viewer data-document-label="{{ resource.label | escape }}" data-document-title="{{ talk.title | escape }}"{% endif %}>
                     {% if resource.label == 'Video' %}<i class="fa-solid fa-play" aria-hidden="true"></i> Video{% else %}<i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i> Slides{% endif %}
                   </a>
                 {% endif %}
@@ -53,4 +53,4 @@ published: true
   {% endfor %}
 </div>
 
-{% include talk_slides_viewer.liquid %}
+{% include document_viewer.liquid %}

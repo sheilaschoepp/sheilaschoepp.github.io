@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="{{ '/assets/css/document-viewer.css' | relative_url | bust_file_cache }}">
+
+<dialog id="document-viewer-dialog" class="document-viewer-dialog" aria-labelledby="document-viewer-title">
+  <header class="document-viewer-header">
+    <div class="document-viewer-heading">
+      <span class="document-viewer-label">Document</span>
+      <h2 id="document-viewer-title">Document</h2>
+    </div>
+    <div class="document-viewer-actions">
+      <a class="document-viewer-external" data-document-external target="_blank" rel="noopener noreferrer"
+        >Open in new tab <span aria-hidden="true">↗</span></a
+      >
+      <button type="button" class="document-viewer-close" aria-label="Close document" autofocus>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+  <iframe class="document-viewer-frame" title="Document preview" src="about:blank"></iframe>
+</dialog>
+
+<script src="{{ '/assets/js/document-viewer.js' | relative_url | bust_file_cache }}" type="module"></script>
