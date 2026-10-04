@@ -24,9 +24,29 @@ published: true
     {% assign newest_talk = group.items | first %}
     {% assign oldest_talk = group.items | last %}
     {% assign talk_count = group.items | size %}
+    {% assign thumbnail_talk = nil %}
+    {% for talk in group.items %}
+      {% if talk.thumbnail != blank %}
+        {% assign thumbnail_talk = talk %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
     <article class="talk-group" aria-labelledby="talk-group-{{ forloop.index }}">
-      <div class="talk-group-header">
-        <div class="talk-group-icon" aria-hidden="true"><i class="fa-solid fa-fw {{ newest_talk.icon | default: 'fa-microphone' | escape }}"></i></div>
+      <div class="talk-group-header{% if thumbnail_talk %} talk-group-header-with-thumbnail{% endif %}">
+        {% if thumbnail_talk %}
+          <img
+            class="talk-group-thumbnail preview z-depth-1 rounded"
+            src="{{ thumbnail_talk.thumbnail | relative_url | bust_file_cache | escape }}"
+            alt="{{ thumbnail_talk.thumbnail_alt | default: group.name | escape }}"
+            {% if thumbnail_talk.thumbnail_width %}width="{{ thumbnail_talk.thumbnail_width }}"{% endif %}
+            {% if thumbnail_talk.thumbnail_height %}height="{{ thumbnail_talk.thumbnail_height }}"{% endif %}
+            loading="lazy"
+            decoding="async"
+            data-talk-zoomable
+          >
+        {% else %}
+          <div class="talk-group-icon" aria-hidden="true"><i class="fa-solid fa-fw {{ newest_talk.icon | default: 'fa-microphone' | escape }}"></i></div>
+        {% endif %}
         <div class="talk-group-heading">
           <h2 class="talk-group-title" id="talk-group-{{ forloop.index }}">{{ group.name | escape }}</h2>
           <p class="talk-group-count">
@@ -63,3 +83,4 @@ published: true
 {% include document_viewer.liquid %}
 
 <script src="{{ '/assets/js/talk-search.js' | relative_url | bust_file_cache }}" type="module"></script>
+<script src="{{ '/assets/js/talk-thumbnails.js' | relative_url | bust_file_cache }}" type="module"></script>

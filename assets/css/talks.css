@@ -57,6 +57,19 @@
   gap: 1.1rem;
 }
 
+.talk-group-header-with-thumbnail {
+  grid-template-columns: 12rem minmax(0, 1fr);
+  align-items: center;
+}
+
+.talk-group-thumbnail {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+}
+
 .talk-group-icon {
   display: grid;
   place-items: center;
@@ -232,6 +245,14 @@ a.talk-back:focus-visible,
   .talk-group-header {
     grid-template-columns: 2.75rem minmax(0, 1fr);
     gap: 0.85rem;
+  }
+
+  .talk-group-header-with-thumbnail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .talk-group-thumbnail {
+    max-width: 20rem;
   }
 
   .talk-group-icon {
