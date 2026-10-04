@@ -17,7 +17,7 @@ sources:
   - "https://rldm.org/?trk=public_post-text"
   - "https://rldm.org/call-for-tutorials-2025/"
 tracks:
-  - name: "Extended abstracts"
+  - name: "Main track"
     deadlines:
       - label: "Extended abstract"
         date: null

@@ -27,7 +27,7 @@ sources:
   - "https://neurips.cc/Conferences/2026/CallforSocials"
   - "https://neurips.cc/Conferences/2026/CallForExpo"
 tracks:
-  - name: "Main Conference Papers"
+  - name: "Main track"
     deadlines:
       - label: "Abstract"
         date: "2026-05-04T23:59:59-12:00"

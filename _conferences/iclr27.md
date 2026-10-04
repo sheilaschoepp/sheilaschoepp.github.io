@@ -18,7 +18,7 @@ sources:
   - "https://iclr.cc/Conferences/2027/CallForWorkshops"
   - "https://iclr.cc/Conferences/2026/CallForBlogPosts"
 tracks:
-  - name: "Main Conference Papers"
+  - name: "Main track"
     source: "https://iclr.cc/Conferences/2027/CallForPapers"
     deadlines:
       - label: "Abstract"

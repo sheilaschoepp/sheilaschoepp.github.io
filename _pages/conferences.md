@@ -73,11 +73,9 @@ nav_order: 3
         <div class="conf-tracks">
           {% for track in conference.tracks %}
             <div class="conf-track">
-              {% if conference.tracks.size > 1 or track.source %}
-                <div class="conf-track-name">
-                  {% if track.source %}<a href="{{ track.source | escape }}" target="_blank" rel="noopener noreferrer">{{ track.name | escape }}</a>{% else %}{{ track.name | escape }}{% endif %}
-                </div>
-              {% endif %}
+              <div class="conf-track-name">
+                {% if track.source %}<a href="{{ track.source | escape }}" target="_blank" rel="noopener noreferrer">{{ track.name | escape }}</a>{% else %}{{ track.name | escape }}{% endif %}
+              </div>
               {% if track.note %}<div class="conf-track-note">{{ track.note | escape }}</div>{% endif %}
               {% for deadline in track.deadlines %}
                 <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>

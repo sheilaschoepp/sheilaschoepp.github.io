@@ -21,7 +21,7 @@ sources:
   - "https://naacl2025-srw.github.io/cfp"
   - "https://openreview.net/group?id=aclweb.org/NAACL/2025/Workshop/Student_Research"
 tracks:
-  - name: "Main Conference (long and short papers)"
+  - name: "Main track"
     deadlines:
       - label: "ARR submission"
         date: "2026-10-12T23:59:00-12:00"

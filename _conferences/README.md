@@ -40,8 +40,9 @@ or minutes. The date stays upcoming until that day has ended everywhere.
 Do not add explanatory notes about missing cutoff times. Show a decision date
 directly, or `display: N/A` if unavailable.
 
-Keep the main paper track first. Its abstract or paper-registration deadline
-determines the conference's open/closed badge; if neither exists, use the paper
+Keep the main paper track first and name it `Main track` consistently. Its
+abstract or paper-registration deadline determines the conference's open/closed
+badge; if neither exists, use the paper
 submission or commitment deadline. An unavailable or historical required gate
 shows `Details pending`. Later deadlines cannot reopen a closed main track.
 

@@ -16,7 +16,7 @@ sources:
   - "https://roboticsconference.org/2026/program/pathways/"
 verified_on: "2026-10-04"
 tracks:
-  - name: "Initial submission"
+  - name: "Main track"
     deadlines:
       - label: "Extended abstract"
         date: "2026-12-04T23:59:00-12:00"

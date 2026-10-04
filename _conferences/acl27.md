@@ -21,7 +21,7 @@ sources:
   - "https://2027.aclweb.org/"
   - "https://2027.aclweb.org/calls/main/"
 tracks:
-  - name: "Main Conference (long and short papers)"
+  - name: "Main track"
     source: "https://2027.aclweb.org/calls/main/"
     deadlines:
       - label: "ARR submission"

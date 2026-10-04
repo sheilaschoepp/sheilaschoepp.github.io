@@ -20,7 +20,7 @@ sources:
   - "https://2026.emnlp.org/calls/volunteers/"
 verified_on: "2026-10-04"
 tracks:
-  - name: "Main conference"
+  - name: "Main track"
     source: "https://2026.emnlp.org/calls/main_conference_papers/"
     deadlines:
       - label: "ARR submission"

@@ -22,7 +22,7 @@ sources:
   - "https://chi2027.acm.org/authors/papers/"
   - "https://chi2027.acm.org/2026/09/24/chi-2027-workshops-whats-new/"
 tracks:
-  - name: "Papers"
+  - name: "Main track"
     source: "https://chi2027.acm.org/authors/papers/"
     deadlines:
       - label: "Paper"

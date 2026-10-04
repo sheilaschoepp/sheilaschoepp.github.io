@@ -24,7 +24,7 @@ sources:
   - "https://humanrobotinteraction.org/2027/late-breaking-reports/"
   - "https://humanrobotinteraction.org/2027/student-volunteer/"
 tracks:
-  - name: "Full Papers"
+  - name: "Main track"
     source: "https://humanrobotinteraction.org/2027/full-papers/"
     deadlines:
       - label: "Abstract"

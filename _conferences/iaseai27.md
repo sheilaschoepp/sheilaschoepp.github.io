@@ -19,7 +19,7 @@ sources:
   - "https://docs.google.com/document/d/e/2PACX-1vSdQb-TtNpT-TrZ7jq9kdjfCZ9D2q-46oTH2igJQsZ1nZ-z44xXWM1vxR_DzDY5tVS62HW8eNLuRLVZ/pub"
 verified_on: "2026-10-04"
 tracks:
-  - name: "Papers"
+  - name: "Main track"
     source: "https://docs.google.com/document/d/e/2PACX-1vR_hLJSEv5WZF66P2HPg8zvezNttnaHvuekFJGdam3gYBMJu57ma2iKeXJKl_DHF4oCuJZ7CLc-IE3d/pub"
     deadlines:
       - label: "Paper and abstract"
