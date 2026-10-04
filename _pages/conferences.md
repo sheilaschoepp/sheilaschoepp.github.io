@@ -3,7 +3,7 @@ layout: page
 title: conferences
 permalink: /conferences/
 description: Conferences and submission deadlines that I keep track of.
-nav: true
+nav: false
 nav_order: 3
 ---
 
