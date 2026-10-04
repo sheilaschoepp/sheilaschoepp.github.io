@@ -18,6 +18,7 @@ if (form && input && status && emptyState && list) {
     return {
       element,
       count,
+      topic: element.dataset.talkTopic,
       originalCount: count.textContent,
       talks: Array.from(element.querySelectorAll(".talk-appearance"), (talk) => ({
         element: talk,
@@ -25,12 +26,16 @@ if (form && input && status && emptyState && list) {
       })),
     };
   });
+  const years = Array.from(list.querySelectorAll(".talk-year"), (element) => ({
+    element,
+    groups: Array.from(element.querySelectorAll(".talk-group")),
+  }));
 
   function filterTalks() {
     const query = input.value.trim();
     const tokens = normalize(query).split(/\s+/).filter(Boolean);
     let matchingTalks = 0;
-    let matchingTopics = 0;
+    const matchingTopics = new Set();
 
     for (const group of groups) {
       let matches = 0;
@@ -43,12 +48,16 @@ if (form && input && status && emptyState && list) {
       group.element.hidden = matches === 0;
       group.count.textContent = matches === group.talks.length ? group.originalCount : `${matches} of ${group.talks.length} talks shown`;
       matchingTalks += matches;
-      if (matches) matchingTopics++;
+      if (matches) matchingTopics.add(group.topic);
+    }
+
+    for (const year of years) {
+      year.element.hidden = year.groups.every((group) => group.hidden);
     }
 
     emptyState.hidden = matchingTalks > 0;
     status.textContent = query
-      ? `${matchingTalks} ${matchingTalks === 1 ? "talk" : "talks"} in ${matchingTopics} ${matchingTopics === 1 ? "topic" : "topics"}.`
+      ? `${matchingTalks} ${matchingTalks === 1 ? "talk" : "talks"} in ${matchingTopics.size} ${matchingTopics.size === 1 ? "topic" : "topics"}.`
       : "";
   }
 
