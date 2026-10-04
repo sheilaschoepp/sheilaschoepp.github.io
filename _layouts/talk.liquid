@@ -1,0 +1,35 @@
+---
+layout: page
+---
+<link rel="stylesheet" href="{{ '/assets/css/talks.css' | relative_url | bust_file_cache }}">
+
+<article class="talk-detail">
+  <p class="talk-meta">
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+  </p>
+  <p class="talk-venue">{{ page.venue | escape }}</p>
+  {% if page.note %}
+    <p>{{ page.note | escape }}</p>
+  {% endif %}
+
+  {% if page.resources %}
+    <ul class="talk-resources" aria-label="Talk resources">
+      {% for resource in page.resources %}
+        <li>
+          {% if resource.url contains '://' %}
+            <a class="talk-resource" href="{{ resource.url | escape }}">{{ resource.label | escape }}</a>
+          {% else %}
+            <a class="talk-resource" href="{{ resource.url | relative_url }}">{{ resource.label | escape }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  <section class="talk-abstract" aria-labelledby="talk-abstract-heading">
+    <h2 id="talk-abstract-heading">Abstract</h2>
+    {{ content }}
+  </section>
+
+  <a class="talk-back" href="{{ '/talks/' | relative_url }}">&larr; All talks</a>
+</article>
