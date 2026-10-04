@@ -80,9 +80,9 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$cyan-color};
-  --global-hover-color: #{v.$cyan-color};
-  --global-hover-text-color: #{v.$white-color};
+  --global-theme-color: #d4a5c9;
+  --global-hover-color: var(--global-theme-color);
+  --global-hover-text-color: var(--global-bg-color);
   --global-footer-bg-color: #{v.$grey-color-light};
   --global-footer-text-color: #{v.$grey-color-dark};
   --global-footer-link-color: #{v.$black-color};
@@ -111,6 +111,10 @@ html[data-theme="dark"] {
   --global-danger-block-bg: #600;
   --global-danger-block-text: #ffb9b9;
   --global-danger-block-title: #ffe0e0;
+
+  ::highlight(search) {
+    color: var(--global-bg-color);
+  }
 
   .only-light {
     display: none;
