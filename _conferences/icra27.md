@@ -7,7 +7,7 @@ start_date: "2027-05-24"
 website: "https://2027.ieee-icra.org/"
 num: 90
 tags: ["RO"]
-timezone: "PST (UTC-8)"
+timezone: "UTC−8"
 id: "icra27"
 sources:
   - "https://2027.ieee-icra.org/"

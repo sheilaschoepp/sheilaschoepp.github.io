@@ -8,7 +8,7 @@ end_date: "2027-05-14"
 website: "https://chi2027.acm.org/"
 num: 80
 tags: ["HCI"]
-timezone: "AoE (UTC−12)"
+timezone: "UTC−12"
 id: "chi27"
 verified_on: "2026-10-04"
 sources:

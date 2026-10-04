@@ -8,7 +8,7 @@ end_date: "2026-09-17"
 website: "https://lifelong-ml.cc/"
 num: 170
 tags: ["ML"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "collas26"
 verified_on: "2026-10-04"
 sources:

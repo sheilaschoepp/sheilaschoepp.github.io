@@ -7,7 +7,7 @@ start_date: "2027-05-03"
 website: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/"
 num: 60
 tags: ["ML", "RO"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "aamas27"
 sources:
   - "https://cyprusconferences.org/aamas2026/call-for-competitions/"

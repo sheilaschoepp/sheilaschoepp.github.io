@@ -7,7 +7,7 @@ start_date: ""
 website: "https://rl-conference.cc/"
 num: 160
 tags: ["RL", "ML"]
-timezone: "Not announced"
+timezone: "N/A"
 id: "rlc27"
 verified_on: "2026-10-04"
 sources:

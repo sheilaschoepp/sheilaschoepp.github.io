@@ -8,7 +8,7 @@ end_date: "2027-06-05"
 website: "https://2027.naacl.org/"
 num: 210
 tags: ["NLP"]
-timezone: "AoE (UTC−12)"
+timezone: "UTC−12"
 id: "naacl27"
 verified_on: "2026-10-04"
 sources:

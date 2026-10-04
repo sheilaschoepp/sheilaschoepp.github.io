@@ -7,7 +7,7 @@ start_date: "2027-07-06"
 website: "https://roboticsconference.org/"
 num: 100
 tags: ["RO"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "rss27"
 sources:
   - "https://roboticsconference.org/information/cfp/"

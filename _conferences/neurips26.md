@@ -8,7 +8,7 @@ end_date: "2026-12-13"
 website: "https://neurips.cc/Conferences/2026"
 num: 20
 tags: ["ML"]
-timezone: "AoE (UTC−12)"
+timezone: "UTC−12"
 id: "nips26"
 verified_on: "2026-10-04"
 sources:
@@ -42,7 +42,7 @@ tracks:
         display: "Sep 24, 2026"
         decision: true
     source: "https://neurips.cc/Conferences/2026/CallForPapers"
-  - name: "Evaluations and Datasets"
+  - name: "Evaluations and Datasets track"
     deadlines:
       - label: "Abstract"
         date: "2026-05-04T23:59:59-12:00"

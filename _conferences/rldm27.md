@@ -8,7 +8,7 @@ end_date: "2027-07-09"
 website: "https://rldm.org/"
 num: 150
 tags: ["RL", "ML"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "rldm27"
 verified_on: "2026-10-04"
 sources:

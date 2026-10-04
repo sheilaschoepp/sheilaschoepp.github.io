@@ -7,7 +7,7 @@ start_date: ""
 website: "https://icml.cc/Conferences/FutureMeetings"
 num: 200
 tags: ["ML"]
-timezone: "Not announced"
+timezone: "N/A"
 id: "icml27"
 verified_on: "2026-10-04"
 sources:

@@ -8,7 +8,7 @@ end_date: "2027-05-06"
 website: "https://virtual.aistats.org/Conferences/2027"
 num: 190
 tags: ["ML"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "aistats27"
 verified_on: "2026-10-04"
 sources:

@@ -7,7 +7,7 @@ start_date: "2026-10-24"
 website: "https://2026.emnlp.org/"
 num: 240
 tags: ["NLP"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "emnlp26"
 sources:
   - "https://2026.emnlp.org/"

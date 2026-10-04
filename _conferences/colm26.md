@@ -8,7 +8,7 @@ end_date: "2026-10-09"
 website: "https://colm.cc/"
 num: 180
 tags: ["ML", "NLP"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "colm26"
 verified_on: "2026-10-04"
 sources:

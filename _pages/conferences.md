@@ -96,7 +96,7 @@ nav_order: 3
           {% endfor %}
         </div>
         <div class="conf-card-footer">
-          <p class="conf-card-timezone">Deadline time zone: {{ conference.timezone | escape }}</p>
+          <p class="conf-card-timezone">Time zone: {{ conference.timezone | escape }}</p>
           <a class="conf-card-link" href="{{ conference.website | escape }}" target="_blank" rel="noopener noreferrer">Visit website <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
         </div>
       </article>

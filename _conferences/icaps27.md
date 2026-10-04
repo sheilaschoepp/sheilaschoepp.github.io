@@ -7,7 +7,7 @@ start_date: "2027-06-27"
 website: "https://icaps27.icaps-conference.org/"
 num: 110
 tags: ["AP"]
-timezone: "UTC-12"
+timezone: "UTC−12"
 id: "icaps27"
 sources:
   - "https://icaps27.icaps-conference.org/"

@@ -8,7 +8,7 @@ end_date: "2027-08-22"
 website: "https://2027.aclweb.org/"
 num: 220
 tags: ["NLP"]
-timezone: "AoE (UTC−12)"
+timezone: "UTC−12"
 id: "acl27"
 verified_on: "2026-10-04"
 sources:

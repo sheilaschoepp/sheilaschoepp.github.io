@@ -7,7 +7,7 @@ start_date: "2027-09-26"
 website: "https://2027.ieee-iros.org/"
 num: 130
 tags: ["RO"]
-timezone: "Unconfirmed"
+timezone: "N/A"
 id: "iros27"
 sources:
   - "https://www.ieee-ras.org/event/2027-ieee-rsj-international-conference-on-intelligent-robots-and-systems-iros-70525/"

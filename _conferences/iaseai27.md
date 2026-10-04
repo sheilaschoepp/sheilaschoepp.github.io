@@ -8,7 +8,7 @@ end_date: "2027-02-12"
 website: "https://www.iaseai.org/our-programs/iaseai27"
 num: 30
 tags: ["ML", "KR"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "iaseai27"
 sources:
   - "https://docs.google.com/document/d/e/2PACX-1vT2xLKWq49hOLDU_SKv7xubSmVsCGyqAWtV3KOW34_ggHVuZeJf6u0HOysOpkmhwJbyCD5phKo9rfy0/pub"

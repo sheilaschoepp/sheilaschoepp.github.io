@@ -7,7 +7,7 @@ start_date: "2026-11-09"
 website: "https://www.corl.org/"
 num: 10
 tags: ["RO", "ML"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "corl26"
 sources:
   - "https://www.corl.org/contributions/call-for-papers"

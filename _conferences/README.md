@@ -60,8 +60,8 @@ optional `source` links its title to the official call or dates page.
 
 Use `decision: true` for author notifications, and name submission tracks or
 rounds accurately. Do not treat an ARR commitment deadline as a new submission
-deadline. `timezone` records the announced deadline timezone; use
-`Unconfirmed` when the official source does not state one.
+deadline. `timezone` records the announced deadline UTC offset, such as
+`UTC−12` for AoE or `UTC−8` for PST; use `N/A` when it is unannounced.
 
 `tags` controls the research-area filters. The starting labels include `AP`
 (automated planning), `HCI` (human-computer interaction), `KR` (knowledge

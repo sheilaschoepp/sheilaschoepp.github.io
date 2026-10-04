@@ -7,7 +7,7 @@ start_date: "2027-06-20"
 website: "https://cvpr.thecvf.com/Conferences/2027"
 num: 230
 tags: ["CV", "ML"]
-timezone: "AoE"
+timezone: "UTC−12"
 id: "cvpr27"
 sources:
   - "https://cvpr.thecvf.com/Conferences/2027"

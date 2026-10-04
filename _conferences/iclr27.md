@@ -8,7 +8,7 @@ end_date: "2027-04-30"
 website: "https://iclr.cc/Conferences/2027"
 num: 70
 tags: ["ML"]
-timezone: "AoE (UTC−12)"
+timezone: "UTC−12"
 id: "iclr27"
 verified_on: "2026-10-04"
 sources:

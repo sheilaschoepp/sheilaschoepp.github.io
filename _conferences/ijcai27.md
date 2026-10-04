@@ -7,7 +7,7 @@ start_date: "2027-08-07"
 website: "https://2027.ijcai.org/"
 num: 120
 tags: ["ML", "KR"]
-timezone: "UTC-12"
+timezone: "UTC−12"
 id: "ijcai27"
 sources:
   - "https://2027.ijcai.org/"

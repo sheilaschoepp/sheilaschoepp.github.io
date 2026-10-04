@@ -7,7 +7,7 @@ start_date: "2027-10-02"
 website: "https://ecai2027.org/"
 num: 140
 tags: ["ML", "KR"]
-timezone: "Not announced"
+timezone: "N/A"
 id: "ecai27"
 sources:
   - "https://2026.ijcai.org/important-dates/"

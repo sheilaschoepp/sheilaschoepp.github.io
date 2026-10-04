@@ -8,7 +8,7 @@ end_date: "2027-03-12"
 website: "https://humanrobotinteraction.org/2027/"
 num: 50
 tags: ["RO", "HCI"]
-timezone: "AoE (UTC−12)"
+timezone: "UTC−12"
 id: "hri27"
 verified_on: "2026-10-04"
 sources:

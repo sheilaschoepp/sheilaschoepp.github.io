@@ -462,7 +462,7 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 #conference-browser .conf-deadline-row {
-  grid-template-columns: 6.25rem max-content minmax(0, 1fr);
+  grid-template-columns: 8rem max-content minmax(0, 1fr);
   font-size: 0.82rem;
   padding: 0.12rem 0;
 }
@@ -496,8 +496,12 @@ html[data-theme="dark"] .conference-deadlines {
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 360px) {
   #conference-browser .conf-deadline-row {
-    grid-template-columns: minmax(4rem, 6.25rem) max-content minmax(0, 1fr);
+    grid-template-columns: 8rem minmax(0, 1fr);
+  }
+
+  #conference-browser .conf-countdown {
+    grid-column: 2;
   }
 }

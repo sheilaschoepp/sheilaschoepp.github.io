@@ -7,7 +7,7 @@ start_date: "2027-02-16"
 website: "https://aaai.org/conference/aaai/aaai-27/"
 num: 40
 tags: ["ML", "KR"]
-timezone: "UTC-12"
+timezone: "UTC−12"
 id: "aaai27"
 sources:
   - "https://aaai.org/conference/aaai/aaai-27/"
