@@ -258,13 +258,6 @@ html[data-theme="dark"] .conference-deadlines {
   text-underline-offset: 0.15em;
 }
 
-.conference-deadlines .conf-track-note {
-  font-size: 0.8rem;
-  color: var(--conf-muted-color);
-  margin-bottom: 0.65rem;
-  line-height: 1.5;
-}
-
 .conference-deadlines .conf-metrics {
   margin: 0 0 0.85rem;
 }
@@ -382,4 +375,122 @@ html[data-theme="dark"] .conference-deadlines {
 
 .conference-deadlines [hidden] {
   display: none !important;
+}
+
+/* Compact conference layout adapted from Pulkit Verma's conference cards.
+ * Keep these adjustments separate from the journal cards that share this file.
+ */
+#conference-browser .conf-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+#conference-browser .site-filter {
+  flex: 1 1 220px;
+}
+
+#conference-browser .conf-tag-filters {
+  gap: 0.35rem;
+}
+
+#conference-browser .conf-sort-wrap {
+  margin-left: auto;
+}
+
+#conference-browser .conf-grid {
+  align-items: stretch;
+  gap: 1rem;
+}
+
+#conference-browser .conf-card {
+  padding: 1rem 1.1rem 0.9rem;
+  border-radius: 8px;
+}
+
+#conference-browser .conf-card-header {
+  min-height: var(--conf-header-height, 0px);
+}
+
+#conference-browser .conf-card-header-content {
+  display: flow-root;
+}
+
+#conference-browser .conf-card-top {
+  margin-bottom: 0.4rem;
+}
+
+#conference-browser .conf-card-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+#conference-browser .conf-card-name {
+  font-size: 0.82rem;
+  line-height: 1.3;
+  margin-bottom: 0.55rem;
+}
+
+#conference-browser .conf-card-meta {
+  gap: 0.2rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.7rem;
+}
+
+#conference-browser .conf-tracks {
+  padding-top: 0.55rem;
+  margin-bottom: 0.6rem;
+}
+
+#conference-browser .conf-track + .conf-track {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+#conference-browser .conf-track-name {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+#conference-browser .conf-deadline-row {
+  grid-template-columns: 6.25rem max-content minmax(0, 1fr);
+  font-size: 0.82rem;
+  padding: 0.12rem 0;
+}
+
+#conference-browser .conf-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+#conference-browser .conf-card-timezone {
+  margin: 0;
+  color: var(--conf-muted-color);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+#conference-browser .conf-card-link {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  #conference-browser .conf-toolbar {
+    display: grid;
+  }
+
+  #conference-browser .conf-sort-wrap {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  #conference-browser .conf-deadline-row {
+    grid-template-columns: minmax(4rem, 6.25rem) max-content minmax(0, 1fr);
+  }
 }
