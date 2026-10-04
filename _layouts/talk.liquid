@@ -15,6 +15,22 @@ layout: page
   {% if page.resources %}
     <ul class="talk-resources" aria-label="Talk resources">
       {% for resource in page.resources %}
+        {% case resource.label %}
+          {% when 'Publisher' %}
+            {% assign resource_icon = 'fa-book-open' %}
+          {% when 'PDF' %}
+            {% assign resource_icon = 'fa-file-pdf' %}
+          {% when 'Poster' %}
+            {% assign resource_icon = 'fa-image' %}
+          {% when 'Video' %}
+            {% assign resource_icon = 'fa-play' %}
+          {% when 'Slides' %}
+            {% assign resource_icon = 'fa-person-chalkboard' %}
+          {% when 'Website' %}
+            {% assign resource_icon = 'fa-globe' %}
+          {% else %}
+            {% assign resource_icon = 'fa-link' %}
+        {% endcase %}
         <li>
           {% if resource.url contains '://' %}
             <a
@@ -24,7 +40,7 @@ layout: page
                 data-slides-viewer data-slides-title="{{ page.title | escape }}"
               {% endif %}
             >
-              {{- resource.label | escape -}}
+              <i class="fa-solid {{ resource_icon }}" aria-hidden="true"></i> {{ resource.label | escape }}
             </a>
           {% else %}
             <a
@@ -34,7 +50,7 @@ layout: page
                 data-slides-viewer data-slides-title="{{ page.title | escape }}"
               {% endif %}
             >
-              {{- resource.label | escape -}}
+              <i class="fa-solid {{ resource_icon }}" aria-hidden="true"></i> {{ resource.label | escape }}
             </a>
           {% endif %}
         </li>
