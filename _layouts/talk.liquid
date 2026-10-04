@@ -21,7 +21,7 @@ layout: page
               class="talk-resource"
               href="{{ resource.url | escape }}"
               {% if resource.label == 'Slides' %}
-                target="_blank" rel="noopener noreferrer"
+                data-slides-viewer data-slides-title="{{ page.title | escape }}"
               {% endif %}
             >
               {{- resource.label | escape -}}
@@ -31,7 +31,7 @@ layout: page
               class="talk-resource"
               href="{{ resource.url | relative_url }}"
               {% if resource.label == 'Slides' %}
-                target="_blank" rel="noopener noreferrer"
+                data-slides-viewer data-slides-title="{{ page.title | escape }}"
               {% endif %}
             >
               {{- resource.label | escape -}}
@@ -49,3 +49,5 @@ layout: page
 
   <a class="talk-back" href="{{ '/talks/' | relative_url }}">&larr; All talks</a>
 </article>
+
+{% include talk_slides_viewer.liquid %}

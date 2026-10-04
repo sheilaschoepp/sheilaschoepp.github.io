@@ -1,0 +1,19 @@
+<dialog id="talk-slides-dialog" class="talk-slides-dialog" aria-labelledby="talk-slides-title">
+  <header class="talk-slides-header">
+    <div class="talk-slides-heading">
+      <span class="talk-slides-label">Slides</span>
+      <h2 id="talk-slides-title">Slides</h2>
+    </div>
+    <div class="talk-slides-actions">
+      <a class="talk-slides-external" data-slides-external target="_blank" rel="noopener noreferrer"
+        >Open in new tab <span aria-hidden="true">↗</span></a
+      >
+      <button type="button" class="talk-slides-close" aria-label="Close slides" autofocus>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+  <iframe class="talk-slides-frame" title="Slides PDF" src="about:blank"></iframe>
+</dialog>
+
+<script src="{{ '/assets/js/talks.js' | relative_url | bust_file_cache }}" type="module"></script>
