@@ -99,12 +99,6 @@ nav_order: 3
   </div>
 
   <div class="conf-empty-state" id="conf-empty-state"{% if conferences.size > 0 %} hidden{% endif %}>No conferences match your filters.</div>
-  <div class="conf-data-note">
-    <p>Dates are maintained from official conference announcements.</p>
-    <p>Deadline time zones are shown on each card. Check the official conference website for the latest submission details.</p>
-    <p>Inspired by <a href="https://pulkitverma.net/conferences/">Pulkit Verma's conference list</a>. Dates from the official conference websites.</p>
-    <noscript><p>JavaScript is needed for countdowns, search, and filters.</p></noscript>
-  </div>
 </div>
 
 <script src="{{ '/assets/js/conferences.js' | relative_url | bust_file_cache }}" type="module"></script>

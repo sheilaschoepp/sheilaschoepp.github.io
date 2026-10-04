@@ -5,132 +5,180 @@
  */
 
 .conference-deadlines {
-  --conf-urgent-color: #b3261e;
-  --conf-open-color: #187337;
-  --conf-tag-background: rgba(0, 0, 0, 0.05);
+  --conf-accent-color: var(--global-theme-color);
+  --conf-urgent-color: #8c365e;
+  --conf-urgent-background: #f8eaf0;
+  --conf-open-color: #654481;
+  --conf-open-background: #f1ebf6;
+  --conf-muted-color: color-mix(in srgb, var(--global-text-color) 68%, var(--global-bg-color));
+  --conf-border-color: color-mix(in srgb, var(--global-theme-color) 14%, var(--global-card-bg-color));
+  --conf-tag-background: color-mix(in srgb, var(--global-theme-color) 6%, var(--global-card-bg-color));
+  font-weight: 400;
 }
 
 html[data-theme="dark"] .conference-deadlines {
-  --conf-urgent-color: #ff8b84;
-  --conf-open-color: #72d691;
-  --conf-tag-background: rgba(255, 255, 255, 0.08);
+  --conf-accent-color: color-mix(in srgb, var(--global-theme-color) 90%, white);
+  --conf-urgent-color: #f3b1cb;
+  --conf-urgent-background: #3d2934;
+  --conf-open-color: #d4bceb;
+  --conf-open-background: #342d3e;
 }
 
 .conference-deadlines .conf-toolbar {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: 0.6rem;
-  margin-bottom: 1.1rem;
+  gap: 1rem 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--global-divider-color);
 }
 
 .conference-deadlines .conf-search-wrap {
   position: relative;
-  flex: 1 1 220px;
-  max-width: 320px;
+  max-width: 28rem;
+  min-width: 0;
 }
 
 .conference-deadlines .conf-search-wrap i {
   position: absolute;
-  left: 0.7rem;
+  left: 0.9rem;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--global-text-color-light);
+  color: var(--conf-muted-color);
   pointer-events: none;
 }
 
 .conference-deadlines #conf-search {
   width: 100%;
-  padding: 0.45rem 0.7rem 0.45rem 2rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 6px;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.9rem 0.6rem 2.5rem;
+  border: 1px solid var(--conf-border-color);
+  border-radius: 8px;
   background: var(--global-card-bg-color);
   color: var(--global-text-color);
-  font-size: 0.9rem;
+  font: inherit;
 }
 
-.conference-deadlines #conf-search:focus {
-  outline: none;
-  border-color: var(--global-theme-color);
+.conference-deadlines #conf-search::placeholder {
+  color: var(--conf-muted-color);
+  opacity: 1;
+}
+
+.conference-deadlines :is(input, select, button, a):focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 3px;
 }
 
 .conference-deadlines .conf-tag-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  gap: 0.5rem;
 }
 
 .conference-deadlines .conf-tag-btn {
-  border: 1px solid var(--global-divider-color);
+  border: 1px solid var(--conf-border-color);
   background: var(--global-card-bg-color);
-  color: var(--global-text-color-light);
+  color: var(--conf-muted-color);
   border-radius: 999px;
-  padding: 0.28rem 0.75rem;
-  font-size: 0.78rem;
-  line-height: 1;
+  min-height: 2.25rem;
+  min-width: 2.75rem;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.25;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .conference-deadlines .conf-tag-btn:hover {
   border-color: var(--global-theme-color);
-  color: var(--global-theme-color);
+  background: var(--conf-tag-background);
+  color: var(--conf-accent-color);
 }
 
 .conference-deadlines .conf-tag-btn.is-active {
-  background: var(--global-theme-color);
+  background: var(--conf-tag-background);
   border-color: var(--global-theme-color);
-  color: var(--global-bg-color);
+  color: var(--conf-accent-color);
+  box-shadow: inset 0 0 0 1px var(--global-theme-color);
 }
 
 .conference-deadlines .conf-sort-wrap {
-  margin-left: auto;
-  font-size: 0.8rem;
-  color: var(--global-text-color-light);
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 0.85rem;
+  color: var(--conf-muted-color);
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.65rem;
+}
+
+.conference-deadlines .conf-sort-wrap label {
+  margin: 0;
+}
+
+.conference-deadlines .conf-sort-wrap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: translateY(-75%) rotate(45deg);
+  pointer-events: none;
 }
 
 .conference-deadlines #conf-sort {
-  border: 1px solid var(--global-divider-color);
+  -webkit-appearance: none;
+  appearance: none;
+  min-height: 2.75rem;
+  border: 1px solid var(--conf-border-color);
   background: var(--global-card-bg-color);
   color: var(--global-text-color);
-  border-radius: 6px;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.8rem;
+  border-radius: 8px;
+  padding: 0.55rem 2.5rem 0.55rem 0.75rem;
+  font: inherit;
 }
 
 .conference-deadlines .conf-empty-state {
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem;
+  border: 1px dashed var(--conf-border-color);
+  border-radius: 12px;
   text-align: center;
-  color: var(--global-text-color-light);
+  color: var(--conf-muted-color);
 }
 
 .conference-deadlines .conf-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
 .conference-deadlines .conf-card {
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
+  min-width: 0;
+  border: 1px solid var(--conf-border-color);
+  border-radius: 12px;
   background: var(--global-card-bg-color);
-  padding: 1rem 1.1rem 0.9rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   transition:
     box-shadow 0.15s ease,
-    border-color 0.15s ease,
-    transform 0.15s ease;
+    border-color 0.15s ease;
+  box-shadow: 0 2px 8px rgba(64, 36, 57, 0.035);
 }
 
 .conference-deadlines .conf-card.hoverable:hover {
-  border-color: var(--global-theme-color);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--global-theme-color) 35%, var(--global-card-bg-color));
+  box-shadow: 0 4px 16px rgba(64, 36, 57, 0.07);
 }
 
 .conference-deadlines .conf-card.is-filtered-out {
@@ -139,10 +187,10 @@ html[data-theme="dark"] .conference-deadlines {
 
 .conference-deadlines .conf-card-top {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 .conference-deadlines .conf-tags {
@@ -152,44 +200,45 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 .conference-deadlines .conf-tag {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--global-theme-color);
+  color: var(--conf-accent-color);
   background: var(--conf-tag-background);
-  border-radius: 4px;
-  padding: 0.12rem 0.4rem;
+  border-radius: 5px;
+  padding: 0.2rem 0.45rem;
 }
 
 .conference-deadlines .conf-status-badge {
   flex: 0 0 auto;
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  font-size: 0.75rem;
+  font-weight: 500;
   border-radius: 999px;
-  padding: 0.18rem 0.55rem;
+  padding: 0.3rem 0.7rem;
   white-space: nowrap;
 }
 
 .conference-deadlines .conf-status-badge.status-urgent {
-  background: rgba(255, 54, 54, 0.12);
+  background: var(--conf-urgent-background);
   color: var(--conf-urgent-color);
 }
 
 .conference-deadlines .conf-status-badge.status-open {
-  background: rgba(0, 171, 55, 0.12);
+  background: var(--conf-open-background);
   color: var(--conf-open-color);
 }
 
 .conference-deadlines .conf-status-badge.status-closed {
-  background: rgba(130, 130, 130, 0.15);
-  color: var(--global-text-color-light);
+  background: color-mix(in srgb, var(--global-text-color) 5%, var(--global-card-bg-color));
+  color: var(--conf-muted-color);
 }
 
 .conference-deadlines .conf-card-title {
-  font-size: 1.05rem;
-  margin: 0 0 0.15rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.4rem;
 }
 
 .conference-deadlines .conf-card-title a {
@@ -197,55 +246,63 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 .conference-deadlines .conf-card-title a:hover {
-  color: var(--global-theme-color);
+  color: var(--conf-accent-color);
 }
 
 .conference-deadlines .conf-card-name {
-  font-size: 0.82rem;
-  color: var(--global-text-color-light);
-  margin: 0 0 0.55rem;
-  line-height: 1.3;
+  font-size: 0.9rem;
+  color: var(--conf-muted-color);
+  margin: 0 0 1rem;
+  line-height: 1.5;
 }
 
 .conference-deadlines .conf-card-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  font-size: 0.78rem;
-  color: var(--global-text-color-light);
-  margin-bottom: 0.7rem;
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
 }
 
 .conference-deadlines .conf-card-meta span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  color: var(--conf-muted-color);
+}
+
+.conference-deadlines .conf-card-meta i {
+  width: 0.85rem;
+  flex-shrink: 0;
+  color: var(--conf-accent-color);
+  text-align: center;
+  font-size: 0.75rem;
 }
 
 .conference-deadlines .conf-tracks {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 0.55rem;
-  margin-bottom: 0.6rem;
+  padding-top: 0.85rem;
+  margin-bottom: 1rem;
 }
 
 .conference-deadlines .conf-track + .conf-track {
-  margin-top: 0.5rem;
-  padding-top: 0.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
   border-top: 1px dashed var(--global-divider-color);
 }
 
 .conference-deadlines .conf-track-name {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--global-text-color);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .conference-deadlines .conf-track-note {
-  font-size: 0.72rem;
-  color: var(--global-text-color-light);
-  margin-bottom: 0.3rem;
-  line-height: 1.3;
+  font-size: 0.8rem;
+  color: var(--conf-muted-color);
+  margin-bottom: 0.65rem;
+  line-height: 1.5;
 }
 
 .conference-deadlines .conf-submission-closed,
@@ -253,14 +310,13 @@ html[data-theme="dark"] .conference-deadlines {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.78rem;
-  font-style: italic;
-  color: var(--global-text-color-light);
-  padding: 0.2rem 0;
+  font-size: 0.85rem;
+  color: var(--conf-muted-color);
+  padding: 0.4rem 0;
 }
 
 .conference-deadlines .conf-notifications-sent {
-  color: var(--conf-open-color);
+  color: var(--conf-muted-color);
 }
 
 .conference-deadlines .conf-submission-closed[hidden],
@@ -269,35 +325,35 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 .conference-deadlines .conf-deadline-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content minmax(5.25rem, auto);
   align-items: baseline;
   gap: 0.5rem;
-  font-size: 0.82rem;
-  padding: 0.12rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.3rem 0;
+  font-variant-numeric: tabular-nums;
 }
 
 .conference-deadlines .conf-deadline-label {
-  flex: 0 0 auto;
-  color: var(--global-text-color-light);
-  min-width: 3.6rem;
+  color: var(--conf-muted-color);
+  overflow-wrap: anywhere;
 }
 
 .conference-deadlines .conf-deadline-date {
-  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .conference-deadlines .conf-deadline-row.is-passed .conf-deadline-date {
   text-decoration: line-through;
-  color: var(--global-text-color-light);
+  color: var(--conf-muted-color);
 }
 
 .conference-deadlines .conf-countdown {
-  flex: 1 1 auto;
   text-align: right;
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  color: var(--global-text-color-light);
+  color: var(--conf-muted-color);
 }
 
 .conference-deadlines .conf-countdown.is-urgent {
@@ -309,35 +365,54 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 .conference-deadlines .conf-card-link {
+  color: var(--conf-accent-color);
   margin-top: auto;
-  font-size: 0.8rem;
+  padding-top: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   display: inline-flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.4rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .conference-deadlines .conf-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 575px) {
+  .conference-deadlines .conf-toolbar {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .conference-deadlines .conf-search-wrap {
+    max-width: none;
+  }
 
   .conference-deadlines .conf-sort-wrap {
-    margin-left: 0;
-    width: 100%;
+    grid-column: 1;
+    grid-row: 3;
     justify-content: space-between;
+  }
+
+  .conference-deadlines .conf-card {
+    padding: 1.15rem;
+  }
+
+  .conference-deadlines #conf-sort {
+    font-size: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conference-deadlines .conf-card,
+  .conference-deadlines .conf-tag-btn {
+    transition: none;
   }
 }
 
 .conference-deadlines [hidden] {
   display: none !important;
-}
-
-.conference-deadlines .conf-data-note {
-  margin-top: 1.25rem;
-  font-size: 0.78rem;
-  color: var(--global-text-color-light);
-}
-
-.conference-deadlines .conf-data-note p {
-  margin-bottom: 0.4rem;
 }
