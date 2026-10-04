@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "Installing optional Python deps for jekyll-jupyter-notebook..."
+# Use the active virtual environment when present; otherwise install for this user.
+if python3 -c 'import sys; sys.exit(sys.prefix == sys.base_prefix)'; then
+    python3 -m pip install jupyter nbconvert
+else
+    python3 -m pip install --user --break-system-packages jupyter nbconvert
+fi
+
+echo
+echo "If your shell cannot find jupyter binaries, add the Python user scripts directory to PATH:"
+python3 -c 'import sysconfig; print(sysconfig.get_path("scripts", scheme=sysconfig.get_preferred_scheme("user")))'
