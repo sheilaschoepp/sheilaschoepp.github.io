@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Passed my candidacy exam and became a Ph.D. candidate.
+Passed my candidacy exam, becoming a Ph.D. candidate in Computing Science at the University of Alberta.

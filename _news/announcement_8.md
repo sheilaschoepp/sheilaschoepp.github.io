@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Began serving as a workflow chair for AAAI 2026 (May 2025 - January 2026).
+Began my term as a workflow chair for AAAI 2026, serving from May 2025 to January 2026.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended AAAI 2026 in Singapore (January 20 - 27, 2026).
+Attended AAAI 2026 in Singapore, January 20–27.
