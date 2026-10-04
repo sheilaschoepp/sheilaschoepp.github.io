@@ -3,6 +3,7 @@ layout: talk
 title: The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning
 permalink: /talks/ijcai-2025/
 talk: true
+topic_label: LLM/VLM-integrated RL
 icon: fa-brain
 thumbnail: /assets/img/talks/llm-vlm-reinforcement-learning-survey.png
 thumbnail_width: 953

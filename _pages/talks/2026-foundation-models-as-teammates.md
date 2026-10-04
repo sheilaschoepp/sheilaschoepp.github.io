@@ -3,6 +3,7 @@ layout: talk
 title: "Foundation Models as Teammates: Coordination in FM-Only and Human-FM Teams"
 permalink: /talks/foundation-models-as-teammates/
 talk: true
+topic_label: Communication in FM MAS
 icon: fa-comments
 thumbnail: /assets/img/talks/foundation-models-team-communication.png
 thumbnail_width: 1586
