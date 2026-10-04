@@ -39,6 +39,7 @@
   display: grid;
   gap: 1.5rem;
   margin-top: 2rem;
+  container-type: inline-size;
 }
 
 .talk-group {
@@ -58,7 +59,8 @@
 }
 
 .talk-group-header-with-thumbnail {
-  grid-template-columns: 12rem minmax(0, 1fr);
+  /* Match Publications' two-column Bootstrap span, including its 30px gutter. */
+  grid-template-columns: calc((100cqw + 30px) / 6 - 30px) minmax(0, 1fr);
   align-items: center;
 }
 
@@ -248,11 +250,7 @@ a.talk-back:focus-visible,
   }
 
   .talk-group-header-with-thumbnail {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .talk-group-thumbnail {
-    max-width: 20rem;
+    grid-template-columns: calc((100cqw + 30px) / 6 - 30px) minmax(0, 1fr);
   }
 
   .talk-group-icon {
@@ -287,6 +285,15 @@ a.talk-back:focus-visible,
 }
 
 @media (max-width: 575px) {
+  .talk-group-header-with-thumbnail {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .talk-group-thumbnail {
+    width: 100cqw;
+    justify-self: center;
+  }
+
   .talk-abstract p {
     line-height: 1.65;
   }
