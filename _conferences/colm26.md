@@ -1,0 +1,33 @@
+---
+shortname: "COLM 2026"
+name: "Conference on Language Modeling"
+location: "Hilton Union Square, San Francisco, USA"
+dates: "October 6–9, 2026"
+start_date: "2026-10-06"
+end_date: "2026-10-09"
+website: "https://colm.cc/"
+num: 180
+tags: ["ML", "NLP"]
+timezone: "AoE"
+id: "colm26"
+verified_on: "2026-10-04"
+sources:
+  - "https://colm.cc/"
+  - "https://colm.cc/Conferences/2026/CallForPapers"
+tracks:
+  - name: "Main track"
+    note: "The official site currently lists the 2026 edition. No 2027 dates have been announced."
+    deadlines:
+      - label: "Abstract"
+        date: "2026-03-26T23:59:00-12:00"
+        display: "Mar 26, 2026"
+        decision: false
+      - label: "Paper"
+        date: "2026-03-31T23:59:00-12:00"
+        display: "Mar 31, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-07-08T23:59:00-12:00"
+        display: "Jul 8, 2026"
+        decision: true
+---
