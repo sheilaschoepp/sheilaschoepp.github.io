@@ -24,6 +24,23 @@ function publishedDay(row) {
   return dayStart.getTime();
 }
 
+function aoeDayKey(now) {
+  const aoeToday = new Date(now - DAY / 2);
+  return Date.UTC(aoeToday.getUTCFullYear(), aoeToday.getUTCMonth(), aoeToday.getUTCDate());
+}
+
+function calendarDaysRemaining(row, now) {
+  if (!row || row.dataset.previousEdition || row.dataset.deadline) return NaN;
+  const day = publishedDay(row);
+  return Number.isFinite(day) ? (day - aoeDayKey(now)) / DAY : NaN;
+}
+
+function formatCalendarCountdown(days) {
+  if (!Number.isFinite(days) || days < 0) return "";
+  if (days === 0) return "Due today";
+  return `${days} day${days === 1 ? "" : "s"} left`;
+}
+
 function deadlineState(row, now) {
   if (!row || row.dataset.previousEdition) return "unknown";
   if (row.dataset.deadline) {
@@ -32,12 +49,16 @@ function deadlineState(row, now) {
     return cutoff > now ? "upcoming" : "passed";
   }
 
-  const day = publishedDay(row);
-  if (!Number.isFinite(day)) return "unknown";
+  const days = calendarDaysRemaining(row, now);
+  if (!Number.isFinite(days)) return "unknown";
   // Without a confirmed cutoff, a date is past only once it has ended everywhere.
-  const aoeToday = new Date(now - DAY / 2);
-  const todayKey = Date.UTC(aoeToday.getUTCFullYear(), aoeToday.getUTCMonth(), aoeToday.getUTCDate());
-  return day >= todayKey ? "upcoming" : "passed";
+  return days >= 0 ? "upcoming" : "passed";
+}
+
+function deadlineIsUrgent(row, now) {
+  if (deadlineState(row, now) !== "upcoming") return false;
+  const cutoff = Date.parse(row.dataset.deadline);
+  return Number.isFinite(cutoff) ? cutoff - now <= URGENT : calendarDaysRemaining(row, now) <= URGENT / DAY;
 }
 
 function deadlineSortKey(row, now) {
@@ -62,21 +83,23 @@ function updateCard(card, now) {
   for (const row of card.querySelectorAll(".conf-deadline-row")) {
     const time = row.dataset.previousEdition ? NaN : Date.parse(row.dataset.deadline);
     const diff = time - now;
-    row.classList.toggle("is-passed", deadlineState(row, now) === "passed");
+    const state = deadlineState(row, now);
+    row.classList.toggle("is-passed", state === "passed");
     const countdown = row.querySelector('[data-role="countdown"]');
     if (countdown) {
-      countdown.textContent = Number.isFinite(time) && diff > 0 ? formatCountdown(diff) : "";
-      countdown.classList.toggle("is-urgent", diff > 0 && diff <= URGENT);
-      countdown.classList.toggle("is-open", diff > URGENT);
+      const days = calendarDaysRemaining(row, now);
+      countdown.textContent = state !== "upcoming" ? "" : Number.isFinite(time) ? formatCountdown(diff) : formatCalendarCountdown(days);
+      const urgent = deadlineIsUrgent(row, now);
+      countdown.classList.toggle("is-urgent", urgent);
+      countdown.classList.toggle("is-open", state === "upcoming" && !urgent);
     }
   }
   card.dataset.sortKey = String(Math.min(...submissions.map((row) => deadlineSortKey(row, now))));
   const gate = mainSubmissionGate(card);
   const state = deadlineState(gate, now);
-  const cutoff = Date.parse(gate?.dataset.deadline);
   const badge = card.querySelector('[data-role="status"]');
   badge.classList.remove("status-open", "status-urgent", "status-closed");
-  const urgent = state === "upcoming" && Number.isFinite(cutoff) && cutoff - now <= URGENT;
+  const urgent = deadlineIsUrgent(gate, now);
   badge.textContent = state === "upcoming" ? (urgent ? "Closing soon" : "Upcoming") : state === "passed" ? "Closed" : "Details pending";
   badge.classList.add(state === "upcoming" ? (urgent ? "status-urgent" : "status-open") : "status-closed");
 }

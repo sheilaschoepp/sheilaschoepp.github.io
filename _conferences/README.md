@@ -31,13 +31,14 @@ to. If neither edition has a published date, show `N/A`.
 
 Keep `start_date` quoted, for example `"2027-06-27"`; use `""` if it is unknown.
 The `dates` field can describe a partial announcement, such as a month without
-exact days. A deadline's `date` supplies the countdown and must include the
+exact days. A deadline's `date` supplies a precise countdown and must include the
 official cutoff time and timezone offset. Use `date: null` if either is unknown.
 Its `display` field can still show a confirmed calendar date, which is used for
-sorting and status without adding a countdown. A date without a confirmed
-cutoff stays upcoming until that calendar day has ended everywhere (AoE).
-Do not add explanatory notes about missing
-cutoff times. Show a decision date directly, or `display: N/A` if unavailable.
+sorting, status, and a whole-day countdown. Without a confirmed cutoff, show
+days remaining or `Due today`, using the AoE calendar day; do not invent hours
+or minutes. The date stays upcoming until that day has ended everywhere.
+Do not add explanatory notes about missing cutoff times. Show a decision date
+directly, or `display: N/A` if unavailable.
 
 Keep the main paper track first. Its abstract or paper-registration deadline
 determines the conference's open/closed badge; if neither exists, use the paper

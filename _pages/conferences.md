@@ -86,7 +86,7 @@ nav_order: 3
                     {{ deadline.display | default: 'N/A' | escape }}
                     {% if deadline.previous_edition %}<small class="conf-deadline-reference">{{ deadline.previous_edition | escape }} edition</small>{% endif %}
                   </span>
-                  {% if deadline.date and deadline.date != empty and deadline.previous_edition == nil %}
+                  {% if deadline.previous_edition == nil %}
                     <span class="conf-countdown" data-role="countdown"></span>
                   {% endif %}
                 </div>
