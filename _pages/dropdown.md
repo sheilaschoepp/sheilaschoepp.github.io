@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about me
+title: beyond research
 nav: true
 nav_order: 4
 dropdown: true
