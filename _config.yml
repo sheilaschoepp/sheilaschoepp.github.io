@@ -194,6 +194,8 @@ collections: # a method to group different types of content
     output: false
   conferences:
     output: false
+  journals:
+    output: false
   news:
     defaults:
       layout: post

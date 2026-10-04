@@ -7,4 +7,6 @@ dropdown: true
 children:
   - title: conferences
     permalink: /conferences/
+  - title: journals
+    permalink: /journals/
 ---
