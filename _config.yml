@@ -375,6 +375,9 @@ scholar:
   details_link: Details
 
   query: "@*"
+  # Sort newest first within each year, using submission dates for papers under review.
+  sort_by: [year, month, day]
+  order: descending
   group_by: year
   group_order: descending
 
