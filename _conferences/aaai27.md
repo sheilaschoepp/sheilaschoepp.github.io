@@ -10,12 +10,17 @@ tags: ["ML", "KR"]
 timezone: "UTC-12"
 id: "aaai27"
 sources:
+  - "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
+  - "https://aaai.org/conference/aaai/aaai-27/tutorial-and-lab-forum-call-for-proposal/"
+  - "https://aaai.org/conference/aaai/aaai-27/thirty-second-aaai-sigai-doctoral-consortium-call-for-proposals/"
+  - "https://aaai.org/conference/aaai/aaai-27/student-abstract-and-poster-program-call-for-proposals/"
+  - "https://aaai.org/conference/aaai/aaai-27/demonstration-call/"
   - "https://aaai.org/conference/aaai/aaai-27/"
   - "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
 verified_on: "2026-10-04"
 tracks:
   - name: "Main track"
-    note: "The notification date is announced; its exact time is unconfirmed."
+    source: "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
     deadlines:
       - label: "Abstract"
         date: "2026-07-21T23:59:00-12:00"
@@ -25,8 +30,78 @@ tracks:
         date: "2026-07-28T23:59:00-12:00"
         display: "Jul 28, 2026"
         decision: false
+      - label: "Supplementary and code"
+        date: "2026-07-31T23:59:00-12:00"
+        display: "Jul 31, 2026"
+        decision: false
       - label: "Decision"
         date: null
         display: "Nov 30, 2026"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Aug 28, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Sep 25, 2026"
+        decision: true
+  - name: "Workshop papers"
+    source: "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Nov 20, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Dec 2, 2026"
+        decision: true
+  - name: "Tutorial and lab proposals"
+    source: "https://aaai.org/conference/aaai/aaai-27/tutorial-and-lab-forum-call-for-proposal/"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Sep 22, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Oct 15, 2026"
+        decision: true
+  - name: "Doctoral consortium"
+    source: "https://aaai.org/conference/aaai/aaai-27/thirty-second-aaai-sigai-doctoral-consortium-call-for-proposals/"
+    deadlines:
+      - label: "Application"
+        date: null
+        display: "Oct 13, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Nov 14, 2026"
+        decision: true
+  - name: "Student abstracts and posters"
+    source: "https://aaai.org/conference/aaai/aaai-27/student-abstract-and-poster-program-call-for-proposals/"
+    deadlines:
+      - label: "Abstract"
+        date: null
+        display: "Sep 28, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Nov 13, 2026"
+        decision: true
+  - name: "Demonstrations"
+    source: "https://aaai.org/conference/aaai/aaai-27/demonstration-call/"
+    deadlines:
+      - label: "Paper and video"
+        date: "2026-09-18T23:59:00-12:00"
+        display: "Sep 18, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Nov 6, 2026"
         decision: true
 ---

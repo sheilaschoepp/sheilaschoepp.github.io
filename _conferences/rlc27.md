@@ -12,16 +12,38 @@ id: "rlc27"
 verified_on: "2026-10-04"
 sources:
   - "https://rl-conference.cc/2026/index.html"
+  - "https://rl-conference.cc/2026/callforpapers.html"
+  - "https://rl-conference.cc/2026/call_for_workshops.html"
 tracks:
   - name: "Main track"
-    note: "The official 2027 announcement confirms two locations and approximate event periods. Submission dates have not been announced; the March deadlines on the site belong to 2026."
+    source: "https://rl-conference.cc/2026/callforpapers.html"
     deadlines:
       - label: "Abstract"
         date: null
-        display: "TBD"
+        display: "Mar 5, 2026"
         decision: false
+        previous_edition: 2026
       - label: "Paper"
         date: null
-        display: "TBD"
+        display: "Mar 5, 2026"
         decision: false
+        previous_edition: 2026
+      - label: "Decision"
+        date: null
+        display: "May 5, 2026"
+        decision: true
+        previous_edition: 2026
+  - name: "Workshop proposals"
+    source: "https://rl-conference.cc/2026/call_for_workshops.html"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Mar 13, 2026"
+        decision: false
+        previous_edition: 2026
+      - label: "Decision"
+        date: null
+        display: "Apr 3, 2026"
+        decision: true
+        previous_edition: 2026
 ---

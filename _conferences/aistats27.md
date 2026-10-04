@@ -12,10 +12,12 @@ timezone: "AoE"
 id: "aistats27"
 verified_on: "2026-10-04"
 sources:
+  - "https://virtual.aistats.org/Conferences/2027/CallForWorkshops"
   - "https://virtual.aistats.org/Conferences/2027/CallForPapers"
   - "https://aistats.org/aistats2027/dates.html"
 tracks:
   - name: "Main track"
+    source: "https://virtual.aistats.org/Conferences/2027/CallForPapers"
     note: "All supplementary material is due with the full paper; there is no separate supplementary deadline."
     deadlines:
       - label: "Abstract"
@@ -29,5 +31,16 @@ tracks:
       - label: "Decision"
         date: "2027-01-20T23:59:00-12:00"
         display: "Jan 20, 2027"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://virtual.aistats.org/Conferences/2027/CallForWorkshops"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Oct 30, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Mid-Dec 2026"
         decision: true
 ---

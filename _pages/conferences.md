@@ -2,7 +2,7 @@
 layout: page
 title: conferences
 permalink: /conferences/
-description: Conferences and submission deadlines that I keep track of.
+description: Conferences listed by submission deadline, then alphabetically.
 nav: false
 nav_order: 3
 ---
@@ -13,7 +13,7 @@ nav_order: 3
      https://github.com/pulkitverma25/pulkitverma25.github.io -->
 
 {% assign empty_array = '' | split: ',' %}
-{% assign conferences = site.conferences | sort: 'num' %}
+{% assign conferences = site.conferences | sort_natural: 'shortname' %}
 {% assign filter_tags = empty_array %}
 {% for entry in conferences %}
 {% assign entry_tags = entry.tags | default: empty_array %}
@@ -44,9 +44,9 @@ nav_order: 3
     <div class="conf-sort-wrap">
       <label for="conf-sort">Sort</label>
       <select id="conf-sort">
-        <option value="deadline">Soonest deadline</option>
+        <option value="deadline" selected>Soonest deadline</option>
         <option value="confdate">Conference date</option>
-        <option value="name">Name</option>
+        <option value="name">Name (A–Z)</option>
       </select>
     </div>
   </div>
@@ -73,15 +73,20 @@ nav_order: 3
         <div class="conf-tracks">
           {% for track in conference.tracks %}
             <div class="conf-track">
-              {% if conference.tracks.size > 1 %}<div class="conf-track-name">{{ track.name | escape }}</div>{% endif %}
+              {% if conference.tracks.size > 1 or track.source %}
+                <div class="conf-track-name">
+                  {% if track.source %}<a href="{{ track.source | escape }}" target="_blank" rel="noopener noreferrer">{{ track.name | escape }}</a>{% else %}{{ track.name | escape }}{% endif %}
+                </div>
+              {% endif %}
               {% if track.note %}<div class="conf-track-note">{{ track.note | escape }}</div>{% endif %}
-              <div class="conf-submission-closed" data-role="submission-closed" hidden><i class="fa-solid fa-lock" aria-hidden="true"></i> Submission deadlines passed</div>
-              <div class="conf-notifications-sent" data-role="notifications-sent" hidden><i class="fa-regular fa-envelope-open" aria-hidden="true"></i> Decision date passed</div>
               {% for deadline in track.deadlines %}
-                <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}>
+                <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>
                   <span class="conf-deadline-label">{{ deadline.label | escape }}</span>
-                  <span class="conf-deadline-date">{{ deadline.display | default: 'TBD' | escape }}</span>
-                  {% if deadline.date and deadline.date != empty %}
+                  <span class="conf-deadline-date">
+                    {{ deadline.display | default: 'N/A' | escape }}
+                    {% if deadline.previous_edition %}<small class="conf-deadline-reference">{{ deadline.previous_edition | escape }} edition</small>{% endif %}
+                  </span>
+                  {% if deadline.date and deadline.date != empty and deadline.previous_edition == nil %}
                     <span class="conf-countdown" data-role="countdown"></span>
                   {% endif %}
                 </div>
