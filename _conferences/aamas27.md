@@ -36,4 +36,15 @@ tracks:
         date: "2026-12-21T23:59:59-12:00"
         display: "Dec 21, 2026"
         decision: true
+  - name: "AAAI Fast Track"
+    source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-aaai-fast-track/"
+    deadlines:
+      - label: "Paper"
+        date: "2026-12-11T23:59:59-12:00"
+        display: "Dec 11, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2027-02-01T23:59:59-12:00"
+        display: "Feb 1, 2027"
+        decision: true
 ---
