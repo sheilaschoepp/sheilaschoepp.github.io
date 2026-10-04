@@ -2,7 +2,7 @@
 layout: page
 title: talks
 permalink: /talks/
-description: Research talks and seminars.
+description: Research talks and seminars, organized by topic and listed in reverse chronological order within each topic.
 nav: true
 nav_order: 2.5
 published: true
