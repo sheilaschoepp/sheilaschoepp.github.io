@@ -20,6 +20,24 @@ google_scholar_id={UeHWp8X0CEIC},
 }
 
 @comment{
+Temporarily hidden until approved for publication on the site.
+@article{Mallahnezhad2026TeachingST,
+  author       = {Mahdieh Mallahnezhad and
+                  Sheila Schoepp and
+                  Mohamadali Tofigh and
+                  Matthew E. Taylor and
+                  Osmar Zaiane},
+  title        = {Teaching in the Student's Terms: {LLM} Explanations as Executable Advice for Reinforcement Learning},
+  journal      = {Under Review},
+  year         = {2026},
+  month        = {10},
+  day          = {08},
+  abbr={Under Review},
+  abstract={Reinforcement learning (RL) uses rewards to teach agents, but learning can be slow, and in sparse reward and partly observable environments, learning may not occur within a limited training budget. Large language models (LLMs) have significant domain knowledge of these types of environments. A natural question arises then: how can a more knowledgeable teacher convey its domain knowledge such that it can be used by a less capable learner? We provide explanations that can be used by the learner. An LLM generates a small number of executable rules prior to training. Each rule suggests an action and provides conditions for when the action should be taken. The conditions within a rule refer to the learner's local observations and, where needed, information about its own task progress. These rules provide auxiliary information during training. The learner acts independently in both action selection and final behavior while the rules serve as guidance during training. We compare a plain Proximal Policy Optimization (PPO) and an exploration based learner (PPO with counting based exploration) in two partially observable task domains: navigation and object interaction tasks. Using explanations, we are able to enable the naive learner to solve tasks that would not be learned using only reward signals within the tested budget and improve upon the performance of the exploration-based learner on selected tasks. Rules generated for small environments can also be applied unchanged to larger environments with failure results becoming successful. Since the rules are generated once and can be reused, there is no additional need for the LLM during training, and the approach requires little LLM computation beyond the initial teaching stage. We present explanations as a feasible and inexpensive mechanism for transferring language model knowledge to reinforcement learning algorithms.}
+}
+}
+
+@comment{
 Temporarily hidden while checking whether this under-review publication may be listed.
 @article{Mallahnezhad2026TowardsDC,
   author       = {Mahdieh Mallahnezhad and
@@ -61,6 +79,27 @@ dimensions={true},
 google_scholar_id={qjMakFHDy7sC},
 }
 
+@comment{
+Temporarily hidden until approved for publication on the site.
+@article{Schoepp2026ContinualRL,
+  author       = {Sheila Schoepp and
+                  Taghian Jazi, Mehran and
+                  Mohamadali Tofigh and
+                  Shotaro Miwa and
+                  Yoshihiro Mitsuka and
+                  Osmar Zaiane},
+  title        = {A Continual Reinforcement Learning Framework for Embodied Agent Adaptation under Hardware Faults},
+  journal      = {Under Review},
+  year         = {2026},
+  month        = {10},
+  day          = {08},
+  abbr={Under Review},
+  abstract={Industry is moving toward autonomous, network-connected agents that detect and adapt to changing conditions, including hardware faults. Reinforcement learning (RL) has shown promise for continual adaptation in autonomous systems. This paper introduces a continual RL pipeline for robotic fault adaptation. The framework includes three stages: learning a policy under normal operation, introducing a hardware fault, and adapting to the corresponding failure mode. We investigate established algorithms for time-series sensor-input control, e.g., Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC), and four knowledge-transfer strategies: retaining or discarding model parameters, and retaining or discarding storage contents. Our results on two benchmarks in Gymnasium environments, Ant-v5 and FetchReachDense-v4, show fault-specific adaptation with clear trade-offs. In Ant-v5, retaining PPO's parameters boosts early returns across all faults, while the effect of retaining SAC's parameters at fault onset varies with the fault. With SAC's parameters retained, clearing the replay buffer improves early returns in three of the four Ant faults. After 2,000 time steps in FetchReachDense-v4, discarding PPO's and SAC's parameters improves performance with the frozen sensor, whereas retaining them improves performance with the biased sensor. Both algorithms improve post-fault returns with continued learning, with outcomes depending on the fault and knowledge-transfer strategy.}
+}
+}
+
+@comment{
+Retained for restoration; replaced in the local preview by Schoepp2026ContinualRL.
 @article{Schoepp2024EnhancingHF,
   title={Enhancing Hardware Fault Tolerance in Machines with Reinforcement Learning Policy Gradient Algorithms},
   author={Sheila Schoepp and Mehran Taghian and Shotaro Miwa and Yoshihiro Mitsuka and Shadan Golestan and Osmar R. Zaiane},
@@ -73,6 +112,8 @@ google_scholar_id={qjMakFHDy7sC},
   abstract={Industry is rapidly moving towards fully autonomous and interconnected systems that can detect and adapt to changing conditions, including machine hardware faults. Traditional methods for adding hardware fault tolerance to machines involve duplicating components and algorithmically reconfiguring a machine's processes when a fault occurs. However, the growing interest in reinforcement learning-based robotic control offers a new perspective on achieving hardware fault tolerance. However, limited research has explored the potential of these approaches for hardware fault tolerance in machines. This paper investigates the potential of two state-of-the-art reinforcement learning algorithms, Proximal Policy Optimization (PPO) and Soft Actor-Critic (SAC), to enhance hardware fault tolerance into machines. We assess the performance of these algorithms in two OpenAI Gym simulated environments, Ant-v2 and FetchReach-v1. Robot models in these environments are subjected to six simulated hardware faults. Additionally, we conduct an ablation study to determine the optimal method for transferring an agent's knowledge, acquired through learning in a normal (pre-fault) environment, to a (post-)fault environment in a continual learning setting. Our results demonstrate that reinforcement learning-based approaches can enhance hardware fault tolerance in simulated machines, with adaptation occurring within minutes. Specifically, PPO exhibits the fastest adaptation when retaining the knowledge within its models, while SAC performs best when discarding all acquired knowledge. Overall, this study highlights the potential of reinforcement learning-based approaches, such as PPO and SAC, for hardware fault tolerance in machines. These findings pave the way for the development of robust and adaptive machines capable of effectively operating in real-world scenarios.},
   doi={10.48550/arXiv.2407.15283},
   pdf={https://arxiv.org/pdf/2407.15283},
+}
+
 }
 
 @comment {
