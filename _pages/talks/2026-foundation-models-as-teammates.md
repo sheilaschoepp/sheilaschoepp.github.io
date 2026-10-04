@@ -4,6 +4,10 @@ title: "Foundation Models as Teammates: Coordination in FM-Only and Human-FM Tea
 permalink: /talks/foundation-models-as-teammates/
 talk: true
 icon: fa-comments
+thumbnail: /assets/img/talks/foundation-models-team-communication.png
+thumbnail_width: 1586
+thumbnail_height: 992
+thumbnail_alt: "FM-only and human–FM chef teams coordinating in a shared cooking task through language, structured messages, symbols, images, and multimodal messages."
 nav: false
 date: 2026-06-29
 venue: Graduate Student Seminar, Department of Computing Science, University of Alberta
