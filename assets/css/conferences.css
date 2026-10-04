@@ -252,6 +252,12 @@ html[data-theme="dark"] .conference-deadlines {
   margin-bottom: 0.5rem;
 }
 
+.conference-deadlines .conf-track-name a {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 0.15em;
+}
+
 .conference-deadlines .conf-track-note {
   font-size: 0.8rem;
   color: var(--conf-muted-color);
@@ -285,25 +291,6 @@ html[data-theme="dark"] .conference-deadlines {
   text-align: right;
 }
 
-.conference-deadlines .conf-submission-closed,
-.conference-deadlines .conf-notifications-sent {
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-size: 0.85rem;
-  color: var(--conf-muted-color);
-  padding: 0.4rem 0;
-}
-
-.conference-deadlines .conf-notifications-sent {
-  color: var(--conf-muted-color);
-}
-
-.conference-deadlines .conf-submission-closed[hidden],
-.conference-deadlines .conf-notifications-sent[hidden] {
-  display: none;
-}
-
 .conference-deadlines .conf-deadline-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) max-content minmax(5.25rem, auto);
@@ -322,6 +309,13 @@ html[data-theme="dark"] .conference-deadlines {
 
 .conference-deadlines .conf-deadline-date {
   white-space: nowrap;
+}
+
+.conference-deadlines .conf-deadline-reference {
+  display: block;
+  color: var(--conf-muted-color);
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 .conference-deadlines .conf-deadline-row.is-passed .conf-deadline-date {
