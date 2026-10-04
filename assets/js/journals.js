@@ -18,6 +18,8 @@ function init() {
   const empty = root.querySelector("#journal-empty-state");
   if (!toolbar || !grid || !search || !sort || !empty) return;
 
+  sort.value = "name";
+
   const cards = [...grid.querySelectorAll(".conf-card")].map((element) => ({
     element,
     name: element.dataset.name || "",

@@ -2,7 +2,7 @@
 layout: page
 title: journals
 permalink: /journals/
-description: Journals and publication information that I keep track of.
+description: Journals listed in alphabetical order.
 nav: false
 ---
 
@@ -22,7 +22,7 @@ nav: false
     <div class="conf-sort-wrap">
       <label for="conf-sort">Sort</label>
       <select id="conf-sort">
-        <option value="name">Name (A–Z)</option>
+        <option value="name" selected>Name (A–Z)</option>
         <option value="publisher">Publisher (A–Z)</option>
         <option value="impact">Highest impact factor</option>
         <option value="citescore">Highest CiteScore</option>
