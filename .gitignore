@@ -14,3 +14,6 @@ Gemfile.lock
 node_modules/
 vendor
 al-folio-upgrade-report.md
+
+# Local-only materials that are not ready for publication.
+.private/
