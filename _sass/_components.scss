@@ -90,6 +90,15 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// News
+
+.news .news-date {
+  border-radius: 0.375rem;
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color) !important;
+  text-transform: uppercase;
+}
+
 // CV
 
 .cv {
