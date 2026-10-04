@@ -1,6 +1,6 @@
 ---
 shortname: "RSS 2027"
-name: "Robotics Science and Systems"
+name: "Robotics: Science and Systems"
 location: "Athens, Greece"
 dates: "July 6-11, 2027"
 start_date: "2027-07-06"
