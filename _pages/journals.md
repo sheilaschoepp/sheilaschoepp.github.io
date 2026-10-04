@@ -30,11 +30,6 @@ nav: false
     </div>
   </div>
 
-  <p class="conf-track-note">
-    <span id="journal-results" role="status" aria-live="polite">{{ journals.size }} journals</span>.
-    Metrics show their source year; years may differ between journals.
-  </p>
-
   <div class="conf-grid" id="journal-grid">
     {% for journal in journals %}
       {% assign access = journal.access | downcase %}

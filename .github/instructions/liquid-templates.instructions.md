@@ -6,7 +6,7 @@ applyTo: "**/*.liquid"
 
 ## Liquid Template Basics
 
-This personal site uses the al-folio v1 gem runtime. Most standard Liquid templates live in `al_folio_core` or a feature gem; the local `_includes/` and `_layouts/` contain intentional site customizations. Do not restore old template directories. Read `MIGRATION.md` and the override inventory before adding a local copy of a gem file. When modifying `.liquid` files:
+This personal site uses the al-folio v1 gem runtime. Most standard Liquid templates live in `al_folio_core` or a feature gem; the local `_includes/` and `_layouts/` contain intentional site customizations. Do not restore old template directories. Read `docs/MIGRATION.md` and the override inventory before adding a local copy of a gem file. When modifying `.liquid` files:
 
 ### Key Directories
 

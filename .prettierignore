@@ -19,10 +19,10 @@ _archive/_sass/font-awesome/*.scss
 _archive/_scripts/*
 _archive/_data/citations.yml
 _archive/_posts/2015-07-15-code.md
-ANALYTICS.md
-CUSTOMIZE.md
-INSTALL.md
-SEO.md
-TROUBLESHOOTING.md
+docs/ANALYTICS.md
+docs/CUSTOMIZE.md
+docs/INSTALL.md
+docs/SEO.md
+docs/TROUBLESHOOTING.md
 .github/agents/*.md
 assets/js/distillpub/transforms.v2.js

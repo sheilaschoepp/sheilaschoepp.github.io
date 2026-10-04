@@ -230,20 +230,15 @@ kramdown:
 include: ["_pages"]
 exclude:
   - AGENTS.md
-  - MIGRATION.md
   - al-folio-upgrade-report.md
   - docs/
   - test/
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
   - lighthouse_results/
   - package.json
@@ -406,7 +401,6 @@ filtered_bibtex_keywords:
     blog,
     code,
     dimensions,
-    eprint,
     google_scholar_id,
     hal,
     html,

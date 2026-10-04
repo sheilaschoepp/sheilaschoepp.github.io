@@ -24,7 +24,7 @@
 //  }
 //}
 
-/*–––– Publications: first author bold+colour, co-authors normal+black ––––*/
+/* Publications: highlight your name and colour coauthor links with the site accent. */
 .publications ol.bibliography li {
   /* super‐bold paper title (leave its colour as is) */
   .title {
@@ -35,7 +35,7 @@
     /* your name (the <em> wrapped author) */
     > em {
       font-style: normal;
-      font-weight: bolder !important;
+      font-weight: 700 !important;
       color: var(--global-theme-color);
       border-bottom: none;
     }
@@ -43,13 +43,7 @@
     /* everyone else (the <a> links) */
     a {
       font-style: normal;
-      font-weight: lighter;
-      color: var(--global-text-color);
-      border-bottom: 1px dashed black;
-    }
-
-    a:hover {
-      border-bottom: 1px solid black;
+      font-weight: 400;
     }
   }
 }

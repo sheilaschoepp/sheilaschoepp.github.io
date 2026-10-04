@@ -1,5 +1,7 @@
 # SEO Best Practices Guide
 
+> This reference guide follows [al-folio v1.2](https://github.com/alshedivat/al-folio/releases/tag/v1.2). For this personal site, use the [site documentation index](README.md), [installation commands](INSTALL.md), and [migration record](MIGRATION.md) first. Preserve the personal-site URL, existing content, and reviewed local overrides. Some examples refer to optional template features.
+
 This guide helps you optimize your al-folio website for search engines so your research and work are discoverable.
 
 <!--ts-->
@@ -389,7 +391,7 @@ Use one H1 per page, usually your blog post or page title
 - Use descriptive filenames: `neural-network-architecture.png` (not `img1.png`)
 - Add alt text (also helps accessibility):
   ```markdown
-  ![Neural network showing three layers with training accuracy of 95%](assets/img/neural-network.png)
+  ![Neural network showing three layers with training accuracy of 95%](../assets/img/neural-network.png)
   ```
 
 **For performance:**

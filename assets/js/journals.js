@@ -16,8 +16,7 @@ function init() {
   const search = root.querySelector("#conf-search");
   const sort = root.querySelector("#conf-sort");
   const empty = root.querySelector("#journal-empty-state");
-  const results = root.querySelector("#journal-results");
-  if (!toolbar || !grid || !search || !sort || !empty || !results) return;
+  if (!toolbar || !grid || !search || !sort || !empty) return;
 
   const cards = [...grid.querySelectorAll(".conf-card")].map((element) => ({
     element,
@@ -55,8 +54,6 @@ function init() {
       grid.append(card.element);
     });
     empty.hidden = count > 0;
-    const label = count === cards.length ? `${cards.length} journals` : `${count} of ${cards.length} journals`;
-    if (results.textContent !== label) results.textContent = label;
   }
 
   search.addEventListener("input", refresh);

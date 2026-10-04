@@ -99,10 +99,10 @@ CV content in **RenderCV format** (recommended approach for generating professio
 
 **Key Files:**
 
-- [`_data/cv.yml`](_data/cv.yml) — Main CV content in RenderCV format
-- [`assets/rendercv/design.yaml`](assets/rendercv/design.yaml) — Design and styling customization
-- [`assets/rendercv/locale.yaml`](assets/rendercv/locale.yaml) — Localization and text formatting
-- [`assets/rendercv/settings.yaml`](assets/rendercv/settings.yaml) — RenderCV-specific settings
+- [`_data/cv.yml` example](https://github.com/alshedivat/al-folio/blob/v1.2/_data/cv.yml) — Main CV content in RenderCV format
+- [`assets/rendercv/design.yaml`](../../assets/rendercv/design.yaml) — Design and styling customization
+- [`assets/rendercv/locale.yaml`](../../assets/rendercv/locale.yaml) — Localization and text formatting
+- [`assets/rendercv/settings.yaml`](../../assets/rendercv/settings.yaml) — RenderCV-specific settings
 
 **Usage:** Rendered by `cv.liquid` layout on CV page; displayed in `about.liquid` on home page.
 
@@ -110,7 +110,7 @@ CV content in **RenderCV format** (recommended approach for generating professio
 
 **Alternative Format (JSONResume):** For an alternative format, see `assets/json/resume.json` which uses the [JSONResume](https://jsonresume.org/) standard. Switch between formats using the `cv_format` frontmatter variable in `_pages/cv.md` (options: `rendercv` or `jsonresume`).
 
-**For more details:** See [CUSTOMIZE.md § Modifying the CV information](CUSTOMIZE.md#modifying-the-cv-information) for setup, switching formats, and PDF generation configuration.
+**For more details:** See [docs/CUSTOMIZE.md § Modifying the CV information](../../docs/CUSTOMIZE.md#modifying-the-cv-information) for setup, switching formats, and PDF generation configuration.
 
 ### citations.yml
 
@@ -167,7 +167,7 @@ Co-author information for bibliography/publications.
    {% endif %}
    ```
 
-3. Document the flag in CUSTOMIZE.md
+3. Document the flag in docs/CUSTOMIZE.md
 
 ### Updating Social Media Links
 

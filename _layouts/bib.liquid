@@ -36,11 +36,15 @@
           %}
         {% endif %}
       {% endif %}
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
+      {%- assign venue_label = entry.abbr | default: entry.journal -%}
+      {%- if venue_label == 'CoRR' -%}
+        {%- assign venue_label = 'Preprint' -%}
+      {%- endif -%}
+      {%- if venue_label -%}
+        {%- if site.data.venues[venue_label] -%}
           {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+          {% if site.data.venues[venue_label].color != blank %}
+            {% assign venue_style = site.data.venues[venue_label].color | prepend: 'style="background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
             class="badge rounded w-100"
@@ -48,14 +52,14 @@
               {{ venue_style }}
             {% endif -%}
           >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+            {% if site.data.venues[venue_label].url %}
+              <a href="{{ site.data.venues[venue_label].url }}">{{ venue_label }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>{{- venue_label -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100">{{ venue_label }}</abbr>
         {% endif %}
       {% endif %}
     </div>
@@ -84,7 +88,7 @@
           {% endif %}
         {%- endif -%}
         {% assign coauthor_url = null %}
-        {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+        {%- assign clean_last_name = author_last_name | downcase | regex_replace: '\p{M}', '' | remove_accents -%}
         {% if site.data.coauthors[clean_last_name] %}
           {%- for coauthor in site.data.coauthors[clean_last_name] -%}
             {% if coauthor.firstname contains author.first %}
@@ -445,12 +449,8 @@
     {% if entry.bibtex_show %}
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
-        {% assign bibtex = site.data.dblp_bibtex[entry.key] %}
-        {% unless bibtex %}
-          {% assign bibtex = entry.bibtex | hideCustomBibtex %}
-        {% endunless %}
         {% highlight bibtex %}
-        {{- bibtex -}}
+        {{- entry.bibtex | hideCustomBibtex | first_last_bibtex -}}
         {% endhighlight %}
       </div>
     {% endif %}

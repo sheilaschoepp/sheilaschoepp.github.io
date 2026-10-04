@@ -7,11 +7,11 @@ This is Sheila Schoepp’s personal site, using the al-folio v1 plugin architect
 - **Are you a coding agent?** → Read [`.github/copilot-instructions.md`](.github/copilot-instructions.md) first (tech stack, build, CI/CD, common pitfalls & solutions)
 - **Customizing the site?** → See [`.github/agents/customize.agent.md`](.github/agents/customize.agent.md)
 - **Writing documentation?** → See [`.github/agents/docs.agent.md`](.github/agents/docs.agent.md)
-- **Need setup/deployment help?** → [INSTALL.md](INSTALL.md)
-- **Upgrading the theme?** → [MIGRATION.md](MIGRATION.md) (runtime ownership, preserved customizations, and audits)
-- **Troubleshooting & FAQ?** → [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-- **Customization & theming?** → [CUSTOMIZE.md](CUSTOMIZE.md)
-- **Quick 5-min start?** → [QUICKSTART.md](QUICKSTART.md)
+- **Need setup/deployment help?** → [docs/INSTALL.md](docs/INSTALL.md)
+- **Upgrading the theme?** → [docs/MIGRATION.md](docs/MIGRATION.md) (runtime ownership, preserved customizations, and audits)
+- **Troubleshooting & FAQ?** → [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md)
+- **Customization & theming?** → [docs/CUSTOMIZE.md](docs/CUSTOMIZE.md)
+- **Quick 5-min start?** → [docs/QUICKSTART.md](docs/QUICKSTART.md)
 
 ## Theme Ownership
 
@@ -42,7 +42,7 @@ docker compose down
 
 1. Check `git status` and review the diff, including any pre-existing changes.
 2. Install the existing formatting dependencies with `npm ci`, then format only changed files with `npx prettier --write <files>`.
-3. Run the production build and upgrade checks from [INSTALL.md](INSTALL.md#upgrade-and-production-checks).
+3. Run the production build and upgrade checks from [docs/INSTALL.md](docs/INSTALL.md#upgrade-and-production-checks).
 4. Inspect the homepage, publications, conferences, “beyond research” dropdown, and light/dark mode at `http://localhost:8080`. Travels stays hidden from navigation unless requested otherwise.
 5. Stage only the files or hunks belonging to the task and commit with a clear message.
 
@@ -59,7 +59,7 @@ When modifying `_config.yml`, these **must be updated together**:
 For troubleshooting common build, deployment, and configuration issues, see:
 
 - [Common Pitfalls & Workarounds](.github/copilot-instructions.md#common-pitfalls--workarounds) in copilot-instructions.md
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for detailed solutions
+- [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for detailed solutions
 - [GitHub Issues](https://github.com/alshedivat/al-folio/issues) to search for your specific problem
 
 ## Commit Format
@@ -77,7 +77,7 @@ For troubleshooting common build, deployment, and configuration issues, see:
 ```
 feat: Add dark mode toggle button to header
 fix: Correct baseurl in project site configuration
-docs: Update INSTALL.md with Docker troubleshooting
+docs: Update docs/INSTALL.md with Docker troubleshooting
 style: Format all Liquid templates with Prettier
 config: Enable blog section in _config.yml
 chore: Update Jekyll dependencies with bundle update --all

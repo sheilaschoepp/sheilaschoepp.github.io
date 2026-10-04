@@ -4,7 +4,7 @@
 
 This is Sheila Schoepp’s personal academic website at `https://sheilaschoepp.github.io`, built with Jekyll and the al-folio v1 plugin architecture. It is a customized user site, not the upstream al-folio starter or a plugin development repository.
 
-Read [MIGRATION.md](../MIGRATION.md) for the migration decisions and [INSTALL.md](../INSTALL.md) for preview, build, and upgrade commands. Older customization guides may refer to files that now come from installed gems; check ownership before recreating them locally.
+Read [docs/MIGRATION.md](../docs/MIGRATION.md) for the migration decisions and [docs/INSTALL.md](../docs/INSTALL.md) for preview, build, and upgrade commands. Older customization guides may refer to files that now come from installed gems; check ownership before recreating them locally.
 
 ## Tech Stack & Runtime Ownership
 
@@ -39,7 +39,7 @@ docker compose down        # Stop the preview
 
 The slim alternative is `docker compose -f docker-compose-slim.yml up`.
 
-The exact production build and audit commands are in [INSTALL.md](../INSTALL.md#upgrade-and-production-checks). Use `JEKYLL_ENV=production` for production validation; a successful development preview does not exercise all minification behavior. ImageMagick and nbconvert are required for image and notebook content and are available in the build environment.
+The exact production build and audit commands are in [docs/INSTALL.md](../docs/INSTALL.md#upgrade-and-production-checks). Use `JEKYLL_ENV=production` for production validation; a successful development preview does not exercise all minification behavior. ImageMagick and nbconvert are required for image and notebook content and are available in the build environment.
 
 ### Existing Local Ruby Environment
 
@@ -47,21 +47,23 @@ If a working local environment already exists, `bundle install`, `bundle exec je
 
 ## Project Layout & Key Files
 
-| Path                                                     | Purpose                                                                                |
-| -------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| `_config.yml`                                            | Site identity, URLs, feature settings, collection configuration, and plugin activation |
-| `Gemfile`                                                | Ruby dependencies and explicit al-folio plugin version pins                            |
-| `_data/`                                                 | Site data, including socials, coauthors, venues, citations, repositories, and CV       |
-| `_bibliography/papers.bib`                               | Publication bibliography                                                               |
-| `_pages/`                                                | Static pages and navigation, including the “beyond research” dropdown                  |
-| `_news/`, `_posts/`, `_projects/`, `_teachings/`         | News, blog, project, and teaching content                                              |
-| `_books/`, `_conferences/`, `_services/`, `_travels/`    | Site collections                                                                       |
-| `_includes/`, `_layouts/`                                | Intentional site templates; most standard templates live in gems                       |
-| `_sass/_site-customizations.scss`                        | Site-specific styling kept separate from the core theme                                |
-| `assets/`                                                | Site images, documents, content embeds, and intentional CSS overrides                  |
-| `.al-folio-overrides.yml`                                | Reviewed upstream/local checksums for gem-owned file overrides                         |
-| `docker-compose.yml`, `Dockerfile`, `bin/entry_point.sh` | Container build and local preview                                                      |
-| `purgecss.config.js`                                     | Production CSS optimization, preserving the compiled v1 Tailwind asset                 |
+| Path                                                                | Purpose                                                                                |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `_config.yml`                                                       | Site identity, URLs, feature settings, collection configuration, and plugin activation |
+| `Gemfile`                                                           | Ruby dependencies and explicit al-folio plugin version pins                            |
+| `_data/`                                                            | Site data, including socials, coauthors, venues, citations, repositories, and CV       |
+| `_bibliography/papers.bib`                                          | Publication bibliography                                                               |
+| `_pages/`                                                           | Static pages and navigation, including the “beyond research” dropdown                  |
+| `_news/`, `_posts/`, `_projects/`, `_teachings/`                    | News, blog, project, and teaching content                                              |
+| `_books/`, `_conferences/`, `_journals/`, `_services/`, `_travels/` | Site collections                                                                       |
+| `_includes/`, `_layouts/`                                           | Intentional site templates; most standard templates live in gems                       |
+| `_sass/_site-customizations.scss`                                   | Site-specific styling kept separate from the core theme                                |
+| `docs/`                                                             | Maintenance guides, including installation and migration records                       |
+| `_plugins/`                                                         | Site-specific extensions, including publication BibTeX presentation                    |
+| `assets/`                                                           | Site images, documents, content embeds, and intentional CSS overrides                  |
+| `.al-folio-overrides.yml`                                           | Reviewed upstream/local checksums for gem-owned file overrides                         |
+| `docker-compose.yml`, `Dockerfile`, `bin/entry_point.sh`            | Container build and local preview                                                      |
+| `purgecss.config.js`                                                | Production CSS optimization, preserving the compiled v1 Tailwind asset                 |
 
 `Gemfile` contains the exact al-folio plugin pins. The migration removes the historical tracked `Gemfile.lock` so the existing `.gitignore` rule takes effect; locally generated lock files are preserved for preview use. Preserve an existing local lock during preview restarts and do not force-add it. If working on an older branch, inspect its tracked status before staging: ignore rules do not untrack files already in Git. Do not commit `_site/`, caches, dependencies, credentials, or OS/editor files.
 
@@ -86,7 +88,7 @@ Before committing:
 
 1. Read `git status` and review the task diff. Preserve the user's existing edits.
 2. Run `npm ci` if formatting dependencies are missing; format changed files using `npx prettier --write <files>` and verify with `npx prettier --check <files>`.
-3. Run the production build. For theme/config/plugin changes, also run the upgrade and override audits from [INSTALL.md](../INSTALL.md#upgrade-and-production-checks).
+3. Run the production build. For theme/config/plugin changes, also run the upgrade and override audits from [docs/INSTALL.md](../docs/INSTALL.md#upgrade-and-production-checks).
 4. Check the homepage, Publications, Conferences, Books and navigation, light/dark mode, and narrow-screen layout. Confirm Travels remains hidden from navigation.
 5. Stage explicit files or hunks. Use commit types `feat`, `fix`, `docs`, `style`, `config`, or `chore`.
 
@@ -145,4 +147,4 @@ importance: 1
 ---
 ```
 
-Publications use standard BibTeX with al-folio fields such as `pdf`, `code`, `preview`, and `doi`; see [CUSTOMIZE.md](../CUSTOMIZE.md). When older instructions contradict the installed v1 runtime or the preserved site configuration, inspect those sources and update the documentation instead of restoring obsolete runtime code.
+Publications use standard BibTeX with al-folio fields such as `pdf`, `code`, `preview`, and `doi`; see [docs/CUSTOMIZE.md](../docs/CUSTOMIZE.md). When older instructions contradict the installed v1 runtime or the preserved site configuration, inspect those sources and update the documentation instead of restoring obsolete runtime code.

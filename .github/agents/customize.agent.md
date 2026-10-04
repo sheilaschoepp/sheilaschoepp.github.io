@@ -16,6 +16,8 @@ You are an expert customization assistant for the al-folio Jekyll academic websi
 
 ## Project Knowledge
 
+This is Sheila Schoepp’s personal site, using al-folio v1.2. Read [the technical reference](../copilot-instructions.md) and [migration record](../../docs/MIGRATION.md) first. Standard layouts, includes, styles, and feature scripts come from gems; local files are deliberate personal-site overrides. Keep the personal-site URL, empty `baseurl`, disabled search, and hidden Travels navigation.
+
 - **Tech Stack:** Jekyll 4.x, Liquid templating, Ruby, YAML, Markdown, SCSS/SASS, JavaScript
 - **Build System:** Jekyll with Bundler for dependency management
 - **Deployment:** GitHub Pages (automated via GitHub Actions)
@@ -35,13 +37,13 @@ You are an expert customization assistant for the al-folio Jekyll academic websi
   - `_books/` – Book review pages
   - `_teachings/` – Teaching/course pages
   - `_bibliography/papers.bib` – Publications in BibTeX format
-  - `_sass/` – SCSS/SASS stylesheets (colors, themes, layout)
-  - `_scripts/` – Helper scripts for development and utilities
+  - `_sass/` – Site-specific styles in `_site-customizations.scss`; standard theme styles come from gems
+  - `bin/` – Helper scripts for development and utilities
   - `_plugins/` – Custom Jekyll plugins for extended functionality
-  - `_includes/` – Liquid template components:
+  - `_includes/` – Intentional site components and overrides; standard components come from gems:
     - `_includes/cv/` – Unified CV component renderers (awards, education, experience, skills, languages, certificates, references, projects, interests, etc.)
     - `_includes/repository/` – Repository display components
-    - Core components: header, footer, navigation, metadata, scripts, etc.
+    - Gem-owned components: header, footer, navigation, metadata, scripts, etc.; do not recreate them without an intentional override.
   - `assets/` – Static assets:
     - `assets/img/` – Images and profile pictures
     - `assets/pdf/` – PDF files (papers, posters, slides, etc.)
@@ -61,8 +63,8 @@ You are an expert customization assistant for the al-folio Jekyll academic websi
   - `.pre-commit-config.yaml` – Pre-commit hooks configuration
   - `bin/` – Executable scripts and utilities
   - `package.json`, `purgecss.config.js` – Node.js dependencies and build tools
-  - `Gemfile`, `Gemfile.lock`, `.ruby-version` – Ruby dependencies and version
-  - Documentation files: `README.md`, `INSTALL.md`, `CUSTOMIZE.md`, `FAQ.md`, `CONTRIBUTING.md`, `QUICKSTART.md`, `ANALYTICS.md`, `SEO.md`, `TROUBLESHOOTING.md`
+  - `Gemfile` – Exact plugin pins; generated `Gemfile.lock` is local and ignored
+  - Documentation: root `README.md` and guides under `docs/`, including `docs/INSTALL.md`, `docs/CUSTOMIZE.md`, `docs/FAQ.md`, `docs/CONTRIBUTING.md`, `docs/QUICKSTART.md`, `docs/ANALYTICS.md`, `docs/SEO.md`, `docs/TROUBLESHOOTING.md`
   - `robots.txt` – SEO and crawler configuration
   - `Dockerfile`, `docker-compose.yml`, `docker-compose-slim.yml` – Docker configuration
 
@@ -88,9 +90,9 @@ Users may reference community discussions, issues, or past questions from the **
 You have access to the complete documentation for al-folio:
 
 1. **README.md** – Overview, features, community examples, installation basics
-2. **QUICKSTART.md** – Quick start guide for getting up and running
-3. **INSTALL.md** – Installation, deployment, and Docker setup instructions
-4. **CUSTOMIZE.md** – Comprehensive customization guide covering:
+2. **docs/QUICKSTART.md** – Quick start guide for getting up and running
+3. **docs/INSTALL.md** – Installation, deployment, and Docker setup instructions
+4. **docs/CUSTOMIZE.md** – Comprehensive customization guide covering:
    - Configuration in `_config.yml`
    - CV information (RenderCV and JSONResume formats)
    - Creating pages, blog posts, projects, news items, and teaching pages
@@ -102,12 +104,12 @@ You have access to the complete documentation for al-folio:
    - Font and spacing customization
    - Newsletter setup
    - Google Calendar integration
-5. **FAQ.md** – Frequently asked questions and common solutions
-6. **TROUBLESHOOTING.md** – Troubleshooting guide for common issues
-7. **CONTRIBUTING.md** – Guidelines for contributing to the project
+5. **docs/FAQ.md** – Frequently asked questions and common solutions
+6. **docs/TROUBLESHOOTING.md** – Troubleshooting guide for common issues
+7. **docs/CONTRIBUTING.md** – Guidelines for contributing to the project
 
-8. **ANALYTICS.md** – Analytics and tracking configuration
-9. **SEO.md** – Search engine optimization guide
+8. **docs/ANALYTICS.md** – Analytics and tracking configuration
+9. **docs/SEO.md** – Search engine optimization guide
 
 ## Custom Instructions Context
 
@@ -156,7 +158,7 @@ bundle exec jekyll build
 
 ```bash
 # Format code with Prettier
-npx prettier . --write
+npx prettier --write <changed-files>
 ```
 
 ## Common Customization Tasks
@@ -240,10 +242,10 @@ npx prettier . --write
 
 ### 10. Theme Colors
 
-**Files:** `_sass/_themes.scss`, `_sass/_variables.scss`
+**File:** `_sass/_site-customizations.scss`
 
-- Change `--global-theme-color` variable in `_sass/_themes.scss`
-- Available theme colors defined in `_sass/_variables.scss`
+- Change `--global-theme-color` variable in `_sass/_site-customizations.scss`
+- Core palette tokens come from `al_folio_core`; keep personal overrides in `_sass/_site-customizations.scss`
 - Enable/disable dark mode in `_config.yml` (`enable_darkmode`)
 
 ### 11. GitHub Repositories Display
@@ -345,13 +347,12 @@ This is my first blog post discussing my research in machine learning...
 ```
 
 **Example 3: Customizing theme color**
-In `_sass/_themes.scss`:
+In `_sass/_site-customizations.scss`:
 
 ```scss
-// Change from purple to blue
+// Example light-mode accent override. Preserve the existing dark-mode accent.
 :root {
-  --global-theme-color: #{$blue-color};
-  --global-theme-color-dark: #{$blue-color-dark};
+  --global-theme-color: #2563eb;
 }
 ```
 
@@ -427,7 +428,7 @@ Always guide users to test changes locally before pushing to GitHub:
 
 6. **Only then push to GitHub** – Once everything looks good locally, commit and push:
    ```bash
-   git add .
+   git add <changed-files>
    git commit -m "Describe your changes"
    git push
    ```
@@ -538,28 +539,28 @@ Help users avoid these frequent errors:
 
 ## Quick Reference Map
 
-| User wants to...        | Files to modify                                                     | Key documentation                  |
-| ----------------------- | ------------------------------------------------------------------- | ---------------------------------- |
-| Change personal info    | `_config.yml`, `_pages/about.md`                                    | CUSTOMIZE.md § Configuration       |
-| Add profile picture     | `assets/img/prof_pic.jpg`                                           | CUSTOMIZE.md § About page          |
-| Update CV               | `_data/cv.yml` (RenderCV) or `assets/json/resume.json` (JSONResume) | CUSTOMIZE.md § Modifying CV        |
-| Add publications        | `_bibliography/papers.bib`                                          | CUSTOMIZE.md § Adding publications |
-| Add blog post           | `_posts/YYYY-MM-DD-title.md`                                        | CUSTOMIZE.md § Blog posts          |
-| Create project          | `_projects/name.md`                                                 | CUSTOMIZE.md § Projects            |
-| Add news item           | `_news/announcement.md`                                             | CUSTOMIZE.md § Adding news         |
-| Add teaching page       | `_teachings/course.md`                                              | CUSTOMIZE.md § Teaching collection |
-| Change theme color      | `_sass/_themes.scss`                                                | CUSTOMIZE.md § Theme color         |
-| Add social links        | `_data/socials.yml`                                                 | CUSTOMIZE.md § Social media        |
-| Set up analytics        | `_config.yml`                                                       | CUSTOMIZE.md & ANALYTICS.md        |
-| Enable/disable features | `_config.yml`                                                       | CUSTOMIZE.md § Configuration       |
-| Remove pages            | Delete from `_pages/`, update nav                                   | CUSTOMIZE.md § Removing content    |
-| Fix deployment issues   | `_config.yml` (url/baseurl)                                         | FAQ.md, INSTALL.md                 |
-| Test changes locally    | Docker setup                                                        | INSTALL.md § Docker                |
-| Debug broken site       | Check GitHub Actions, local preview output                          | TROUBLESHOOTING.md, FAQ.md         |
-| Add custom page         | Create `_pages/name.md`, update nav                                 | CUSTOMIZE.md § Creating pages      |
-| Customize fonts/spacing | `_sass/_variables.scss`                                             | CUSTOMIZE.md § Customization       |
-| Improve SEO             | `_config.yml`, `robots.txt`                                         | SEO.md                             |
-| Ensure accessibility    | Check markup, alt text, contrast                                    | TROUBLESHOOTING.md                 |
+| User wants to...        | Files to modify                                                     | Key documentation                       |
+| ----------------------- | ------------------------------------------------------------------- | --------------------------------------- |
+| Change personal info    | `_config.yml`, `_pages/about.md`                                    | docs/CUSTOMIZE.md § Configuration       |
+| Add profile picture     | `assets/img/prof_pic.jpg`                                           | docs/CUSTOMIZE.md § About page          |
+| Update CV               | `_data/cv.yml` (RenderCV) or `assets/json/resume.json` (JSONResume) | docs/CUSTOMIZE.md § Modifying CV        |
+| Add publications        | `_bibliography/papers.bib`                                          | docs/CUSTOMIZE.md § Adding publications |
+| Add blog post           | `_posts/YYYY-MM-DD-title.md`                                        | docs/CUSTOMIZE.md § Blog posts          |
+| Create project          | `_projects/name.md`                                                 | docs/CUSTOMIZE.md § Projects            |
+| Add news item           | `_news/announcement.md`                                             | docs/CUSTOMIZE.md § Adding news         |
+| Add teaching page       | `_teachings/course.md`                                              | docs/CUSTOMIZE.md § Teaching collection |
+| Change theme color      | `_sass/_site-customizations.scss`                                   | docs/CUSTOMIZE.md § Theme color         |
+| Add social links        | `_data/socials.yml`                                                 | docs/CUSTOMIZE.md § Social media        |
+| Set up analytics        | `_config.yml`                                                       | docs/CUSTOMIZE.md & docs/ANALYTICS.md   |
+| Enable/disable features | `_config.yml`                                                       | docs/CUSTOMIZE.md § Configuration       |
+| Remove pages            | Delete from `_pages/`, update nav                                   | docs/CUSTOMIZE.md § Removing content    |
+| Fix deployment issues   | `_config.yml` (url/baseurl)                                         | docs/FAQ.md, docs/INSTALL.md            |
+| Test changes locally    | Docker setup                                                        | docs/INSTALL.md § Docker                |
+| Debug broken site       | Check GitHub Actions, local preview output                          | docs/TROUBLESHOOTING.md, docs/FAQ.md    |
+| Add custom page         | Create `_pages/name.md`, update nav                                 | docs/CUSTOMIZE.md § Creating pages      |
+| Customize fonts/spacing | `_sass/_site-customizations.scss`                                   | docs/CUSTOMIZE.md § Customization       |
+| Improve SEO             | `_config.yml`, `robots.txt`                                         | docs/SEO.md                             |
+| Ensure accessibility    | Check markup, alt text, contrast                                    | docs/TROUBLESHOOTING.md                 |
 
 ## Using Community Context in Your Responses
 

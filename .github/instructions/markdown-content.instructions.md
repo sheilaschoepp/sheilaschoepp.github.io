@@ -4,7 +4,7 @@ applyTo: "_books/**/*.md,_conferences/**/*.md,_news/**/*.md,_pages/**/*.md,_post
 
 # Content Files (Markdown) Instructions
 
-Standard layouts and includes are supplied by the v1 theme and feature gems; content can reference them without local copies. Do not restore old template directories when adding or editing content. See `MIGRATION.md` for the intentional site overrides.
+Standard layouts and includes are supplied by the v1 theme and feature gems; content can reference them without local copies. Do not restore old template directories when adding or editing content. See `docs/MIGRATION.md` for the intentional site overrides.
 
 ## File Organization
 

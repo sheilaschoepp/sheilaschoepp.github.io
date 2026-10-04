@@ -1,8 +1,10 @@
 # Quick Start Guide
 
+> This reference guide follows [al-folio v1.2](https://github.com/alshedivat/al-folio/releases/tag/v1.2). For this personal site, use the [site documentation index](README.md), [installation commands](INSTALL.md), and [migration record](MIGRATION.md) first. Preserve the personal-site URL, existing content, and reviewed local overrides. Some examples refer to optional template features.
+
 **Get your al-folio site running in 5 minutes.** This guide is for users who just want a working website quickly without deep customization.
 
-> **Video Tutorial:** Watch a walkthrough of these steps [here](assets/video/tutorial_al_folio.mp4)
+> **Video Tutorial:** Watch a walkthrough of these steps [here](../assets/video/tutorial_al_folio.mp4)
 
 <!--ts-->
 
@@ -21,11 +23,16 @@
 
 ## Step 1: Create Your Repository (1 min)
 
-1. Click **[Use this template](https://github.com/new?template_name=al-folio&template_owner=alshedivat)** on the al-folio repository page
-2. Name your repository:
-   - **Personal/Organization site:** `username.github.io` (replace `username` with your GitHub username)
-   - **Project site:** Any name (e.g., `my-research-website`)
-3. Click **Create repository from template**
+**⚠️ Important:** Use the **"Use this template"** button, NOT the fork button. This ensures your site is independent and you won't accidentally submit your personal changes back to the al-folio project.
+
+1. Go to the [al-folio repository](https://github.com/alshedivat/al-folio)
+2. Click the green **"Use this template"** button (top right), then select **"Create a new repository"**
+3. Name your repository:
+   - **Personal/Organization site (if you want your site to be at `username.github.io`):** `username.github.io` (replace `username` with your GitHub username)
+   - **Project site (if you want your site to be at `username.github.io/project-name`):** Any name (e.g., `my-research-website`)
+4. Click **"Create repository from template"**
+
+**Already forked by mistake?** No problem. Your fork will work fine—just be careful when making changes. Create a new branch for your updates (e.g., `git checkout -b my-site-updates`) and make sure you push to **your own repository**, not the main al-folio project.
 
 ## Step 2: Configure Deployment (1 min)
 
@@ -73,8 +80,9 @@ Once your site is running, explore these customization options:
 
 ### Customize Appearance
 
-- **Theme color:** Edit `_config.yml`, search for `theme_color`
-- **Enable/disable sections:** In `_config.yml`, look for `enabled: false/true` options
+- **Theme color:** Not a `_config.yml` key. In `v1.x` the palette lives in Sass tokens owned by the `al_folio_core` gem — see [CUSTOMIZE.md § Changing theme color](CUSTOMIZE.md#changing-theme-color)
+- **Layout and UI:** In `_config.yml`, adjust `back_to_top`, `footer_fixed`, `max_width`, and `navbar_fixed`
+- **Enable/disable features:** In `_config.yml`, look for the `enabled: false/true` and `enable_*` flags
 - **Social media links:** Edit `_data/socials.yml`
 
 ### Learn More
@@ -98,7 +106,7 @@ See [CUSTOMIZE.md § GitHub Copilot Customization Agent](CUSTOMIZE.md#github-cop
 
 **Common first steps:**
 
-- Change the theme color in `_config.yml`
+- Fill in `title`, `first_name`, `last_name`, `url`, and `baseurl` in `_config.yml`
 - Add your social media links in `_data/socials.yml`
 - Upload your profile picture to `assets/img/prof_pic.jpg`
 - Write a short bio in `_pages/about.md`

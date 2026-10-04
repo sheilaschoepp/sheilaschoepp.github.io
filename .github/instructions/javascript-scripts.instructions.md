@@ -17,7 +17,7 @@ This site uses the al-folio v1 gem runtime. The old local `_scripts/` directory 
 
 Plugins must be in both `Gemfile` and `_config.yml`'s `plugins:` list. Configuration and page front matter control whether their assets are emitted. Missing generated assets may indicate a disabled feature rather than a missing local script.
 
-The intentional local search wrapper is `_includes/plugins/al_search_assets.liquid`. It keeps the gem runtime and filters entries from collections with `output: false`. Search stays disabled unless requested otherwise. See `MIGRATION.md` for the complete override inventory.
+The intentional local search wrapper is `_includes/plugins/al_search_assets.liquid`. It keeps the gem runtime and filters entries from collections with `output: false`. Search stays disabled unless requested otherwise. See `docs/MIGRATION.md` for the complete override inventory.
 
 ## File Structure & Frontmatter
 
