@@ -245,11 +245,15 @@ let setSearchTheme = (theme) => {
   }
 };
 
+// Allow the matching CSS transition to finish, with time for a slow repaint.
+const THEME_TRANSITION_MS = 240;
+const THEME_TRANSITION_CLEANUP_MS = THEME_TRANSITION_MS + 120;
+
 let transTheme = () => {
   document.documentElement.classList.add("transition");
   window.setTimeout(() => {
     document.documentElement.classList.remove("transition");
-  }, 500);
+  }, THEME_TRANSITION_CLEANUP_MS);
 };
 
 // Determine the expected state of the theme toggle, which can be "dark", "light", or

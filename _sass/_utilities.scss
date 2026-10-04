@@ -114,12 +114,24 @@ progress::-moz-progress-bar {
 
 // Themes transition
 
+// Animate inherited colors at the root to avoid staggered transitions in nested text.
+// Body also declares its own text color, so it needs the same transition.
 html.transition,
+html.transition body {
+  transition-property: color, background-color, border-color, fill, stroke, box-shadow !important;
+  transition-duration: 240ms !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
+}
+
+// Non-inherited properties still need to be transitioned per element.
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+  transition-property: background-color, border-color, box-shadow !important;
+  transition-duration: 240ms !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
 }
 
 // Copy button
