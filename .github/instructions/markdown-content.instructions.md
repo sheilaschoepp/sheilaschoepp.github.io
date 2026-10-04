@@ -1,8 +1,10 @@
 ---
-applyTo: "_books/**/*.md,_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/**/*.md,_teachings/**/*.md"
+applyTo: "_books/**/*.md,_conferences/**/*.md,_news/**/*.md,_pages/**/*.md,_posts/**/*.md,_projects/**/*.md,_services/**/*.md,_teachings/**/*.md,_travels/**/*.md"
 ---
 
 # Content Files (Markdown) Instructions
+
+Standard layouts and includes are supplied by the v1 theme and feature gems; content can reference them without local copies. Do not restore old template directories when adding or editing content. See `MIGRATION.md` for the intentional site overrides.
 
 ## File Organization
 
@@ -264,7 +266,7 @@ The Prettier formatter applies to markdown files:
 **Always run before committing:**
 
 ```bash
-npx prettier --write .
+npx prettier --write <changed-files>
 ```
 
 ## Trust These Instructions

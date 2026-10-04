@@ -1,46 +1,27 @@
 ---
-applyTo: "_scripts/**/*.js"
+applyTo: "assets/**/*.js,**/*.liquid.js"
 ---
 
 # JavaScript Scripts Instructions
 
 ## Overview
 
-The `_scripts/` directory contains JavaScript files that provide frontend functionality for the al-folio website. These scripts handle:
+This site uses the al-folio v1 gem runtime. The old local `_scripts/` directory has been removed intentionally. Standard search, analytics, and image scripts are supplied by feature gems; do not recreate their pre-v1 files in this repository.
 
-- **Search functionality** – Ninja-keys integration for search bar
-- **Analytics setup** – Google Analytics, Cronitor, Open Panel integrations
-- **Gallery functionality** – PhotoSwipe lightbox initialization
-- **Liquid template processing** – Files with `.liquid.js` extension process Jekyll Liquid syntax
+| Functionality                                  | Owning gem      |
+| ---------------------------------------------- | --------------- |
+| Search index, Ninja-keys component, and assets | `al_search`     |
+| Analytics providers                            | `al_analytics`  |
+| PhotoSwipe, zoom, and image tools              | `al_img_tools`  |
+| Standard theme behavior                        | `al_folio_core` |
 
-## Key Script Files
+Plugins must be in both `Gemfile` and `_config.yml`'s `plugins:` list. Configuration and page front matter control whether their assets are emitted. Missing generated assets may indicate a disabled feature rather than a missing local script.
 
-### `search.liquid.js`
-
-- **Purpose:** Generates searchable navigation data for the Ninja-keys search component
-- **Type:** Liquid + JavaScript hybrid (Jekyll processes `.liquid.js` files)
-- **Output:** Compiled to `/assets/js/search-data.js` via permalink frontmatter
-- **Content:** Builds `ninja.data` array from site pages, posts, and navigation structure
-- **Usage:** Included in `_includes/scripts.liquid` and loaded in layouts
-
-### `photoswipe-setup.js`
-
-- **Purpose:** Initializes PhotoSwipe lightbox for image galleries
-- **Type:** Pure JavaScript with ES6 imports
-- **Output:** Compiled to `/assets/js/photoswipe-setup.js`
-- **Dependencies:** PhotoSwipe library (referenced via `site.third_party_libraries`)
-- **Functionality:** Automatically converts `.pswp-gallery` elements into interactive lightbox galleries
-
-### `google-analytics-setup.js`, `cronitor-analytics-setup.js`, `open-panel-analytics-setup.js`
-
-- **Purpose:** Initialize third-party analytics services
-- **Type:** Conditional setup scripts (may be excluded from production builds)
-- **Usage:** Loaded conditionally based on `_config.yml` feature flags
-- **Integration:** Each sets up tracking code for respective analytics platforms
+The intentional local search wrapper is `_includes/plugins/al_search_assets.liquid`. It keeps the gem runtime and filters entries from collections with `output: false`. Search stays disabled unless requested otherwise. See `MIGRATION.md` for the complete override inventory.
 
 ## File Structure & Frontmatter
 
-All scripts in `_scripts/` may include Jekyll frontmatter:
+A new site-specific script that requires Liquid processing can include Jekyll front matter. Keep plain site JavaScript under `assets/js/`; use an intentional template override only when the behavior cannot be configured through the plugin.
 
 ```javascript
 ---
@@ -57,14 +38,14 @@ permalink: /assets/js/filename.js
 **Processing:**
 
 - `.liquid.js` files – Processed by Jekyll's Liquid engine before JavaScript compilation
-- `.js` files – Processed normally, passed through to assets directory
-- **Note:** Files in `_scripts/` are ignored by Prettier (see `.prettierignore`) because `.liquid.js` files mix Liquid template syntax with JavaScript, which Prettier doesn't support
+- Plain `.js` assets without front matter are copied to their existing relative paths; Jekyll does not automatically move arbitrary script files into `assets/js/`
+- Mixed Liquid/JavaScript needs both template and generated JavaScript validation. Respect `.prettierignore`; do not force a JavaScript-only parser onto Liquid syntax.
 
 ## JavaScript Patterns in al-folio
 
 ### Liquid + JavaScript Mixing (in `.liquid.js` files)
 
-Example from `search.liquid.js`:
+Illustrative Liquid/JavaScript pattern (do not use it to replace the gem-owned search index):
 
 ```javascript
 ---
@@ -119,78 +100,20 @@ element.addEventListener("click", (event) => {
 
 ## Common Modification Patterns
 
-### Adding a New Analytics Service
+### Analytics, Search, and Galleries
 
-1. Create new file `_scripts/myservice-setup.js`:
-
-```javascript
----
-permalink: /assets/js/myservice-setup.js
----
-(function() {
-  // Initialize your service
-  if (window.myService) {
-    console.log('MyService loaded');
-  }
-})();
-```
-
-2. Add conditional loading to `_includes/scripts.liquid`:
-
-```liquid
-{% if site.myservice_enabled %}
-  <script src="{{ '/assets/js/myservice-setup.js' | relative_url }}"></script>
-{% endif %}
-```
-
-3. Add feature flag to `_config.yml`:
-
-```yaml
-myservice_enabled: false
-```
-
-### Modifying Search Data Structure
-
-In `search.liquid.js`:
-
-1. Identify the Liquid loop building `ninja.data` array
-2. Add new properties to each object:
-
-```javascript
-{
-  id: "nav-{{ title | slugify }}",
-  title: "{{ title }}",
-  newField: "{{ page.new_property }}",  // Add new field
-  handler: () => { ... }
-}
-```
-
-3. Rebuild: `docker compose up` will regenerate `/assets/js/search-data.js`
-
-### Updating Gallery Functionality
-
-In `photoswipe-setup.js`:
-
-1. Modify gallery selector or initialization options
-2. Reference [PhotoSwipe documentation](https://photoswipe.com/) for available options
-3. Update any CSS classes used in gallery markup
+1. Check the owning gem, `_config.yml` settings, and page front matter first.
+2. Inspect the installed plugin's current implementation before changing behavior. A plugin update or existing option may provide the requested behavior.
+3. Keep truly site-specific behavior in a small local asset or intentional wrapper override. Do not copy the full old `_includes/scripts.liquid`, search index, analytics setup, or PhotoSwipe runtime back into this repository.
+4. Track any gem-owned path override in `.al-folio-overrides.yml`, and inspect upstream differences after a version update.
+5. Rebuild and test the generated script in the browser, including feature-disabled behavior.
 
 ## Code Style Notes
 
-**Prettier and \_scripts/:**
-
-Files in `_scripts/` are **excluded from Prettier formatting** (defined in `.prettierignore`) because:
-
-- `.liquid.js` files contain mixed Liquid template syntax and JavaScript
-- Prettier doesn't understand or support this hybrid format
-- Manual formatting consistency is required for these files
-
-**When modifying \_scripts/ files:**
-
-- Follow existing code style in the file (indentation, spacing, quotes)
-- Maintain readability for Liquid + JavaScript mixed code
-- Do NOT run Prettier on the `_scripts/` directory
-- **DO run Prettier on the rest of the project** when making other changes: `npx prettier . --write`
+- Format changed plain JavaScript with the project's Prettier configuration.
+- Follow existing formatting for mixed Liquid/JavaScript and respect the configured ignore rules.
+- Format changed Liquid wrappers with the Liquid formatter; verify that their generated JavaScript remains valid.
+- Do not format the whole repository for a narrow script change.
 
 ## Validation & Testing
 
@@ -205,14 +128,11 @@ docker compose up
 
 ### Checking Generated Output
 
-After `docker compose up`, verify scripts compiled correctly:
+After `docker compose up`, inspect generated scripts inside the preview container (the output directory is `/tmp/_site`, not the host `_site`):
 
 ```bash
-# Check if script files exist in _site/assets/js/
-ls _site/assets/js/
-
-# Verify no Liquid syntax in generated output (should be pure JavaScript)
-cat _site/assets/js/search-data.js | head -20
+docker compose exec jekyll ls /tmp/_site/assets/js/
+# Inspect the relevant enabled feature asset and check for unprocessed Liquid.
 ```
 
 ### Debugging Script Issues
@@ -221,7 +141,7 @@ cat _site/assets/js/search-data.js | head -20
 
 - Check browser DevTools Console for HTTP 404 errors
 - Verify `permalink:` frontmatter matches script inclusion paths
-- Check that script is actually in `_site/assets/js/` after build
+- Check that the owning feature is enabled and its generated script exists under the configured build destination
 
 **Liquid syntax errors:**
 
@@ -240,9 +160,9 @@ cat _site/assets/js/search-data.js | head -20
 When modifying JavaScript scripts:
 
 - `.liquid.js` files must have valid Liquid syntax AND valid JavaScript that remains valid after Jekyll processes the Liquid
-- Do NOT run Prettier on `_scripts/` files (they are in `.prettierignore` because of Liquid + JavaScript mixing)
+- Respect `.prettierignore` for mixed Liquid/JavaScript, and validate the generated output
 - Test locally with `docker compose up` to verify build succeeds and scripts work
-- For site-wide script inclusion, modify `_includes/scripts.liquid`
+- Standard site-wide script loading is gem-owned; prefer configuration or a focused intentional wrapper override
 - For configuration (feature flags, third-party URLs), see yaml-configuration.instructions.md
-- Reference the actual script files in `_scripts/` as examples when adding new functionality
-- Only search for additional details if errors occur during build or testing
+- Reference the installed owning gem and retained site scripts; the absence of `_scripts/` is expected
+- Consult the owning plugin documentation when behavior or ownership is unclear

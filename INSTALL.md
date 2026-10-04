@@ -3,6 +3,7 @@
 <!--ts-->
 
 - [Installing and Deploying](#installing-and-deploying)
+  - [This Personal Site](#this-personal-site)
   - [Recommended Approach](#recommended-approach)
     - [Important Notes for GitHub Pages Sites](#important-notes-for-github-pages-sites)
     - [Automatic Deployment](#automatic-deployment)
@@ -21,10 +22,24 @@
     - [Deploy on <a href="https://www.netlify.com/" rel="nofollow">Netlify</a>](https://www.netlify.com/)
     - [Deployment to another hosting server (non GitHub Pages)](#deployment-to-another-hosting-server-non-github-pages)
     - [Deployment to a separate repository (advanced users only)](#deployment-to-a-separate-repository-advanced-users-only)
+  - [Upgrade and Production Checks](#upgrade-and-production-checks)
   - [Maintaining Dependencies](#maintaining-dependencies)
   - [Upgrading from a previous version](#upgrading-from-a-previous-version)
 
 <!--te-->
+
+## This Personal Site
+
+This repository uses the al-folio v1 plugin architecture with explicitly pinned plugin versions. The theme comes from `al_folio_core`; site content, settings, and intentional custom templates remain in this repository. See [MIGRATION.md](MIGRATION.md) for the migration decisions and override inventory.
+
+Keep these settings for this personal GitHub Pages site:
+
+```yaml
+url: https://sheilaschoepp.github.io
+baseurl:
+```
+
+The upstream demo's `/al-folio` baseurl does not apply here. The general deployment alternatives below are retained as reference; the existing site deploys through `.github/workflows/deploy.yml` to `gh-pages`.
 
 ## Recommended Approach
 
@@ -63,18 +78,18 @@ Using Docker to install Jekyll and Ruby dependencies is the easiest way.
 You need to take the following steps to get `al-folio` up and running on your local machine:
 
 - First, install [docker](https://docs.docker.com/get-docker/) and [docker-compose](https://docs.docker.com/compose/install/).
-- Finally, run the following command that will pull the latest pre-built image from DockerHub and will run your website.
+- Finally, pull the image selected in `docker-compose.yml` and start the local preview.
 
 ```bash
 docker compose pull
 docker compose up
 ```
 
-Note that when you run it for the first time, it will download a docker image of size 400MB or so. To see the template running, open your browser and go to `http://localhost:8080`. You should see a copy of the theme's demo website.
+The first run downloads the container image and installs any missing Ruby dependencies. Open `http://localhost:8080/` to preview this site. The entry point uses the mounted `Gemfile` and preserves an existing local `Gemfile.lock`. Preview output is written to `/tmp/_site` inside the container, so it does not create a host `_site/` directory.
 
 Now, feel free to customize the theme however you like (don't forget to change the name!). Also, your changes should be automatically rendered in real-time (or maybe after a few seconds).
 
-> Beta: You can also use the slimmed docker image with a size below 100MBs and exact same functionality. Just use `docker compose -f docker-compose-slim.yml up`
+The alternative slim image is configured in `docker-compose-slim.yml`: run `docker compose -f docker-compose-slim.yml up`.
 
 ### Build your own docker image
 
@@ -86,7 +101,7 @@ Build and run a new docker image using:
 docker compose up --build
 ```
 
-> If you want to update jekyll, install new ruby packages, etc., all you have to do is build the image again using `--force-recreate` argument at the end of the previous command! It will download Ruby and Jekyll and install all Ruby packages again from scratch.
+When changing Ruby dependencies, edit `Gemfile` and rebuild the image. The al-folio plugins are pinned, so rebuilding alone does not select a newer theme release. Follow [Maintaining Dependencies](#maintaining-dependencies) when changing those versions.
 
 If you want to use a specific docker version, you can do so by changing the version tag to `your_version` in `docker-compose.yaml` (the `v0.16.3` in `image: amirpourmand/al-folio:v0.16.3`). For example, you might have created your website on `v0.10.0` and you want to stick with that.
 
@@ -245,41 +260,52 @@ In its default configuration, al-folio will copy the top-level `README.md` to th
 
 **Note:** Do _not_ run `jekyll clean` on your publishing source repo as this will result in the entire directory getting deleted, irrespective of the content of `keep_files` in `_config.yml`.
 
-## Maintaining Dependencies
+## Upgrade and Production Checks
 
-**al-folio** uses **Bundler** (a Ruby dependency manager) to keep track of Ruby packages (called "gems") needed to run Jekyll and its plugins.
-
-**To update all dependencies:**
+Run these checks after changing the theme, plugin versions, or runtime configuration. They install the dependencies selected by `Gemfile`, audit the v1 configuration and local overrides, and build production output:
 
 ```bash
-bundle update --all
+docker compose run --rm --no-deps --entrypoint bash jekyll -lc 'bundle install && bundle exec al-folio upgrade audit && bundle exec al-folio upgrade overrides audit --fail-on-stale && JEKYLL_ENV=production bundle exec jekyll build --destination /tmp/_site'
 ```
 
-**After updating:**
+If the audit reports findings, inspect them before applying changes. Generate its detailed report when needed:
 
-1. Rebuild the Docker image to apply changes: `docker compose up --build`
-2. Test locally to ensure everything still works: `docker compose up`
-3. Visit `http://localhost:8080` and verify the site renders correctly
-4. If your site fails after updating, check the [FAQ](FAQ.md) for troubleshooting
+```bash
+docker compose run --rm --no-deps --entrypoint bash jekyll -lc 'bundle install && bundle exec al-folio upgrade report'
+```
 
-**For Ruby/Python environment issues:**
+`al-folio-upgrade-report.md` distinguishes blocking findings from follow-up work. Do not treat `--no-fail` as a passing audit; that flag is useful only for gathering findings during a migration. A successful production build does not replace browser checks of navigation, key pages, responsive layout, and light/dark mode.
 
-- Always use Docker for consistency with CI/CD (see [Local setup using Docker](#local-setup-using-docker-recommended))
-- Avoid manual Ruby/Python installation when possible
+The deployment workflow also optimizes CSS using `purgecss.config.js`. Its v1 Tailwind asset is intentionally excluded from PurgeCSS because interactive classes can be absent from generated HTML. Run the full workflow checks when changing styles or deployment settings.
+
+## Maintaining Dependencies
+
+Bundler manages the Ruby packages (gems) that build the site. Each al-folio plugin is pinned to an explicit version in `Gemfile`; its version number is independent of the overall al-folio release number.
+
+For a theme update:
+
+1. Review the upstream release notes and choose compatible plugin versions in `Gemfile`.
+2. Keep each plugin in both `Gemfile` and the `plugins:` list in `_config.yml`.
+3. Run `bundle update` in the build environment and rebuild the Docker image if using a locally built image.
+4. Run the upgrade and production checks above, then review any changed local overrides.
+5. Preview at `http://localhost:8080/` before deploying.
+
+`Gemfile` records the exact al-folio plugin pins. The migration removes the historically tracked `Gemfile.lock`, making the existing `.gitignore` rule effective. Bundler can still keep a local lock file for previews; do not force-add it. If using an older branch, check whether it still tracks the lock file before staging dependency changes, because ignore rules do not untrack existing files.
 
 ## Upgrading from a previous version
 
-If you installed **al-folio** as described above, you can manually update your code by following the steps below:
+This site has moved from vendored pre-v1 theme files to v1's versioned gems. Future upgrades should update the pinned gems and review local overrides, rather than rebase the entire personal site onto the upstream starter. [MIGRATION.md](MIGRATION.md) records the preserved customizations.
+
+Local `_includes`, `_layouts`, Sass, and assets are valid site customizations. An override at the same path as a gem file wins over that gem's copy, so review it whenever the upstream file changes:
 
 ```bash
-# Assuming the current directory is <your-repo-name>
-git remote add upstream https://github.com/alshedivat/al-folio.git
-git fetch upstream
-git rebase v0.16.3
+bundle exec al-folio upgrade overrides audit --fail-on-stale
+bundle exec al-folio upgrade overrides diff <path>
+bundle exec al-folio upgrade overrides accept <path>
 ```
 
-If you have extensively customized a previous version, it might be trickier to upgrade.
-You can still follow the steps above, but `git rebase` may result in merge conflicts that must be resolved.
-See [git rebase manual](https://help.github.com/en/github/using-git/about-git-rebase) and how to [resolve conflicts](https://help.github.com/en/github/using-git/resolving-merge-conflicts-after-a-git-rebase) for more information.
-If rebasing is too complicated, we recommend re-installing the new version of the theme from scratch and port over your content and changes from the previous version manually. You can use tools like [meld](https://meldmerge.org/)
-or [winmerge](https://winmerge.org/) to help in this process.
+Run these in the same environment as Jekyll. Commit `.al-folio-overrides.yml` after reviewing and accepting an intentional override; it records the gem version and upstream/local checksums for the next upgrade. Do not accept changes without reading their diff.
+
+Bootstrap compatibility is enabled for retained legacy content. It is supported through v1.2, deprecated in v1.3, and removed in v2.0; migrate that content before moving beyond its supported window. The core theme uses the v1 Tailwind runtime.
+
+See the official [upgrade guide](https://github.com/alshedivat/al-folio/blob/main/docs/INSTALL.md#upgrading-from-a-previous-version) and [architecture guide](https://github.com/alshedivat/al-folio/blob/main/docs/ARCHITECTURE.md) for the current runtime contract. Starter-only restrictions on local runtime directories do not apply to customized personal sites such as this one.

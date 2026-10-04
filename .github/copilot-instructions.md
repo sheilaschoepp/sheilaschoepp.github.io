@@ -1,219 +1,130 @@
-# Copilot Coding Agent Instructions
+# Coding Agent Instructions
 
 ## Repository Overview
 
-**al-folio** is a simple, clean, and responsive [Jekyll](https://jekyllrb.com/) theme for academics and researchers. It enables users to create professional portfolio and blog websites with minimal configuration. The repository serves both as a template and as a reference implementation.
+This is Sheila Schoepp’s personal academic website at `https://sheilaschoepp.github.io`, built with Jekyll and the al-folio v1 plugin architecture. It is a customized user site, not the upstream al-folio starter or a plugin development repository.
 
-- **Type:** Jekyll static site generator template
-- **Target Users:** Academics, researchers, and professionals
-- **Key Features:** CV display, publication bibliography, blog posts, projects, news/announcements, course listings
+Read [MIGRATION.md](../MIGRATION.md) for the migration decisions and [INSTALL.md](../INSTALL.md) for preview, build, and upgrade commands. Older customization guides may refer to files that now come from installed gems; check ownership before recreating them locally.
 
-## Tech Stack & Versions
+## Tech Stack & Runtime Ownership
 
-**Core Technologies:**
+- **Jekyll:** 4.x, with Ruby 3.3.5 in deployment workflows.
+- **Python:** 3.13 in deployment workflows, with nbconvert for notebooks.
+- **Node.js:** 22 in site build workflows, with Prettier and PurgeCSS.
+- **Docker:** the image and local build options are defined in `docker-compose.yml` and `Dockerfile`.
+- **Theme:** `al_folio_core`, selected by `theme: al_folio_core` in `_config.yml`.
+- **Features:** independently versioned `al_*` gems, pinned in `Gemfile` and activated in `_config.yml`.
 
-- **Jekyll:** v4.x (Ruby static site generator)
-- **Ruby:** 3.3.5 (primary CI/CD version), 3.2.2 (some workflows)
-- **Python:** 3.13 (for nbconvert, jupyter notebook support)
-- **Node.js:** Latest (for purgecss and prettier)
-- **Docker:** Uses prebuilt image `amirpourmand/al-folio:v0.16.3` (Ruby slim-based)
+The core gem provides the standard layouts, includes, Sass, scripts, and assets. Feature gems own search, CV rendering, Distill, citations, charts, math, comments, image tools, analytics, and other optional features. Do not restore old vendored runtime files merely because they no longer exist in this repository. See upstream [architecture](https://github.com/alshedivat/al-folio/blob/main/docs/ARCHITECTURE.md) and [ownership boundaries](https://github.com/alshedivat/al-folio/blob/main/docs/BOUNDARIES.md).
 
-**Build Dependencies (from Gemfile):**
-
-- `classifier-reborn` – Related posts calculation
-- `jekyll-archives-v2` – Archive page generation
-- `jekyll-jupyter-notebook` – Jupyter notebook embedding
-- `jekyll-minifier` – CSS/JS minification
-- `jekyll-paginate-v2` – Pagination
-- `jekyll-scholar` – Bibliography management
-- `jekyll-tabs` – Tab UI components
-- `jekyll-toc` – Table of contents generation
-- `jemoji` – Emoji support
-- Multiple other specialized jekyll plugins
-
-**Code Quality Tools:**
-
-- **Prettier:** v3.8.0+ with `@shopify/prettier-plugin-liquid` – Code formatter (mandatory for PRs)
-- **Purgecss:** CSS purification for production builds
+Intentional local overrides are supported in this personal site. Local files with the same path as a gem file take precedence over the gem. The upstream starter-only rule forbidding `_includes/`, `_layouts/`, and `_sass/` does not apply here. Keep customizations focused, and review `.al-folio-overrides.yml` after upgrades so that an old local copy does not hide a new upstream fix.
 
 ## Building & Local Development
 
-### Docker (Recommended Approach)
+### Docker (Recommended)
 
-**Always use Docker for local development.** This ensures consistency with CI/CD and avoids Ruby/Python environment issues.
-
-**Initial Setup:**
+Use Docker to avoid changing the host Ruby and Python environment:
 
 ```bash
-docker compose pull                    # Pull prebuilt image
-docker compose up                      # Start development server
-# Site runs at http://localhost:8080
+docker compose pull
+docker compose up
 ```
 
-**Rebuilding with Updated Dependencies:**
+Preview the site at `http://localhost:8080/`. The entry point installs missing gems and restarts Jekyll when `_config.yml` changes. Preview output is written to `/tmp/_site` inside the container, not the host `_site/` directory.
 
 ```bash
-docker compose up --build              # Rebuilds Docker image from Dockerfile
-docker compose up --force-recreate     # Forces complete rebuild
+docker compose up --build   # Build the image from the local Dockerfile
+docker compose down        # Stop the preview
 ```
 
-**For slim Docker image (if image size is critical):**
+The slim alternative is `docker compose -f docker-compose-slim.yml up`.
 
-```bash
-docker compose -f docker-compose-slim.yml up
-```
+The exact production build and audit commands are in [INSTALL.md](../INSTALL.md#upgrade-and-production-checks). Use `JEKYLL_ENV=production` for production validation; a successful development preview does not exercise all minification behavior. ImageMagick and nbconvert are required for image and notebook content and are available in the build environment.
 
-**If Docker build fails:**
+### Existing Local Ruby Environment
 
-- Check disk space and available RAM
-- Kill any existing jekyll processes: `docker compose down`
-- For M1/M2 Mac: Ensure Docker Desktop is up-to-date
-- Linux users may need Docker group permissions: `sudo usermod -aG docker $USER` (then logout/login)
-
-### Bundle/Jekyll (Legacy, Use Docker Instead)
-
-```bash
-bundle install                         # Install Ruby gems
-pip install jupyter                    # Install Python dependencies
-bundle exec jekyll serve --port 4000   # Run at http://localhost:4000
-```
-
-### Important Build Requirements
-
-- **ImageMagick must be installed** – Required for image processing plugins
-  - Docker: Installed automatically
-  - Local: `sudo apt-get install imagemagick` (Linux) or `brew install imagemagick` (Mac)
-- **nbconvert must be upgraded before build** – `pip3 install --upgrade nbconvert`
-- **Always set JEKYLL_ENV=production for production builds** – Required for CSS/JS minification
+If a working local environment already exists, `bundle install`, `bundle exec jekyll serve`, and `bundle exec jekyll build` remain valid. Do not install or replace system Ruby solely to run this site. `bin/setup-python-deps` installs notebook dependencies using an active Python virtual environment when available.
 
 ## Project Layout & Key Files
 
-### Root Directory Structure
+| Path                                                     | Purpose                                                                                |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `_config.yml`                                            | Site identity, URLs, feature settings, collection configuration, and plugin activation |
+| `Gemfile`                                                | Ruby dependencies and explicit al-folio plugin version pins                            |
+| `_data/`                                                 | Site data, including socials, coauthors, venues, citations, repositories, and CV       |
+| `_bibliography/papers.bib`                               | Publication bibliography                                                               |
+| `_pages/`                                                | Static pages and navigation, including the “beyond research” dropdown                  |
+| `_news/`, `_posts/`, `_projects/`, `_teachings/`         | News, blog, project, and teaching content                                              |
+| `_books/`, `_conferences/`, `_services/`, `_travels/`    | Site collections                                                                       |
+| `_includes/`, `_layouts/`                                | Intentional site templates; most standard templates live in gems                       |
+| `_sass/_site-customizations.scss`                        | Site-specific styling kept separate from the core theme                                |
+| `assets/`                                                | Site images, documents, content embeds, and intentional CSS overrides                  |
+| `.al-folio-overrides.yml`                                | Reviewed upstream/local checksums for gem-owned file overrides                         |
+| `docker-compose.yml`, `Dockerfile`, `bin/entry_point.sh` | Container build and local preview                                                      |
+| `purgecss.config.js`                                     | Production CSS optimization, preserving the compiled v1 Tailwind asset                 |
 
-- `_bibliography/papers.bib` – BibTeX bibliography for publications
-- `_config.yml` – **Primary configuration file** (title, author, URLs, baseurl, feature flags)
-- `_data/` – YAML data files (socials.yml, coauthors.yml, cv.yml, citations.yml, venues.yml, repositories.yml)
-- `_includes/` – Reusable Liquid template components
-- `_layouts/` – Page layout templates (about.liquid, post.liquid, bib.liquid, distill.liquid, cv.liquid, etc.)
-- `_news/` – News/announcement entries
-- `_pages/` – Static pages (about.md, cv.md, publications.md, projects.md, teaching.md, etc.)
-- `_posts/` – Blog posts (format: YYYY-MM-DD-title.md)
-- `_projects/` – Project showcase entries
-- `_sass/` – SCSS stylesheets
-- `_scripts/` – JavaScript files for functionality
-- `_teachings/` – Course and teaching entries
-- `assets/img/` – Images, profile pictures
-- `docker-compose.yml` – Docker compose configuration
-- `Dockerfile` – Docker image definition
-- `Gemfile` & `Gemfile.lock` – Ruby dependency specifications
-- `package.json` – Node.js dependencies (prettier only)
-- `purgecss.config.js` – PurgeCSS configuration for production CSS optimization
+`Gemfile` contains the exact al-folio plugin pins. The migration removes the historical tracked `Gemfile.lock` so the existing `.gitignore` rule takes effect; locally generated lock files are preserved for preview use. Preserve an existing local lock during preview restarts and do not force-add it. If working on an older branch, inspect its tracked status before staging: ignore rules do not untrack files already in Git. Do not commit `_site/`, caches, dependencies, credentials, or OS/editor files.
 
-### Configuration Priority
+## Configuration Rules
 
-When making changes:
-
-1. **Always start with `_config.yml`** for site-wide settings
-2. **Feature flags are in `_config.yml`** – Look for `enabled: true/false` options
-3. **Social media links:** `_data/socials.yml`
-4. **Content data:** Respective `_data/*.yml` files
-5. **Styling:** `_sass/` directory (uses SCSS)
+1. Preserve `url: https://sheilaschoepp.github.io` and an empty `baseurl:`. The upstream demo uses `/al-folio`; copying that value here breaks personal-site links.
+2. Keep `theme: al_folio_core` and the `al_folio` namespace, including API version, style engine, Tailwind settings, Distill settings, and feature flags.
+3. A plugin must be present in both `Gemfile` and `_config.yml`'s `plugins:` list. Feature-specific flags and page front matter must also enable the feature.
+4. Bootstrap compatibility is intentionally enabled while existing content uses Bootstrap markup. It is supported through v1.2, deprecated in v1.3, and removed in v2.0. Review the compatibility requirement before changing versions.
+5. When updating a third-party library version, update its Subresource Integrity hashes at the same time.
+6. Quote YAML values containing special characters such as `:` or `#`.
+7. Preserve disabled features unless the task requests enabling them. Search is disabled. Travels remains commented out in the “beyond research” dropdown; hiding it from the menu does not unpublish its existing URL.
+8. `output: false` collections supply entries to listing pages without generating an individual page per entry. Do not add links to nonexistent individual book or conference pages.
 
 ## CI/CD Pipeline & Validation
 
-### GitHub Workflows (in `.github/workflows/`)
+`.github/workflows/deploy.yml` installs dependencies, builds with `JEKYLL_ENV=production`, optimizes eligible CSS, and publishes `_site/` to `gh-pages` on eligible pushes. Pull requests build without deploying. GitHub Pages serves the generated `gh-pages` branch; its built-in Jekyll environment is not the source build environment.
 
-- **deploy.yml** – Main deployment workflow (runs on push/PR to main/master)
-  - Sets up Ruby 3.3.5, Python 3.13
-  - Installs imagemagick, nbconvert
-  - Runs `bundle exec jekyll build` with JEKYLL_ENV=production
-  - Runs purgecss for CSS optimization
-  - Commits built site to gh-pages branch
-  - **Triggers on:** Changes to site files, assets, config (NOT documentation files alone)
-- **prettier.yml** – Code formatting validation (mandatory)
-  - Runs prettier on all files
-  - **Fails PRs if code is not properly formatted**
-  - Generates HTML diff artifact on failure
-  - Must install prettier locally to avoid failures: `npm install prettier @shopify/prettier-plugin-liquid`
-- **broken-links.yml, broken-links-site.yml** – Link validation
-- **axe.yml** – Accessibility testing
-- **codeql.yml** – Security scanning
-- **update-citations.yml** – Automatic citation updates
-- **render-cv.yml** – CV rendering from RenderCV format
+`theme-upgrade-audit.yml` checks the v1 upgrade contract and fails on stale override baselines while allowing reviewed intentional overrides. Other workflows provide formatting, link, accessibility, security, citation, and CV checks. Check their actual definitions before assuming that an unrelated workflow uses the same tool versions or trigger paths.
 
-### Pre-commit Requirements
+Before committing:
 
-**You must run these locally before pushing:**
+1. Read `git status` and review the task diff. Preserve the user's existing edits.
+2. Run `npm ci` if formatting dependencies are missing; format changed files using `npx prettier --write <files>` and verify with `npx prettier --check <files>`.
+3. Run the production build. For theme/config/plugin changes, also run the upgrade and override audits from [INSTALL.md](../INSTALL.md#upgrade-and-production-checks).
+4. Check the homepage, Publications, Conferences, Books and navigation, light/dark mode, and narrow-screen layout. Confirm Travels remains hidden from navigation.
+5. Stage explicit files or hunks. Use commit types `feat`, `fix`, `docs`, `style`, `config`, or `chore`.
 
-1. **Prettier formatting (mandatory):**
-
-```bash
-npm install --save-dev prettier @shopify/prettier-plugin-liquid
-npx prettier . --write
-```
-
-2. **Local build test with Jekyll:**
-
-```bash
-docker compose pull && docker compose up
-# Let it build (wait 30-60 seconds)
-# Visit http://localhost:8080 and verify site renders correctly
-# Exit with Ctrl+C
-```
-
-3. **Or run full build simulation:**
-
-```bash
-docker compose up --build
-bundle exec jekyll build
-# Check for errors in output
-```
+Do not automatically accept every override after a dependency update. Use `bundle exec al-folio upgrade overrides diff <path>` to inspect changed upstream files, adapt the local customization, then accept only the reviewed path.
 
 ## Common Pitfalls & Workarounds
 
-### YAML Syntax Errors in \_config.yml
+### Feature Does Not Render
 
-- **Problem:** Special characters (`:`, `&`, `#`) in values cause parse errors
-- **Solution:** Quote string values: `title: "My: Cool Site"`
-- **Debug:** Run locally to see detailed error: `bundle exec jekyll build`
+Check the gem dependency, the `_config.yml` plugin entry, the site-wide feature flag, the page front matter, and the relevant `third_party_libraries` entry. Some missing features emit no error. Do not vendor old scripts to work around incorrect plugin wiring.
 
-### "Unknown tag 'toc'" Error on Deployment
+### CSS or Links Missing After Deployment
 
-- **Problem:** Deploy succeeds locally but fails on GitHub Actions
-- **Cause:** Jekyll plugins don't load properly
-- **Solution:** Verify gh-pages branch is set as deployment source in Settings → Pages
+Verify the effective `url` and `baseurl`. This personal site has no `/al-folio` prefix. Also check that the compiled Tailwind asset is present and excluded from PurgeCSS; runtime class names may not all occur in generated HTML.
 
-### CSS/JS Not Loading After Deploy
+### Local Override Hides an Upstream Fix
 
-- **Problem:** Site loads but has no styling
-- **Cause:** Incorrect `url` and `baseurl` in `_config.yml`
-- **Fix:**
-  - Personal site: `url: https://username.github.io`, `baseurl:` (empty)
-  - Project site: `url: https://username.github.io`, `baseurl: /repo-name/`
-  - Clear browser cache (Ctrl+Shift+Del or private browsing)
+Run the override audit and diff the affected path. `.al-folio-overrides.yml` records the reviewed gem version and file checksum, allowing the next dependency upgrade to report upstream changes without relying on Git merge conflicts.
 
-### Prettier Formatting Failures
+### YAML or Unknown Liquid Tag Errors
 
-- **Problem:** PR fails prettier check after local builds passed
-- **Solution:** Run prettier before committing:
-  ```bash
-  npx prettier . --write
-  git add . && git commit -m "Format code with prettier"
-  ```
+Inspect the build error and the relevant configuration. An unknown plugin tag can mean the owning gem is absent from the dependency or activation list. Confirm that the normal deployment workflow is used rather than GitHub Pages' restricted source builder.
 
-### Port 8080 or 4000 Already in Use
+### Formatting Failure
 
-- **Docker:** `docker compose down` then `docker compose up`
-- **Ruby:** Kill process: `lsof -i :4000 | grep LISTEN | awk '{print $2}' | xargs kill`
+Format only the affected files with the installed project formatter. Do not rewrite the entire repository or stage unrelated changes to fix a narrow formatting failure.
 
-### Related Posts Errors ("Zero vectors cannot be normalized")
+### Port Already in Use
 
-- **Cause:** Empty blog posts or posts with only stop words confuse classifier-reborn
-- **Solution:** Add meaningful content to posts, or set `related_posts: false` in post frontmatter
+Stop the relevant preview with `docker compose down`, or choose another host port in a local Compose override. Do not kill unrelated processes.
 
-## File Format Specifications
+### Related Posts Error: “Zero vectors cannot be normalized”
 
-### Blog Post Frontmatter (\_posts/)
+Empty posts or posts containing only stop words can confuse `classifier-reborn`. Add meaningful content or set `related_posts: false` in the affected post's front matter.
+
+## Content Conventions
+
+Read the corresponding instruction in `.github/instructions/` before changing Markdown content, YAML, BibTeX, Liquid, or JavaScript. Standard examples remain:
 
 ```yaml
 ---
@@ -223,8 +134,6 @@ date: YYYY-MM-DD
 categories: category-name
 ---
 ```
-
-### Project Frontmatter (\_projects/)
 
 ```yaml
 ---
@@ -236,18 +145,4 @@ importance: 1
 ---
 ```
 
-### BibTeX Format (papers.bib)
-
-- Standard BibTeX format
-- al-folio supports custom keywords: `pdf`, `code`, `preview`, `doi`, etc.
-- Check CUSTOMIZE.md for custom bibtex keyword documentation
-
-## Trust These Instructions
-
-This guidance documents the tested, working build process and project structure. **Trust these instructions and only perform additional searches if:**
-
-1. Specific information contradicts what you observe in the codebase
-2. You need implementation details beyond what's documented
-3. Error messages reference features or files not mentioned here
-
-The instructions are designed to reduce unnecessary exploration and allow you to focus on code changes.
+Publications use standard BibTeX with al-folio fields such as `pdf`, `code`, `preview`, and `doi`; see [CUSTOMIZE.md](../CUSTOMIZE.md). When older instructions contradict the installed v1 runtime or the preserved site configuration, inspect those sources and update the documentation instead of restoring obsolete runtime code.

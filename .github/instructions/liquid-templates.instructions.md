@@ -6,7 +6,7 @@ applyTo: "**/*.liquid"
 
 ## Liquid Template Basics
 
-This al-folio repository uses Liquid templating extensively. When modifying `.liquid` files:
+This personal site uses the al-folio v1 gem runtime. Most standard Liquid templates live in `al_folio_core` or a feature gem; the local `_includes/` and `_layouts/` contain intentional site customizations. Do not restore old template directories. Read `MIGRATION.md` and the override inventory before adding a local copy of a gem file. When modifying `.liquid` files:
 
 ### Key Directories
 
@@ -24,10 +24,11 @@ This al-folio repository uses Liquid templating extensively. When modifying `.li
 - `| date: format` – Date filtering
 - `| where: "key", "value"` – Collection filtering
 
-### Important al-folio Liquid Components
+### Standard Gem-Owned Liquid Components
+
+These paths refer to templates inside the installed runtime, not files that must exist locally. Distill rendering is owned by `al_folio_distill`; do not recreate the old `distill_scripts.liquid` include.
 
 - `_includes/citation.liquid` – Bibliography entry rendering
-- `_includes/distill_scripts.liquid` – Distill.pub specific scripts
 - `_includes/footer.liquid` – Site footer
 - `_includes/head.liquid` – Page <head> section
 - `_includes/header.liquid` – Site header/navigation
@@ -42,14 +43,14 @@ Prettier with `@shopify/prettier-plugin-liquid` enforces formatting:
 - Single quotes around strings in Liquid tags
 - Consistent spacing
 - Indentation with 2 spaces
-- Run `npx prettier . --write` before committing
+- Format only changed files with `npx prettier --write <files>` before committing
 
 ## Common Modification Patterns
 
 ### Modifying Site Header/Navigation
 
-- Edit `_includes/header.liquid`
-- Add links to navigation array in `_config.yml` (see yaml-configuration.instructions.md)
+- Edit navigation front matter in `_pages/` (including `nav`, `nav_order`, and dropdown `children`). The current dropdown is `_pages/dropdown.md`, titled “beyond research”.
+- The standard header is gem-owned. Create a local header override only when a requested behavior cannot be configured through page front matter; review and track it in `.al-folio-overrides.yml`.
 - Test by viewing site in browser: `docker compose up` → http://localhost:8080
 
 ### Adding a New Component Include
@@ -72,7 +73,7 @@ Prettier with `@shopify/prettier-plugin-liquid` enforces formatting:
 
    ```bash
    npx prettier _includes/ _layouts/ --check
-   npx prettier . --write  # Fix formatting
+   npx prettier --write <changed-files>  # Fix only affected files
    ```
 
 2. **Build test:**
@@ -93,7 +94,7 @@ Prettier with `@shopify/prettier-plugin-liquid` enforces formatting:
 
 When working with Liquid templates:
 
-- Use `_includes/` and `_layouts/` as reference for syntax patterns
+- Use the local custom templates or the installed gem templates as syntax references; an absent local standard template is expected in v1
 - Follow existing formatting in files (Prettier will enforce consistency)
 - Always test locally before pushing (build must succeed)
 - For configuration changes, see yaml-configuration.instructions.md

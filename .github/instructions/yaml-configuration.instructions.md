@@ -11,7 +11,7 @@ applyTo: "_config.yml,_data/**/*.yml"
 When modifying `_config.yml`, always update these in pairs:
 
 - **url** and **baseurl** must be consistent:
-  - Personal site: `url: https://username.github.io`, `baseurl:` (leave empty)
+  - This personal site: `url: https://sheilaschoepp.github.io`, `baseurl:` (leave empty; do not copy the upstream demo’s `/al-folio` prefix)
   - Project site: `url: https://username.github.io`, `baseurl: /projectname/`
 - **title, first_name, last_name** – Site header and metadata
 - **description** – Used in RSS feeds and metadata
@@ -19,15 +19,17 @@ When modifying `_config.yml`, always update these in pairs:
 
 ### Feature Flags in \_config.yml
 
-Look for `enabled: false/true` patterns. Common ones:
+Keep `theme: al_folio_core` and the `al_folio` runtime contract. Plugin dependencies in `Gemfile` must agree with the `plugins:` activation list. Optional features may also require site flags and page front matter; adding only a flag does not install a plugin.
 
-- `blog.enabled`
-- `news.enabled`
-- `profile.image_circular`
-- `profile.show_social_links`
-- `projects.enabled`
-- `publications.enabled`
-- `related_blog_posts`
+Use keys that exist in the current configuration, such as:
+
+- `search_enabled`
+- `enable_darkmode`, `enable_math`, `enable_cookie_consent`
+- `related_blog_posts.enabled`
+- `al_folio.features.cv.enabled`, `al_folio.features.distill.enabled`
+- `al_folio.compat.bootstrap.enabled` (retained for legacy site content)
+
+Page-level settings such as `profile` and `announcements` belong in the relevant page's front matter. Navigation is configured in `_pages/`, not a global navigation array. Collection `output: false` disables individual entry pages while retaining data for listing pages.
 
 ### YAML Syntax Rules
 
@@ -170,7 +172,7 @@ Co-author information for bibliography/publications.
 ### Updating Social Media Links
 
 1. Edit `_data/socials.yml`
-2. Keep entries alphabetically sorted
+2. Preserve the intended display order of entries
 3. Ensure `icon` identifiers match available icons (Academicons or Font Awesome)
 4. Use full profile URLs in `url` field
 5. Test: `docker compose up` → check social icons on site
@@ -210,7 +212,7 @@ Update these in `_config.yml`:
 
    ```bash
    npx prettier _config.yml _data/ --check
-   npx prettier . --write  # Fix formatting
+   npx prettier --write <changed-files>  # Fix only affected files
    ```
 
 3. **Visual verification:**
@@ -229,7 +231,7 @@ Update these in `_config.yml`:
 
 ### Feature flag not working
 
-- Check syntax: `feature: enabled: true` (colon after feature name)
+- Check YAML nesting and the owning plugin in both `Gemfile` and `_config.yml`
 - Verify spelling in Liquid template: `{% if site.feature.enabled %}`
 - Clear browser cache if using old cached pages
 
