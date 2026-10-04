@@ -20,6 +20,7 @@ sources:
 verified_on: "2026-10-04"
 tracks:
   - name: "Main track"
+    source: "https://ecai2027.org/#deadlines-section"
     deadlines:
       - label: "Paper"
         date: null
