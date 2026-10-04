@@ -1,0 +1,25 @@
+{% comment %}
+  Keep the plugin-owned search runtime, but omit individual entries from collections
+  that do not generate pages. Navigation links to their overview pages remain visible.
+{% endcomment %}
+{% if site.search_enabled and site.plugins contains 'al_search' %}
+  {% al_search_assets %}
+  <script>
+    (() => {
+      const search = document.querySelector('ninja-keys');
+      if (!search || !Array.isArray(search.data)) return;
+
+      const excludedPrefixes = [
+        {% for collection in site.collections %}
+          {% unless collection.output or collection.label == 'posts' %}
+            {{ collection.label | append: '-' | jsonify }},
+          {% endunless %}
+        {% endfor %}
+      ];
+      search.data = search.data.filter((entry) => {
+        if (entry.section === 'Navigation' || entry.section === 'Dropdown') return true;
+        return !excludedPrefixes.some((prefix) => typeof entry.id === 'string' && entry.id.startsWith(prefix));
+      });
+    })();
+  </script>
+{% endif %}
