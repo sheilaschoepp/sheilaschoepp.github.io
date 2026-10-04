@@ -3,7 +3,7 @@ layout: talk
 title: "Foundation Models as Teammates: Coordination in FM-Only and Human-FM Teams"
 permalink: /talks/foundation-models-as-teammates/
 talk: true
-icon: fa-people-group
+icon: fa-comments
 nav: false
 date: 2026-06-29
 venue: Graduate Student Seminar, Department of Computing Science, University of Alberta

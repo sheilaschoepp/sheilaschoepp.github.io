@@ -3,7 +3,7 @@ layout: talk
 title: The Evolving Landscape of LLM- and VLM-Integrated Reinforcement Learning
 permalink: /talks/ijcai-2025/
 talk: true
-icon: fa-microphone
+icon: fa-brain
 nav: false
 date: 2025-08-21
 venue: IJCAI 2025, Montréal, Canada

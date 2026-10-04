@@ -20,7 +20,7 @@ published: true
     {% assign talk_count = group.items | size %}
     <article class="talk-group" aria-labelledby="talk-group-{{ forloop.index }}">
       <div class="talk-group-header">
-        <div class="talk-group-icon" aria-hidden="true"><i class="fa-solid {{ newest_talk.icon | default: 'fa-microphone' | escape }}"></i></div>
+        <div class="talk-group-icon" aria-hidden="true"><i class="fa-solid fa-fw {{ newest_talk.icon | default: 'fa-microphone' | escape }}"></i></div>
         <div class="talk-group-heading">
           <h2 class="talk-group-title" id="talk-group-{{ forloop.index }}">{{ group.name | escape }}</h2>
           <p class="talk-group-count">
