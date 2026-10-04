@@ -31,6 +31,17 @@ jobs:
             ./*.md
             docs/**/*.md
 
+      - name: Setup Node
+        if: steps.changed-files.outputs.any_changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install formatting dependencies
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: npm ci
+
       - name: Updated toc on all markdown changed files
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
@@ -42,7 +53,8 @@ jobs:
             if [[ "$file" != *.md ]]; then
               continue
             fi
-            ./gh-md-toc --indent 2 --insert --no-backup --hide-footer $file
+            ./gh-md-toc --indent 2 --insert --no-backup --hide-footer "$file"
+            npx --no-install prettier --write "$file"
           done
           rm gh-md-toc
 
