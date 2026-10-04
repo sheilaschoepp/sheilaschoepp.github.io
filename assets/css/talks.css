@@ -1,9 +1,7 @@
 /* Grouped talks and detail pages use the site's light and dark theme colors. */
 
 .talk-search {
-  padding-bottom: 1.5rem;
   margin: 0;
-  border-bottom: 1px solid var(--global-divider-color);
 }
 
 .talk-search-status {
@@ -30,19 +28,30 @@
 .talk-search [hidden],
 .talk-search-status[hidden],
 .talk-search-empty[hidden],
+.talk-year[hidden],
 .talk-group[hidden],
 .talk-appearance[hidden] {
   display: none !important;
 }
 
+.talk-year-title {
+  padding-top: 1rem;
+  margin: 2rem 0 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-divider-color);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: right;
+}
+
 .talk-groups {
   display: grid;
   gap: 1.5rem;
-  margin-top: 2rem;
-  container-type: inline-size;
 }
 
 .talk-group {
+  container-type: inline-size;
   min-width: 0;
   padding: 1.5rem;
   border: 1px solid var(--global-divider-color);
@@ -79,16 +88,16 @@
 .talk-group .talk-group-title {
   margin: 0;
   color: var(--global-text-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.5;
   overflow-wrap: break-word;
 }
 
 .talk-group-count {
   margin: 0.4rem 0 0;
   color: var(--global-text-color-light);
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -120,7 +129,7 @@
 .talk-appearance-venue {
   min-width: 0;
   color: var(--global-text-color);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
   text-decoration: none;
   overflow-wrap: break-word;
@@ -158,7 +167,7 @@
 
 .talk-appearance-date {
   color: var(--global-text-color-light);
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
   text-align: right;
   white-space: nowrap;
@@ -238,10 +247,6 @@ a.talk-back:focus-visible,
 
   .talk-group-header-with-thumbnail {
     grid-template-columns: calc((100cqw + 30px) / 6 - 30px) minmax(0, 1fr);
-  }
-
-  .talk-group .talk-group-title {
-    font-size: 1.1rem;
   }
 
   .talk-appearance {
