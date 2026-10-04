@@ -11,7 +11,7 @@ thumbnail_height: 992
 thumbnail_alt: "FM-only and human–FM chef teams coordinating in a shared cooking task through language, structured messages, symbols, images, and multimodal messages."
 nav: false
 date: 2026-06-29
-venue: Graduate Student Seminar, Department of Computing Science, University of Alberta
+venue: Graduate Student Seminar, University of Alberta
 # Unpublished slides are kept locally in .private/slides/Schoepp2026FoundationModels-slides.pdf.
 # When ready, copy the PDF to assets/pdf/ and uncomment the resource below.
 # resources:
