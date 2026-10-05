@@ -5,10 +5,10 @@ permalink: /talks/foundation-models-as-teammates/
 talk: true
 topic_label: Research
 icon: fa-comments
-thumbnail: /assets/img/talks/foundation-models-team-communication.png
-thumbnail_width: 1586
-thumbnail_height: 992
-thumbnail_alt: "FM-only and human–FM chef teams coordinating in a shared cooking task through language, structured messages, symbols, images, and multimodal messages."
+thumbnail: /assets/img/talks/foundation-models-in-conversation.png
+thumbnail_width: 1536
+thumbnail_height: 1024
+thumbnail_alt: "ChatGPT, PaLM E, Claude, and Gemini represented as robots sharing ideas, perspectives, knowledge, and solutions around a table."
 nav: false
 date: 2026-06-29
 venue: Graduate Student Seminar, University of Alberta
