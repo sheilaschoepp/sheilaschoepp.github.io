@@ -381,7 +381,7 @@ html[data-theme="dark"] .conference-deadlines {
  * Keep these adjustments separate from the journal cards that share this file.
  */
 #conference-browser .conf-toolbar {
-  gap: 0.6rem;
+  column-gap: 0.6rem;
   padding-bottom: 1rem;
   margin-bottom: 1.1rem;
 }
