@@ -10,7 +10,7 @@ num: 220
 tags: ["NLP"]
 timezone: "UTC−12"
 id: "acl27"
-verified_on: "2026-10-04"
+verified_on: "2026-10-07"
 sources:
   - "https://2027.eacl.org/calls/workshops/"
   - "https://www.aclweb.org/portal/content/joint-call-tutorial-proposals-eaclacl-2026"
@@ -30,12 +30,14 @@ tracks:
         decision: false
       - label: "Commitment"
         date: null
-        display: "Mar 14, 2026"
+        display: "Mar 14, 2027"
         decision: false
-        previous_edition: 2026
+        tentative_from: 2026
+        source: "https://2026.aclweb.org/calls/main_conference_papers/"
       - label: "Decision"
         date: null
-        display: "Apr 4, 2026"
+        display: "Apr 4, 2027"
         decision: true
-        previous_edition: 2026
+        tentative_from: 2026
+        source: "https://2026.aclweb.org/calls/main_conference_papers/"
 ---

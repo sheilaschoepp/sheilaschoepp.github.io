@@ -20,37 +20,52 @@ The page displays the dates in these Markdown files. It does not fetch an
 external conference feed or rewrite the files when someone visits.
 
 When checking for updates, distinguish the conference year from the year of its
-submission deadline. Do not advance last year's dates to estimate a new edition.
+submission deadline. Official current dates take priority. For an announced
+edition with an unpublished date, use the 2026 edition's published month and day
+as a tentative date, shifting the year by the difference in conference editions
+(one year for 2027). This also preserves deadlines that fall in the year before
+the conference. Label the estimate clearly and retain its official 2026 source.
 If a future edition has not been announced, keep the latest confirmed edition.
-For an announced edition with an unpublished deadline, use the previous
-edition's published date as a clearly labeled reference when available. Keep
-its actual year and set `previous_edition` to the conference edition it belongs
-to. If neither edition has a published date, show `N/A`.
+If neither edition has a published date, show `N/A`.
 
 ## Dates and deadlines
 
 Keep `start_date` quoted, for example `"2027-06-27"`; use `""` if it is unknown.
 The `dates` field can describe a partial announcement, such as a month without
-exact days. A deadline's `date` supplies a precise countdown and must include the
+exact days. If no current event dates are available, use the 2026 range shifted
+to the current edition, label it `tentative, based on 2026`, and set `start_date`
+and `end_date` to that range for sorting. Preserve any official partial dates
+that conflict with the old range, such as RLC's separate early/late August events.
+A deadline's `date` supplies a precise countdown and must include the
 official cutoff time and timezone offset. Use `date: null` if either is unknown.
 Its `display` field can still show a confirmed calendar date, which is used for
 sorting, status, and a whole-day countdown. Without a confirmed cutoff, show
 days remaining or `Due today`, using the AoE calendar day; do not invent hours
 or minutes. The date stays upcoming until that day has ended everywhere.
-Do not add explanatory notes about missing cutoff times. Show a decision date
-directly, or `display: N/A` if unavailable.
+Do not add explanatory notes about missing cutoff times. Apply the same 2026
+tentative fallback to missing decision dates.
 
 Keep the main paper track first and name it `Main track` consistently. The
-badge considers submission deadlines across all current tracks: any upcoming
+badge considers submission deadlines across all current tracks: any confirmed upcoming
 deadline keeps the card open, with `Closing soon` for a deadline within seven
 days. Show `Closed` only when all current submission deadlines have passed.
-Unresolved deadlines with none upcoming show `Details pending`. Decisions and
-previous-edition reference dates do not determine the badge.
+When only tentative submissions remain, show `Tentative`, including when their
+estimated dates have passed; an estimate cannot confirm that submissions closed.
+Other unresolved deadlines with none upcoming show `Details pending`. Decisions
+and historical references do not determine the badge.
 
 Keep the cards compact: list the main paper deadlines and decisions, plus a
 small selection of important paper tracks, such as AAMAS's AAAI Fast Track.
 Omit exhaustive program categories and explanatory commentary. Use a specific
 official call for every linked track.
+
+For tentative deadlines, set `date: null`, put the estimated current date in
+`display`, and add `tentative_from: 2026`. Add a deadline-level `source` if its
+2026 source differs from the track's source. These dates show a linked
+`Tentative · 2026` label, take part in upcoming deadline sorting, and use an
+approximate whole-day countdown. They do not trigger `Closing soon` or crossed-out
+dates. Replace the estimate and remove `tentative_from` and the fallback `source`
+when the official current date becomes available.
 
 For historical references, set `date: null`, keep the actual old date in
 `display`, and add `previous_edition: 2026` (using the relevant edition year).

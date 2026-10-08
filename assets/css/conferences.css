@@ -388,15 +388,9 @@ html[data-theme="dark"] .conference-deadlines {
  * Keep these adjustments separate from the journal cards that share this file.
  */
 #conference-browser .conf-toolbar {
-  display: flex;
-  flex-wrap: wrap;
   gap: 0.6rem;
   padding-bottom: 1rem;
   margin-bottom: 1.1rem;
-}
-
-#conference-browser .site-filter {
-  flex: 1 1 220px;
 }
 
 #conference-browser .conf-tag-filters {
@@ -487,10 +481,6 @@ html[data-theme="dark"] .conference-deadlines {
 }
 
 @media (max-width: 767px) {
-  #conference-browser .conf-toolbar {
-    display: grid;
-  }
-
   #conference-browser .conf-sort-wrap {
     margin-left: 0;
   }

@@ -9,7 +9,7 @@ num: 160
 tags: ["RL", "ML"]
 timezone: "N/A"
 id: "rlc27"
-verified_on: "2026-10-04"
+verified_on: "2026-10-07"
 sources:
   - "https://rl-conference.cc/2026/index.html"
   - "https://rl-conference.cc/2026/callforpapers.html"
@@ -20,17 +20,17 @@ tracks:
     deadlines:
       - label: "Abstract"
         date: null
-        display: "Mar 5, 2026"
+        display: "Mar 5, 2027"
         decision: false
-        previous_edition: 2026
+        tentative_from: 2026
       - label: "Paper"
         date: null
-        display: "Mar 5, 2026"
+        display: "Mar 5, 2027"
         decision: false
-        previous_edition: 2026
+        tentative_from: 2026
       - label: "Decision"
         date: null
-        display: "May 5, 2026"
+        display: "May 5, 2027"
         decision: true
-        previous_edition: 2026
+        tentative_from: 2026
 ---

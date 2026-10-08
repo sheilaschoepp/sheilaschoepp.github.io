@@ -81,10 +81,11 @@ nav_order: 3
                 {% if track.source %}<a href="{{ track.source | escape }}" target="_blank" rel="noopener noreferrer">{{ track.name | escape }}</a>{% else %}{{ track.name | escape }}{% endif %}
               </div>
               {% for deadline in track.deadlines %}
-                <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>
+                <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.tentative_from %} data-tentative-from="{{ deadline.tentative_from | escape }}"{% elsif deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>
                   <span class="conf-deadline-label">{{ deadline.label | escape }}</span>
                   <span class="conf-deadline-date">
                     {{ deadline.display | default: 'N/A' | escape }}
+                    {% if deadline.tentative_from %}<small class="conf-deadline-reference"><a href="{{ deadline.source | default: track.source | escape }}" target="_blank" rel="noopener noreferrer" title="Tentative date based on the {{ deadline.tentative_from | escape }} edition">Tentative · {{ deadline.tentative_from | escape }}</a></small>{% endif %}
                     {% if deadline.previous_edition %}<small class="conf-deadline-reference">{{ deadline.previous_edition | escape }} edition</small>{% endif %}
                   </span>
                   {% if deadline.previous_edition == nil %}

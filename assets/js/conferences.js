@@ -56,13 +56,14 @@ function deadlineState(row, now) {
 }
 
 function deadlineIsUrgent(row, now) {
+  if (row.dataset.tentativeFrom) return false;
   if (deadlineState(row, now) !== "upcoming") return false;
   const cutoff = Date.parse(row.dataset.deadline);
   return Number.isFinite(cutoff) ? cutoff - now <= URGENT : calendarDaysRemaining(row, now) <= URGENT / DAY;
 }
 
 function deadlineSortKey(row, now) {
-  // Sort by the published calendar day so equal dates tie alphabetically.
+  // Sort by the displayed calendar day, including tentative dates.
   return deadlineState(row, now) === "upcoming" ? publishedDay(row) : Infinity;
 }
 
@@ -72,24 +73,27 @@ function updateCard(card, now) {
     const time = row.dataset.previousEdition ? NaN : Date.parse(row.dataset.deadline);
     const diff = time - now;
     const state = deadlineState(row, now);
-    row.classList.toggle("is-passed", state === "passed");
+    row.classList.toggle("is-passed", state === "passed" && !row.dataset.tentativeFrom);
     const countdown = row.querySelector('[data-role="countdown"]');
     if (countdown) {
       const days = calendarDaysRemaining(row, now);
       countdown.textContent = state !== "upcoming" ? "" : Number.isFinite(time) ? formatCountdown(diff) : formatCalendarCountdown(days);
+      if (row.dataset.tentativeFrom && countdown.textContent) countdown.textContent = `≈ ${countdown.textContent}`;
       const urgent = deadlineIsUrgent(row, now);
       countdown.classList.toggle("is-urgent", urgent);
       countdown.classList.toggle("is-open", state === "upcoming" && !urgent);
     }
   }
   card.dataset.sortKey = String(Math.min(...submissions.map((row) => deadlineSortKey(row, now))));
-  const states = submissions.map((row) => deadlineState(row, now));
+  const confirmed = submissions.filter((row) => !row.dataset.tentativeFrom);
+  const tentative = submissions.some((row) => row.dataset.tentativeFrom);
+  const states = confirmed.map((row) => deadlineState(row, now));
   const upcoming = states.includes("upcoming");
-  const closed = states.length > 0 && states.every((state) => state === "passed");
+  const closed = !tentative && states.length > 0 && states.every((state) => state === "passed");
   const badge = card.querySelector('[data-role="status"]');
   badge.classList.remove("status-open", "status-urgent", "status-closed");
   const urgent = submissions.some((row) => deadlineIsUrgent(row, now));
-  badge.textContent = upcoming ? (urgent ? "Closing soon" : "Upcoming") : closed ? "Closed" : "Details pending";
+  badge.textContent = upcoming ? (urgent ? "Closing soon" : "Upcoming") : tentative ? "Tentative" : closed ? "Closed" : "Details pending";
   badge.classList.add(upcoming ? (urgent ? "status-urgent" : "status-open") : "status-closed");
 }
 
