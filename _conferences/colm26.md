@@ -20,10 +20,12 @@ tracks:
     source: "https://colm.cc/Conferences/2026/CallForPapers"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-03-26T23:59:00-12:00"
         display: "Mar 26, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-03-31T23:59:00-12:00"
         display: "Mar 31, 2026"
         decision: false

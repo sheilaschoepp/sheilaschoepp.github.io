@@ -23,6 +23,7 @@ tracks:
     source: "https://ecai2027.org/#deadlines-section"
     deadlines:
       - label: "Paper"
+        submission_type: paper
         date: null
         display: "Apr 14, 2027"
         decision: false

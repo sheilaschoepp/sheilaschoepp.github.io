@@ -20,6 +20,7 @@ tracks:
   - name: "Main track"
     deadlines:
       - label: "Paper"
+        submission_type: paper
         date: null
         display: "Mar 1, 2027"
         decision: false

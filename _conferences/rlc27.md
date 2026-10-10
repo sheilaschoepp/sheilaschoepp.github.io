@@ -19,11 +19,13 @@ tracks:
     source: "https://rl-conference.cc/2026/callforpapers.html"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: null
         display: "Mar 5, 2027"
         decision: false
         tentative_from: 2026
       - label: "Paper"
+        submission_type: paper
         date: null
         display: "Mar 5, 2027"
         decision: false

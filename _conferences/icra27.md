@@ -21,6 +21,7 @@ tracks:
   - name: "Main track"
     deadlines:
       - label: "Paper"
+        submission_type: paper
         date: "2026-09-16T23:59:00-08:00"
         display: "Sep 16, 2026"
         decision: false

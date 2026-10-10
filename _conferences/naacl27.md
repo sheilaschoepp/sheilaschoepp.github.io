@@ -24,6 +24,7 @@ tracks:
   - name: "Main track"
     deadlines:
       - label: "ARR submission"
+        submission_type: paper
         date: "2026-10-12T23:59:00-12:00"
         display: "Oct 12, 2026"
         decision: false

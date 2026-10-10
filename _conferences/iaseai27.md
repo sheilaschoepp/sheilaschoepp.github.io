@@ -22,7 +22,13 @@ tracks:
   - name: "Main track"
     source: "https://docs.google.com/document/d/e/2PACX-1vR_hLJSEv5WZF66P2HPg8zvezNttnaHvuekFJGdam3gYBMJu57ma2iKeXJKl_DHF4oCuJZ7CLc-IE3d/pub"
     deadlines:
-      - label: "Paper and abstract"
+      - label: "Abstract"
+        submission_type: abstract
+        date: null
+        display: "Oct 5, 2026"
+        decision: false
+      - label: "Paper"
+        submission_type: paper
         date: null
         display: "Oct 5, 2026"
         decision: false

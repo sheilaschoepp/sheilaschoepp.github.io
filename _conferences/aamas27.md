@@ -25,10 +25,12 @@ tracks:
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-10-01T23:59:59-12:00"
         display: "Oct 1, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-10-08T23:59:59-12:00"
         display: "Oct 8, 2026"
         decision: false

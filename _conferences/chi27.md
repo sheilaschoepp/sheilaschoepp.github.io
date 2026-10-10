@@ -26,6 +26,7 @@ tracks:
     source: "https://chi2027.acm.org/authors/papers/"
     deadlines:
       - label: "Paper"
+        submission_type: paper
         date: "2026-09-10T23:59:59-12:00"
         display: "Sep 10, 2026"
         decision: false

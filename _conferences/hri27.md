@@ -28,10 +28,12 @@ tracks:
     source: "https://humanrobotinteraction.org/2027/full-papers/"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-09-11T23:59:00-12:00"
         display: "Sep 11, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-09-18T23:59:00-12:00"
         display: "Sep 18, 2026"
         decision: false

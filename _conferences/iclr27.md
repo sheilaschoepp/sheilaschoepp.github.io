@@ -22,10 +22,12 @@ tracks:
     source: "https://iclr.cc/Conferences/2027/CallForPapers"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-09-18T23:59:59-12:00"
         display: "Sep 18, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-09-25T23:59:59-12:00"
         display: "Sep 25, 2026"
         decision: false

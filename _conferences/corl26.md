@@ -22,10 +22,12 @@ tracks:
     source: "https://www.corl.org/contributions/call-for-papers"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-05-25T23:59:00-12:00"
         display: "May 25, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-05-28T23:59:00-12:00"
         display: "May 28, 2026"
         decision: false

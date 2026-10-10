@@ -24,6 +24,7 @@ tracks:
     source: "https://2026.emnlp.org/calls/main_conference_papers/"
     deadlines:
       - label: "ARR submission"
+        submission_type: paper
         date: "2026-05-25T23:59:00-12:00"
         display: "May 25, 2026"
         decision: false

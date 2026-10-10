@@ -20,10 +20,12 @@ tracks:
     source: "https://virtual.aistats.org/Conferences/2027/CallForPapers"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-09-29T23:59:00-12:00"
         display: "Sep 29, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-10-06T23:59:00-12:00"
         display: "Oct 6, 2026"
         decision: false

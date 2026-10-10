@@ -8,9 +8,11 @@ README has no front matter and is not a conference entry.
 Edit a file to change a conference, duplicate one to add a conference, or remove
 one to remove it. Keep one file per conference series. Update `shortname`,
 `name`, `website`, location, dates, tags, and tracks when adding an entry.
-The page defaults to the next submission deadline, with alphabetical ties and
-an alphabetical fallback before JavaScript runs. The legacy `num` field is not
-used for ordering. Visitors can also choose another sort order.
+The page defaults to the main-track paper submission deadline, falling back to
+the main-track abstract deadline only when the paper has no usable date. Ties
+are alphabetical, with an alphabetical fallback before JavaScript runs. The
+legacy `num` field is not used for ordering. Visitors can also choose another
+sort order.
 
 ## Sources and updates
 
@@ -45,27 +47,37 @@ or minutes. The date stays upcoming until that day has ended everywhere.
 Do not add explanatory notes about missing cutoff times. Apply the same 2026
 tentative fallback to missing decision dates.
 
-Keep the main paper track first and name it `Main track` consistently. The
-badge considers submission deadlines across all current tracks: any confirmed upcoming
-deadline keeps the card open, with `Closing soon` for a deadline within seven
-days. Show `Closed` only when all current submission deadlines have passed.
-When only tentative submissions remain, show `Tentative`, including when their
-estimated dates have passed; an estimate cannot confirm that submissions closed.
-Other unresolved deadlines with none upcoming show `Details pending`. Decisions
-and historical references do not determine the badge.
+Keep the main paper track first and name it `Main track` consistently. Mark its
+primary paper deadline with `submission_type: paper`, including ARR submissions,
+extended abstracts, or combined paper-and-abstract submissions. Mark a separate
+abstract deadline with `submission_type: abstract`. Do not mark registration,
+commitment, resubmission, supplementary, decision, or other-track deadlines.
+
+The badge and default sorting use the main-track paper deadline when it has a
+usable timestamp or calendar date, including a tentative date. If that date is
+unavailable, use the main-track abstract deadline instead. A passed paper
+deadline still determines the badge; it does not trigger the abstract fallback.
+Show `Details pending` if neither deadline has a usable date. A confirmed future
+deadline shows `Upcoming`, or `Closing soon` within seven days; a confirmed
+passed deadline shows `Closed`. A selected tentative date shows `Tentative`,
+including after its estimate has passed, because an estimate cannot confirm
+closure. Decisions and historical references do not determine the badge.
 
 Keep the cards compact: list the main paper deadlines and decisions, plus a
 small selection of important paper tracks, such as AAMAS's AAAI Fast Track.
-Omit exhaustive program categories and explanatory commentary. Use a specific
-official call for every linked track.
+Other tracks remain visible for reference, with their individual countdowns,
+but do not determine the badge or default sort order. Omit exhaustive program
+categories and explanatory commentary. Use a specific official call for every
+linked track.
 
 For tentative deadlines, set `date: null`, put the estimated current date in
 `display`, and add `tentative_from: 2026`. Add a deadline-level `source` if its
 2026 source differs from the track's source. These dates show a linked
-`Tentative · 2026` label, take part in upcoming deadline sorting, and use an
-approximate whole-day countdown. They do not trigger `Closing soon` or crossed-out
-dates. Replace the estimate and remove `tentative_from` and the fallback `source`
-when the official current date becomes available.
+`Tentative · 2026` label and use an approximate whole-day countdown. A future
+estimate takes part in deadline sorting only when selected as the main-track
+paper or fallback abstract date. Estimates do not trigger `Closing soon` or
+crossed-out dates. Replace the estimate and remove `tentative_from` and the
+fallback `source` when the official current date becomes available.
 
 For historical references, set `date: null`, keep the actual old date in
 `display`, and add `previous_edition: 2026` (using the relevant edition year).

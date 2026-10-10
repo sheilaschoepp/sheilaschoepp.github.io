@@ -18,10 +18,12 @@ tracks:
   - name: "Main track"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-04-10T23:59:00-12:00"
         display: "Apr 10, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-04-15T23:59:00-12:00"
         display: "Apr 15, 2026"
         decision: false

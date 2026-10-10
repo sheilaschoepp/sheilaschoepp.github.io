@@ -67,8 +67,15 @@ function deadlineSortKey(row, now) {
   return deadlineState(row, now) === "upcoming" ? publishedDay(row) : Infinity;
 }
 
+function determiningDeadline(card, now) {
+  const candidates = ["paper", "abstract"].map((type) =>
+    card.querySelector(`.conf-deadline-row[data-kind="submission"][data-main-submission="${type}"]:not([data-previous-edition])`)
+  );
+  // A passed paper date still determines closure; only an unknown date falls back.
+  return candidates.find((row) => deadlineState(row, now) !== "unknown") || null;
+}
+
 function updateCard(card, now) {
-  const submissions = [...card.querySelectorAll('.conf-deadline-row[data-kind="submission"]')].filter((row) => !row.dataset.previousEdition);
   for (const row of card.querySelectorAll(".conf-deadline-row")) {
     const time = row.dataset.previousEdition ? NaN : Date.parse(row.dataset.deadline);
     const diff = time - now;
@@ -84,15 +91,15 @@ function updateCard(card, now) {
       countdown.classList.toggle("is-open", state === "upcoming" && !urgent);
     }
   }
-  card.dataset.sortKey = String(Math.min(...submissions.map((row) => deadlineSortKey(row, now))));
-  const confirmed = submissions.filter((row) => !row.dataset.tentativeFrom);
-  const tentative = submissions.some((row) => row.dataset.tentativeFrom);
-  const states = confirmed.map((row) => deadlineState(row, now));
-  const upcoming = states.includes("upcoming");
-  const closed = !tentative && states.length > 0 && states.every((state) => state === "passed");
+  const determining = determiningDeadline(card, now);
+  card.dataset.sortKey = String(deadlineSortKey(determining, now));
+  const state = deadlineState(determining, now);
+  const tentative = Boolean(determining?.dataset.tentativeFrom);
+  const upcoming = state === "upcoming" && !tentative;
+  const closed = state === "passed" && !tentative;
   const badge = card.querySelector('[data-role="status"]');
   badge.classList.remove("status-open", "status-urgent", "status-closed");
-  const urgent = submissions.some((row) => deadlineIsUrgent(row, now));
+  const urgent = determining && deadlineIsUrgent(determining, now);
   badge.textContent = upcoming ? (urgent ? "Closing soon" : "Upcoming") : tentative ? "Tentative" : closed ? "Closed" : "Details pending";
   badge.classList.add(upcoming ? (urgent ? "status-urgent" : "status-open") : "status-closed");
 }

@@ -25,6 +25,7 @@ tracks:
     source: "https://2027.aclweb.org/calls/main/"
     deadlines:
       - label: "ARR submission"
+        submission_type: paper
         date: "2027-01-04T23:59:00-12:00"
         display: "Jan 4, 2027"
         decision: false

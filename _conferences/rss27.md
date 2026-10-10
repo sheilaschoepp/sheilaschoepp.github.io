@@ -19,6 +19,7 @@ tracks:
   - name: "Main track"
     deadlines:
       - label: "Extended abstract"
+        submission_type: paper
         date: "2026-12-04T23:59:00-12:00"
         display: "Dec 4, 2026"
         decision: false

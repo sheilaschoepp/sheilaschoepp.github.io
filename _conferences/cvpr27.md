@@ -28,6 +28,7 @@ tracks:
         display: "Nov 10, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-11-16T23:59:59-12:00"
         display: "Nov 16, 2026"
         decision: false

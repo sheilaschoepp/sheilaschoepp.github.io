@@ -23,10 +23,12 @@ tracks:
     source: "https://icaps27.icaps-conference.org/calls/cfp/"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-12-07T23:59:00-12:00"
         display: "Dec 7, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-12-14T23:59:00-12:00"
         display: "Dec 14, 2026"
         decision: false

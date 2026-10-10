@@ -20,6 +20,7 @@ tracks:
   - name: "Main track"
     deadlines:
       - label: "Extended abstract"
+        submission_type: paper
         date: null
         display: "Jan 20, 2027"
         decision: false

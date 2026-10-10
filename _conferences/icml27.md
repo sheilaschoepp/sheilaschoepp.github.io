@@ -23,11 +23,13 @@ tracks:
     source: "https://icml.cc/Conferences/2026/Dates"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: null
         display: "Jan 23, 2027"
         decision: false
         tentative_from: 2026
       - label: "Paper"
+        submission_type: paper
         date: null
         display: "Jan 28, 2027"
         decision: false

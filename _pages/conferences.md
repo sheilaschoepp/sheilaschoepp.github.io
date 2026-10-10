@@ -2,7 +2,7 @@
 layout: page
 title: conferences
 permalink: /conferences/
-description: Conferences listed by submission deadline, then alphabetically.
+description: Status and sorting follow the main-track paper deadline, or the abstract deadline when no paper date is available.
 nav: false
 nav_order: 3
 ---
@@ -81,7 +81,7 @@ nav_order: 3
                 {% if track.source %}<a href="{{ track.source | escape }}" target="_blank" rel="noopener noreferrer">{{ track.name | escape }}</a>{% else %}{{ track.name | escape }}{% endif %}
               </div>
               {% for deadline in track.deadlines %}
-                <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.tentative_from %} data-tentative-from="{{ deadline.tentative_from | escape }}"{% elsif deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>
+                <div class="conf-deadline-row" data-kind="{% if deadline.decision %}decision{% else %}submission{% endif %}"{% if track.name == 'Main track' and deadline.decision != true and deadline.submission_type %} data-main-submission="{{ deadline.submission_type | escape }}"{% endif %}{% if deadline.previous_edition %} data-previous-edition="{{ deadline.previous_edition | escape }}"{% else %} data-sort-date="{{ deadline.display | date: '%Y-%m-%d' | escape }}"{% if deadline.tentative_from %} data-tentative-from="{{ deadline.tentative_from | escape }}"{% elsif deadline.date and deadline.date != empty %} data-deadline="{{ deadline.date | escape }}"{% endif %}{% endif %}>
                   <span class="conf-deadline-label">{{ deadline.label | escape }}</span>
                   <span class="conf-deadline-date">
                     {{ deadline.display | default: 'N/A' | escape }}

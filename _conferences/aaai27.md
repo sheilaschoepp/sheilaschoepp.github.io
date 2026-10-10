@@ -20,10 +20,12 @@ tracks:
     source: "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
     deadlines:
       - label: "Abstract"
+        submission_type: abstract
         date: "2026-07-21T23:59:00-12:00"
         display: "Jul 21, 2026"
         decision: false
       - label: "Paper"
+        submission_type: paper
         date: "2026-07-28T23:59:00-12:00"
         display: "Jul 28, 2026"
         decision: false
