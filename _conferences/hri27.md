@@ -10,7 +10,7 @@ num: 50
 tags: ["RO", "HCI"]
 timezone: "UTC−12"
 id: "hri27"
-verified_on: "2026-10-04"
+verified_on: "2026-10-11"
 sources:
   - "https://humanrobotinteraction.org/2027/"
   - "https://humanrobotinteraction.org/2027/full-papers/"
@@ -40,5 +40,16 @@ tracks:
       - label: "Decision"
         date: "2026-11-30T23:59:00-12:00"
         display: "Nov 30, 2026"
+        decision: true
+  - name: "Late Breaking Reports"
+    source: "https://humanrobotinteraction.org/2027/late-breaking-reports/"
+    deadlines:
+      - label: "Paper"
+        date: "2026-12-08T23:59:00-12:00"
+        display: "Dec 8, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2027-01-13T23:59:00-12:00"
+        display: "Jan 13, 2027"
         decision: true
 ---

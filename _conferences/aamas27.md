@@ -19,7 +19,7 @@ sources:
   - "https://cyprusconferences.org/aamas2026/call-for-demonstrations/"
   - "https://warwick.ac.uk/fac/sci/dcs/aamas2027/"
   - "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
-verified_on: "2026-10-04"
+verified_on: "2026-10-11"
 tracks:
   - name: "Main track"
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
@@ -48,5 +48,28 @@ tracks:
       - label: "Decision"
         date: "2027-02-01T23:59:59-12:00"
         display: "Feb 1, 2027"
+        decision: true
+  - name: "Blue Sky Ideas"
+    source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-blue-sky-ideas/"
+    deadlines:
+      - label: "OpenReview author registration"
+        date: "2026-10-20T23:59:59-12:00"
+        display: "Oct 20, 2026"
+        decision: false
+      - label: "Abstract"
+        date: "2026-11-05T23:59:59-12:00"
+        display: "Nov 5, 2026"
+        decision: false
+      - label: "Paper"
+        date: "2026-11-12T23:59:59-12:00"
+        display: "Nov 12, 2026"
+        decision: false
+      - label: "Early decision"
+        date: "2026-11-30T23:59:59-12:00"
+        display: "Nov 30, 2026"
+        decision: true
+      - label: "Final decision"
+        date: "2027-01-21T23:59:59-12:00"
+        display: "Jan 21, 2027"
         decision: true
 ---

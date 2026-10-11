@@ -14,7 +14,7 @@ sources:
   - "https://roboticsconference.org/2026/information/cfw/"
   - "https://roboticsconference.org/2026/program/pioneers/"
   - "https://roboticsconference.org/2026/program/pathways/"
-verified_on: "2026-10-04"
+verified_on: "2026-10-11"
 tracks:
   - name: "Main track"
     deadlines:
@@ -26,6 +26,10 @@ tracks:
       - label: "Stage 1 decision"
         date: "2027-02-05T23:59:00-12:00"
         display: "Feb 5, 2027"
+        decision: true
+      - label: "Stage 2 decision"
+        date: "2027-02-26T23:59:00-12:00"
+        display: "Feb 26, 2027"
         decision: true
     source: "https://roboticsconference.org/information/cfp/"
   - name: "Invited final submission"

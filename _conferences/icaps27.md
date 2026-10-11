@@ -12,12 +12,13 @@ id: "icaps27"
 sources:
   - "https://icaps27.icaps-conference.org/"
   - "https://icaps27.icaps-conference.org/calls/cfp/"
+  - "https://icaps27.icaps-conference.org/calls/special_tracks/"
   - "https://icaps26.icaps-conference.org/calls/workshops/"
   - "https://icaps26.icaps-conference.org/calls/dc_call/"
   - "https://icaps26.icaps-conference.org/calls/launchpad_call/"
   - "https://icaps26.icaps-conference.org/calls/demos/"
   - "https://icaps26.icaps-conference.org/calls/previously_published_research/"
-verified_on: "2026-10-04"
+verified_on: "2026-10-11"
 tracks:
   - name: "Main track"
     source: "https://icaps27.icaps-conference.org/calls/cfp/"
@@ -29,6 +30,21 @@ tracks:
         decision: false
       - label: "Paper"
         submission_type: paper
+        date: "2026-12-14T23:59:00-12:00"
+        display: "Dec 14, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Feb 26, 2027"
+        decision: true
+  - name: "Planning Under a Different Name"
+    source: "https://icaps27.icaps-conference.org/calls/special_tracks/"
+    deadlines:
+      - label: "Abstract"
+        date: "2026-12-07T23:59:00-12:00"
+        display: "Dec 7, 2026"
+        decision: false
+      - label: "Paper"
         date: "2026-12-14T23:59:00-12:00"
         display: "Dec 14, 2026"
         decision: false

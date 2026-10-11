@@ -17,7 +17,7 @@ sources:
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-dc-paprs/"
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-demos/"
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-competitions-and-challenges/"
-verified_on: "2026-10-04"
+verified_on: "2026-10-11"
 tracks:
   - name: "Main track"
     source: "https://ecai2027.org/#deadlines-section"
@@ -27,6 +27,10 @@ tracks:
         date: null
         display: "Apr 14, 2027"
         decision: false
+      - label: "Phase 1 decision"
+        date: null
+        display: "May 15, 2027"
+        decision: true
       - label: "Decision"
         date: null
         display: "Jul 15, 2027"
