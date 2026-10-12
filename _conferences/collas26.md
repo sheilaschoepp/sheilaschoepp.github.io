@@ -10,12 +10,14 @@ num: 170
 tags: ["ML"]
 timezone: "UTC−12"
 id: "collas26"
-verified_on: "2026-10-04"
+verified_on: "2026-10-12"
 sources:
+  - "https://lifelong-ml.cc/Conferences/2026/call"
   - "https://lifelong-ml.cc/Conferences/2026/call_for_non_archival_track"
   - "https://lifelong-ml.cc/"
 tracks:
   - name: "Main track"
+    source: "https://lifelong-ml.cc/Conferences/2026/call"
     deadlines:
       - label: "Abstract"
         submission_type: abstract
@@ -30,5 +32,16 @@ tracks:
       - label: "Decision"
         date: "2026-06-24T23:59:00-12:00"
         display: "Jun 24, 2026"
+        decision: true
+  - name: "Work-in-Progress (non-archival)"
+    source: "https://lifelong-ml.cc/Conferences/2026/call_for_non_archival_track"
+    deadlines:
+      - label: "Extended abstract"
+        date: "2026-07-01T23:59:00-12:00"
+        display: "Jul 1, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "N/A"
         decision: true
 ---

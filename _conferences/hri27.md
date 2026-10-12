@@ -10,19 +10,14 @@ num: 50
 tags: ["RO", "HCI"]
 timezone: "UTC−12"
 id: "hri27"
-verified_on: "2026-10-11"
+verified_on: "2026-10-12"
 sources:
   - "https://humanrobotinteraction.org/2027/"
   - "https://humanrobotinteraction.org/2027/full-papers/"
   - "https://humanrobotinteraction.org/2027/short-contributions/"
   - "https://humanrobotinteraction.org/2027/alt-hri/"
   - "https://humanrobotinteraction.org/2027/workshops-tutorials/"
-  - "https://humanrobotinteraction.org/2027/videos-demos/"
-  - "https://humanrobotinteraction.org/2027/industry-white-papers/"
-  - "https://humanrobotinteraction.org/2027/student-design-competition/"
-  - "https://hripioneers.org/"
   - "https://humanrobotinteraction.org/2027/late-breaking-reports/"
-  - "https://humanrobotinteraction.org/2027/student-volunteer/"
 tracks:
   - name: "Main track"
     source: "https://humanrobotinteraction.org/2027/full-papers/"
@@ -41,6 +36,28 @@ tracks:
         date: "2026-11-30T23:59:00-12:00"
         display: "Nov 30, 2026"
         decision: true
+  - name: "Short Contributions"
+    source: "https://humanrobotinteraction.org/2027/short-contributions/"
+    deadlines:
+      - label: "Paper"
+        date: "2026-10-01T23:59:00-12:00"
+        display: "Oct 1, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-12-02T23:59:00-12:00"
+        display: "Dec 2, 2026"
+        decision: true
+  - name: "alt.HRI"
+    source: "https://humanrobotinteraction.org/2027/alt-hri/"
+    deadlines:
+      - label: "Paper"
+        date: "2026-10-01T23:59:00-12:00"
+        display: "Oct 1, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-12-02T23:59:00-12:00"
+        display: "Dec 2, 2026"
+        decision: true
   - name: "Late Breaking Reports"
     source: "https://humanrobotinteraction.org/2027/late-breaking-reports/"
     deadlines:
@@ -51,5 +68,16 @@ tracks:
       - label: "Decision"
         date: "2027-01-13T23:59:00-12:00"
         display: "Jan 13, 2027"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://humanrobotinteraction.org/2027/workshops-tutorials/"
+    deadlines:
+      - label: "Proposal"
+        date: "2026-10-05T23:59:00-12:00"
+        display: "Oct 5, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-11-19T23:59:00-12:00"
+        display: "Nov 19, 2026"
         decision: true
 ---

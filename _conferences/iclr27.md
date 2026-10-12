@@ -10,13 +10,12 @@ num: 70
 tags: ["ML"]
 timezone: "UTC−12"
 id: "iclr27"
-verified_on: "2026-10-04"
+verified_on: "2026-10-12"
 sources:
   - "https://iclr.cc/Conferences/2027"
   - "https://iclr.cc/Conferences/2027/Dates"
   - "https://iclr.cc/Conferences/2027/CallForPapers"
   - "https://iclr.cc/Conferences/2027/CallForWorkshops"
-  - "https://iclr.cc/Conferences/2026/CallForBlogPosts"
 tracks:
   - name: "Main track"
     source: "https://iclr.cc/Conferences/2027/CallForPapers"
@@ -34,5 +33,16 @@ tracks:
       - label: "Decision"
         date: null
         display: "Dec 16, 2026"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://iclr.cc/Conferences/2027/CallForWorkshops"
+    deadlines:
+      - label: "Proposal"
+        date: "2026-10-09T23:59:00-12:00"
+        display: "Oct 9, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Nov 29, 2026"
         decision: true
 ---

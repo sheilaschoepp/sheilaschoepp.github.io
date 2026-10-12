@@ -1,7 +1,7 @@
 ---
 shortname: "ICRA 2027"
 name: "IEEE International Conference on Robotics and Automation"
-location: "Seoul, Republic of Korea"
+location: "Coex, Seoul, Republic of Korea"
 dates: "May 24-28, 2027"
 start_date: "2027-05-24"
 website: "https://2027.ieee-icra.org/"
@@ -12,11 +12,9 @@ id: "icra27"
 sources:
   - "https://2027.ieee-icra.org/"
   - "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
+  - "https://2027.ieee-icra.org/attend/venue-conference-center/"
   - "https://2027.ieee-icra.org/contribute/call-for-workshop-and-tutorial/"
-  - "https://2027.ieee-icra.org/contribute/call-for-competition/"
-  - "https://2027.ieee-icra.org/contribute/call-for-art-in-robotics/"
-  - "https://2026.ieee-icra.org/announcements/call-for-late-breaking-results/"
-verified_on: "2026-10-04"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
     deadlines:
@@ -30,4 +28,19 @@ tracks:
         display: "Jan 31, 2027"
         decision: true
     source: "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
+  - name: "Workshop proposals"
+    source: "https://2027.ieee-icra.org/contribute/call-for-workshop-and-tutorial/"
+    deadlines:
+      - label: "Pre-proposal"
+        date: null
+        display: "Sep 1, 2026"
+        decision: false
+      - label: "Invited proposal"
+        date: null
+        display: "Nov 2, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Jan 31, 2027"
+        decision: true
 ---

@@ -17,9 +17,10 @@ sources:
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-demos/"
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-dc-paprs/"
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-competitions-and-challenges/"
-verified_on: "2026-10-04"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
+    source: "https://2027.ijcai.org/"
     deadlines:
       - label: "Abstract"
         submission_type: abstract
@@ -34,5 +35,18 @@ tracks:
       - label: "Decision"
         date: "2027-04-21T23:59:00-12:00"
         display: "Apr 21, 2027"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://2026.ijcai.org/ijcai-ecai-2026-call-for-workshop-proposals/"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Feb 6, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Mar 6, 2027"
+        tentative_from: 2026
         decision: true
 ---

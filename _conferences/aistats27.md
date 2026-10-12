@@ -2,7 +2,7 @@
 shortname: "AISTATS 2027"
 name: "International Conference on Artificial Intelligence and Statistics"
 location: "Montreal, Canada"
-dates: "May 3–6, 2027"
+dates: "May 3 workshops; May 4–6 main conference, 2027"
 start_date: "2027-05-03"
 end_date: "2027-05-06"
 website: "https://virtual.aistats.org/Conferences/2027"
@@ -10,7 +10,7 @@ num: 190
 tags: ["ML"]
 timezone: "UTC−12"
 id: "aistats27"
-verified_on: "2026-10-04"
+verified_on: "2026-10-12"
 sources:
   - "https://virtual.aistats.org/Conferences/2027/CallForWorkshops"
   - "https://virtual.aistats.org/Conferences/2027/CallForPapers"
@@ -33,4 +33,11 @@ tracks:
         date: "2027-01-20T23:59:00-12:00"
         display: "Jan 20, 2027"
         decision: true
+  - name: "Workshop proposals"
+    source: "https://virtual.aistats.org/Conferences/2027/CallForWorkshops"
+    deadlines:
+      - label: "Proposal"
+        date: "2026-10-30T23:59:00-12:00"
+        display: "Oct 30, 2026"
+        decision: false
 ---

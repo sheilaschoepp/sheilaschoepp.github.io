@@ -9,7 +9,7 @@ num: 160
 tags: ["RL", "ML"]
 timezone: "N/A"
 id: "rlc27"
-verified_on: "2026-10-07"
+verified_on: "2026-10-12"
 sources:
   - "https://rl-conference.cc/2026/index.html"
   - "https://rl-conference.cc/2026/callforpapers.html"
@@ -33,6 +33,19 @@ tracks:
       - label: "Decision"
         date: null
         display: "May 5, 2027"
+        decision: true
+        tentative_from: 2026
+  - name: "Workshop proposals"
+    source: "https://rl-conference.cc/2026/call_for_workshops.html"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Mar 13, 2027"
+        decision: false
+        tentative_from: 2026
+      - label: "Decision"
+        date: null
+        display: "Apr 3, 2027"
         decision: true
         tentative_from: 2026
 ---

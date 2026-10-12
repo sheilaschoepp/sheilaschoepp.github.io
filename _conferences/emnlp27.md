@@ -7,12 +7,13 @@ start_date: ""
 website: "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
 num: 240
 tags: ["NLP"]
-timezone: "N/A"
+timezone: "UTC−12"
 id: "emnlp27"
 sources:
   - "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
   - "https://2026.emnlp.org/calls/main_conference_papers/"
-verified_on: "2026-10-11"
+  - "https://2026.emnlp.org/calls/industry_track/"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
     source: "https://2026.emnlp.org/calls/main_conference_papers/"
@@ -23,14 +24,33 @@ tracks:
         display: "May 25, 2027"
         tentative_from: 2026
         decision: false
-      - label: "Commitment"
+      - label: "Decision"
         date: null
-        display: "Aug 2, 2027"
+        display: "Aug 20, 2027"
+        tentative_from: 2026
+        decision: true
+  - name: "Industry Track"
+    source: "https://2026.emnlp.org/calls/industry_track/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Jun 16, 2027"
         tentative_from: 2026
         decision: false
       - label: "Decision"
         date: null
         display: "Aug 20, 2027"
         tentative_from: 2026
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
+    deadlines:
+      - label: "Proposal"
+        date: "2026-09-04T23:59:00-12:00"
+        display: "Sep 4, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-10-02T23:59:00-12:00"
+        display: "Oct 2, 2026"
         decision: true
 ---

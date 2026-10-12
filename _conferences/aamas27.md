@@ -1,7 +1,7 @@
 ---
 shortname: "AAMAS 2027"
 name: "International Conference on Autonomous Agents and Multiagent Systems"
-location: "Hanoi, Vietnam"
+location: "JW Marriott Hotel, Hanoi, Vietnam"
 dates: "May 3-7, 2027"
 start_date: "2027-05-03"
 website: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/"
@@ -19,7 +19,7 @@ sources:
   - "https://cyprusconferences.org/aamas2026/call-for-demonstrations/"
   - "https://warwick.ac.uk/fac/sci/dcs/aamas2027/"
   - "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
-verified_on: "2026-10-11"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
@@ -52,10 +52,6 @@ tracks:
   - name: "Blue Sky Ideas"
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-blue-sky-ideas/"
     deadlines:
-      - label: "OpenReview author registration"
-        date: "2026-10-20T23:59:59-12:00"
-        display: "Oct 20, 2026"
-        decision: false
       - label: "Abstract"
         date: "2026-11-05T23:59:59-12:00"
         display: "Nov 5, 2026"
@@ -64,12 +60,19 @@ tracks:
         date: "2026-11-12T23:59:59-12:00"
         display: "Nov 12, 2026"
         decision: false
-      - label: "Early decision"
-        date: "2026-11-30T23:59:59-12:00"
-        display: "Nov 30, 2026"
-        decision: true
-      - label: "Final decision"
+      - label: "Decision"
         date: "2027-01-21T23:59:59-12:00"
         display: "Jan 21, 2027"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-workshops/"
+    deadlines:
+      - label: "Proposal"
+        date: "2026-10-29T23:59:00-12:00"
+        display: "Oct 29, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-11-28T23:59:00-12:00"
+        display: "Nov 28, 2026"
         decision: true
 ---

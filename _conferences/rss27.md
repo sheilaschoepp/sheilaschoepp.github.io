@@ -12,9 +12,7 @@ id: "rss27"
 sources:
   - "https://roboticsconference.org/information/cfp/"
   - "https://roboticsconference.org/2026/information/cfw/"
-  - "https://roboticsconference.org/2026/program/pioneers/"
-  - "https://roboticsconference.org/2026/program/pathways/"
-verified_on: "2026-10-11"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
     deadlines:
@@ -23,28 +21,26 @@ tracks:
         date: "2026-12-04T23:59:00-12:00"
         display: "Dec 4, 2026"
         decision: false
-      - label: "Stage 1 decision"
-        date: "2027-02-05T23:59:00-12:00"
-        display: "Feb 5, 2027"
-        decision: true
-      - label: "Stage 2 decision"
-        date: "2027-02-26T23:59:00-12:00"
-        display: "Feb 26, 2027"
-        decision: true
-    source: "https://roboticsconference.org/information/cfp/"
-  - name: "Invited final submission"
-    deadlines:
-      - label: "Final paper"
+      - label: "Invited paper"
         date: "2027-04-16T23:59:00-12:00"
         display: "Apr 16, 2027"
         decision: false
-      - label: "Supplementary"
-        date: "2027-04-19T23:59:00-12:00"
-        display: "Apr 19, 2027"
-        decision: false
-      - label: "Acceptance"
+      - label: "Decision"
         date: "2027-04-30T23:59:00-12:00"
         display: "Apr 30, 2027"
         decision: true
     source: "https://roboticsconference.org/information/cfp/"
+  - name: "Workshop proposals"
+    source: "https://roboticsconference.org/2026/information/cfw/"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Feb 12, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Apr 23, 2027"
+        tentative_from: 2026
+        decision: true
 ---

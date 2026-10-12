@@ -13,12 +13,9 @@ sources:
   - "https://icaps27.icaps-conference.org/"
   - "https://icaps27.icaps-conference.org/calls/cfp/"
   - "https://icaps27.icaps-conference.org/calls/special_tracks/"
+  - "https://icaps27.icaps-conference.org/dates/"
   - "https://icaps26.icaps-conference.org/calls/workshops/"
-  - "https://icaps26.icaps-conference.org/calls/dc_call/"
-  - "https://icaps26.icaps-conference.org/calls/launchpad_call/"
-  - "https://icaps26.icaps-conference.org/calls/demos/"
-  - "https://icaps26.icaps-conference.org/calls/previously_published_research/"
-verified_on: "2026-10-11"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
     source: "https://icaps27.icaps-conference.org/calls/cfp/"
@@ -51,5 +48,18 @@ tracks:
       - label: "Decision"
         date: null
         display: "Feb 26, 2027"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://icaps26.icaps-conference.org/calls/workshops/"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Feb 8, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Feb 23, 2027"
+        tentative_from: 2026
         decision: true
 ---

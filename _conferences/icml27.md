@@ -10,14 +10,13 @@ num: 200
 tags: ["ML"]
 timezone: "N/A"
 id: "icml27"
-verified_on: "2026-10-07"
+verified_on: "2026-10-12"
 sources:
   - "https://icml.cc/Conferences/FutureMeetings"
   - "https://icml.cc/Conferences/2026/Dates"
   - "https://icml.cc/Conferences/2026/CallForPositionPapers"
   - "https://icml.cc/Conferences/2026/CallForWorkshops"
-  - "https://icml.cc/Conferences/2026/CallForTutorials"
-  - "https://icml.cc/Conferences/2026/CallForSocials"
+  - "https://icml.cc/Conferences/2026/ReviewerInstructions"
 tracks:
   - name: "Main track"
     source: "https://icml.cc/Conferences/2026/Dates"
@@ -37,6 +36,38 @@ tracks:
       - label: "Decision"
         date: null
         display: "Apr 30, 2027"
+        decision: true
+        tentative_from: 2026
+  - name: "Position papers"
+    source: "https://icml.cc/Conferences/2026/CallForPositionPapers"
+    deadlines:
+      - label: "Abstract"
+        date: null
+        display: "Jan 23, 2027"
+        decision: false
+        tentative_from: 2026
+      - label: "Paper"
+        date: null
+        display: "Jan 28, 2027"
+        decision: false
+        tentative_from: 2026
+      - label: "Decision"
+        date: null
+        display: "Apr 30, 2027"
+        decision: true
+        tentative_from: 2026
+        source: "https://icml.cc/Conferences/2026/ReviewerInstructions"
+  - name: "Workshop proposals"
+    source: "https://icml.cc/Conferences/2026/CallForWorkshops"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Feb 13, 2027"
+        decision: false
+        tentative_from: 2026
+      - label: "Decision"
+        date: null
+        display: "Mar 20, 2027"
         decision: true
         tentative_from: 2026
 ---

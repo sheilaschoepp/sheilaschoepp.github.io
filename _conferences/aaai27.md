@@ -14,7 +14,10 @@ sources:
   - "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
   - "https://aaai.org/conference/aaai/aaai-27/aia-call/"
   - "https://aaai.org/conference/aaai/aaai-27/aisi-call/"
-verified_on: "2026-10-04"
+  - "https://aaai.org/conference/aaai/aaai-27/bridge-program-call-for-proposals/"
+  - "https://aaai.org/conference/aaai/aaai-27/senior-member-presentation-track-call-for-proposals/"
+  - "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
+verified_on: "2026-10-12"
 tracks:
   - name: "Main track"
     source: "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
@@ -48,6 +51,28 @@ tracks:
         date: null
         display: "Nov 30, 2026"
         decision: true
+  - name: "Blue Sky Ideas (Senior Member)"
+    source: "https://aaai.org/conference/aaai/aaai-27/senior-member-presentation-track-call-for-proposals/"
+    deadlines:
+      - label: "Talk proposal and paper"
+        date: "2026-09-23T23:59:00-12:00"
+        display: "Sep 23, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2026-11-18T23:59:00-12:00"
+        display: "Nov 18, 2026"
+        decision: true
+  - name: "Bridge Program proposals"
+    source: "https://aaai.org/conference/aaai/aaai-27/bridge-program-call-for-proposals/"
+    deadlines:
+      - label: "Proposal"
+        date: "2026-10-16T23:59:00-12:00"
+        display: "Oct 16, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Oct 23, 2026"
+        decision: true
   - name: "AI for Social Impact"
     source: "https://aaai.org/conference/aaai/aaai-27/aisi-call/"
     deadlines:
@@ -62,5 +87,16 @@ tracks:
       - label: "Decision"
         date: null
         display: "Nov 30, 2026"
+        decision: true
+  - name: "Workshop proposals"
+    source: "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
+    deadlines:
+      - label: "Proposal"
+        date: null
+        display: "Aug 28, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Sep 25, 2026"
         decision: true
 ---

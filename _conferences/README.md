@@ -63,12 +63,18 @@ passed deadline shows `Closed`. A selected tentative date shows `Tentative`,
 including after its estimate has passed, because an estimate cannot confirm
 closure. Decisions and historical references do not determine the badge.
 
-Keep the cards compact: list the main paper deadlines and decisions, plus a
-small selection of important paper tracks, such as AAMAS's AAAI Fast Track.
-Other tracks remain visible for reference, with their individual countdowns,
-but do not determine the badge or default sort order. Omit exhaustive program
-categories and explanatory commentary. Use a specific official call for every
-linked track.
+Keep the cards compact: list the main paper track and a small selection of
+important paper tracks, such as Blue Sky Ideas and AAMAS's AAAI Fast Track.
+Show only abstract, paper, and final decision dates. Include proposal dates
+for selected opportunities, such as workshop or Bridge Program proposals.
+Keep accurate labels for combined submissions, ARR papers, extended abstracts,
+and invited papers. For multi-stage submissions, show the initial submission,
+invited paper, and final decision rather than intermediate review gates.
+Omit registration, commitment, resubmission, author feedback, rebuttal,
+supplementary, and camera-ready dates. Do not add every program category.
+Selected additional tracks have individual countdowns but do not determine
+the badge or default sort order. Use a specific official call for every linked
+track, and omit explanatory commentary.
 
 For tentative deadlines, set `date: null`, put the estimated current date in
 `display`, and add `tentative_from: 2026`. Add a deadline-level `source` if its
