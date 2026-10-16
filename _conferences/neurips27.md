@@ -10,7 +10,7 @@ num: 20
 tags: ["ML"]
 timezone: "N/A"
 id: "nips27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-16"
 sources:
   - "https://neurips.cc/Conferences/FutureMeetings"
   - "https://neurips.cc/Conferences/2026/Dates"
@@ -18,6 +18,8 @@ sources:
   - "https://neurips.cc/Conferences/2026/CallForEvaluationsDatasets"
   - "https://neurips.cc/Conferences/2026/CallForPositionPapers"
   - "https://neurips.cc/Conferences/2026/CallForWorkshops"
+  - "https://neurips2026haic.com/cfp.html"
+  - "https://blog.iclr.cc/2025/02/03/workshops-at-iclr-2025/"
 tracks:
   - name: "Main track"
     deadlines:
@@ -73,6 +75,19 @@ tracks:
       - label: "Decision"
         date: null
         display: "Sep 24, 2027"
+        tentative_from: 2026
+        decision: true
+  - name: "Human-AI Coevolution (HAIC) workshop"
+    source: "https://neurips2026haic.com/cfp.html"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Sep 2, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Sep 29, 2027"
         tentative_from: 2026
         decision: true
   - name: "Workshop proposals"

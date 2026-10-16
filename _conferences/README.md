@@ -76,6 +76,14 @@ Selected additional tracks have individual countdowns but do not determine
 the badge or default sort order. Use a specific official call for every linked
 track, and omit explanatory commentary.
 
+Include a small selection of key annually recurring workshops and special paper
+tracks within their host conference's card. Check the official series history or
+consecutive annual editions before adding a workshop; a one-off event or multiple
+editions in one year does not establish annual recurrence. Retain the official
+history links in `sources`. Workshop entries list their own paper submission and
+final decision dates, distinct from the host's workshop proposal call. Apply the
+same tentative-date rules when the next workshop call has not been published.
+
 For tentative deadlines, set `date: null`, put the estimated current date in
 `display`, and add `tentative_from: 2026`. Add a deadline-level `source` if its
 2026 source differs from the track's source. These dates show a linked

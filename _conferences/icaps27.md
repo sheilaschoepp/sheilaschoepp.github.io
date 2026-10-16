@@ -15,7 +15,13 @@ sources:
   - "https://icaps27.icaps-conference.org/calls/special_tracks/"
   - "https://icaps27.icaps-conference.org/dates/"
   - "https://icaps26.icaps-conference.org/calls/workshops/"
-verified_on: "2026-10-12"
+  - "https://icaps26.icaps-conference.org/program/workshops/haxp/"
+  - "https://icaps25.icaps-conference.org/program/workshops/haxp/"
+  - "https://haxp-icaps.web.app/"
+  - "https://groups.google.com/g/planning-list/c/Wm9ri4eo940"
+  - "https://icaps26.icaps-conference.org/program/workshops/planrob/"
+  - "https://icaps25.icaps-conference.org/program/workshops/planrob/"
+verified_on: "2026-10-16"
 tracks:
   - name: "Main track"
     source: "https://icaps27.icaps-conference.org/calls/cfp/"
@@ -48,6 +54,34 @@ tracks:
       - label: "Decision"
         date: null
         display: "Feb 26, 2027"
+        decision: true
+  - name: "HAXP: Human-Aware and Explainable Planning (workshop)"
+    source: "https://haxp-icaps.web.app/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "May 17, 2027"
+        tentative_from: 2026
+        source: "https://groups.google.com/g/planning-list/c/Wm9ri4eo940"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Jun 10, 2027"
+        tentative_from: 2026
+        source: "https://groups.google.com/g/planning-list/c/Wm9ri4eo940"
+        decision: true
+  - name: "PlanRob: Planning and Robotics (workshop)"
+    source: "https://icaps26.icaps-conference.org/program/workshops/planrob/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "May 2, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "May 30, 2027"
+        tentative_from: 2026
         decision: true
   - name: "Workshop proposals"
     source: "https://icaps26.icaps-conference.org/calls/workshops/"

@@ -23,7 +23,7 @@ nav_order: 3
 
 <div class="conference-deadlines" id="conference-browser">
   <div class="conf-toolbar">
-    {% include site_filter.liquid id='conf-search' label='Search conferences or locations' %}
+    {% include site_filter.liquid id='conf-search' label='Search conferences, workshops, tracks, or locations' %}
     <div class="conf-tag-filters" role="group" aria-label="Filter by research area">
       {% for tag in filter_tags %}
         {% assign tag_name = tag %}
@@ -54,7 +54,8 @@ nav_order: 3
   <div class="conf-grid" id="conf-grid">
     {% for conference in conferences %}
       {% assign conference_tags = conference.tags %}
-      {% assign search_blob = conference.shortname | append: ' ' | append: conference.name | append: ' ' | append: conference.location | downcase %}
+      {% assign track_names = conference.tracks | map: 'name' | join: ' ' %}
+      {% assign search_blob = conference.shortname | append: ' ' | append: conference.name | append: ' ' | append: conference.location | append: ' ' | append: track_names | downcase %}
       <article class="conf-card hoverable" data-name="{{ conference.shortname | escape }}" data-tags="{{ conference_tags | join: ',' | escape }}" data-search="{{ search_blob | escape }}" data-start="{{ conference.start_date | escape }}">
         <div class="conf-card-header">
           <div class="conf-card-header-content">

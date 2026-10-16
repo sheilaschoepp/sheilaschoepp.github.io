@@ -10,7 +10,7 @@ num: 50
 tags: ["RO", "HCI"]
 timezone: "UTC−12"
 id: "hri27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-16"
 sources:
   - "https://humanrobotinteraction.org/2027/"
   - "https://humanrobotinteraction.org/2027/full-papers/"
@@ -18,6 +18,8 @@ sources:
   - "https://humanrobotinteraction.org/2027/alt-hri/"
   - "https://humanrobotinteraction.org/2027/workshops-tutorials/"
   - "https://humanrobotinteraction.org/2027/late-breaking-reports/"
+  - "https://leap-hri.github.io/"
+  - "https://leap-hri.github.io/2025/"
 tracks:
   - name: "Main track"
     source: "https://humanrobotinteraction.org/2027/full-papers/"
@@ -68,6 +70,19 @@ tracks:
       - label: "Decision"
         date: "2027-01-13T23:59:00-12:00"
         display: "Jan 13, 2027"
+        decision: true
+  - name: "LEAP-HRI Workshop (Lifelong Learning and Personalization)"
+    source: "https://leap-hri.github.io/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Feb 16, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Mar 2, 2027"
+        tentative_from: 2026
         decision: true
   - name: "Workshop proposals"
     source: "https://humanrobotinteraction.org/2027/workshops-tutorials/"

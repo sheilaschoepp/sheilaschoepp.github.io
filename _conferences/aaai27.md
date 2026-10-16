@@ -17,7 +17,10 @@ sources:
   - "https://aaai.org/conference/aaai/aaai-27/bridge-program-call-for-proposals/"
   - "https://aaai.org/conference/aaai/aaai-27/senior-member-presentation-track-call-for-proposals/"
   - "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
-verified_on: "2026-10-12"
+  - "https://tom4ai.github.io/AAAI2027/call-for-papers/"
+  - "https://tom4ai.github.io/events/AAAI2027/"
+  - "https://tom4ai.github.io/events/"
+verified_on: "2026-10-16"
 tracks:
   - name: "Main track"
     source: "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
@@ -87,6 +90,17 @@ tracks:
       - label: "Decision"
         date: null
         display: "Nov 30, 2026"
+        decision: true
+  - name: "ToM4AI: Theory of Mind for AI (workshop)"
+    source: "https://tom4ai.github.io/AAAI2027/call-for-papers/"
+    deadlines:
+      - label: "Extended abstract"
+        date: null
+        display: "Nov 20, 2026"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Dec 2, 2026"
         decision: true
   - name: "Workshop proposals"
     source: "https://aaai.org/conference/aaai/aaai-27/workshops-call/"

@@ -10,12 +10,14 @@ num: 70
 tags: ["ML"]
 timezone: "UTC−12"
 id: "iclr27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-16"
 sources:
   - "https://iclr.cc/Conferences/2027"
   - "https://iclr.cc/Conferences/2027/Dates"
   - "https://iclr.cc/Conferences/2027/CallForPapers"
   - "https://iclr.cc/Conferences/2027/CallForWorkshops"
+  - "https://sites.google.com/view/iclr-2026-workshop-world-model/submit"
+  - "https://sites.google.com/view/worldmodel-iclr2025/submit"
 tracks:
   - name: "Main track"
     source: "https://iclr.cc/Conferences/2027/CallForPapers"
@@ -33,6 +35,19 @@ tracks:
       - label: "Decision"
         date: null
         display: "Dec 16, 2026"
+        decision: true
+  - name: "World Models workshop"
+    source: "https://sites.google.com/view/iclr-2026-workshop-world-model/submit"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Feb 7, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Mar 1, 2027"
+        tentative_from: 2026
         decision: true
   - name: "Workshop proposals"
     source: "https://iclr.cc/Conferences/2027/CallForWorkshops"

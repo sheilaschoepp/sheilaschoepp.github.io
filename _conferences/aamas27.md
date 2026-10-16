@@ -19,7 +19,11 @@ sources:
   - "https://cyprusconferences.org/aamas2026/call-for-demonstrations/"
   - "https://warwick.ac.uk/fac/sci/dcs/aamas2027/"
   - "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
-verified_on: "2026-10-12"
+  - "https://alaworkshop2026.github.io/"
+  - "https://ala-workshop.github.io/"
+  - "https://coin-workshop.github.io/coine-2026-paphos/"
+  - "https://coin-workshop.github.io/coine_workshop_series.html"
+verified_on: "2026-10-16"
 tracks:
   - name: "Main track"
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"
@@ -63,6 +67,32 @@ tracks:
       - label: "Decision"
         date: "2027-01-21T23:59:59-12:00"
         display: "Jan 21, 2027"
+        decision: true
+  - name: "ALA: Adaptive and Learning Agents (workshop)"
+    source: "https://alaworkshop2026.github.io/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Feb 26, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Mar 26, 2027"
+        tentative_from: 2026
+        decision: true
+  - name: "COINE: Coordination, Organizations, Institutions, Norms and Ethics (workshop)"
+    source: "https://coin-workshop.github.io/coine-2026-paphos/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Feb 23, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Mar 20, 2027"
+        tentative_from: 2026
         decision: true
   - name: "Workshop proposals"
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-workshops/"

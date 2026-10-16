@@ -13,7 +13,12 @@ sources:
   - "https://www.aclweb.org/portal/content/joint-call-workshops-proposals-2027"
   - "https://2026.emnlp.org/calls/main_conference_papers/"
   - "https://2026.emnlp.org/calls/industry_track/"
-verified_on: "2026-10-12"
+  - "https://realm-workshop.github.io/call_for_papers/"
+  - "https://realm-workshop.github.io/2025-acl/"
+  - "https://blackboxnlp.github.io/2026/call/"
+  - "https://blackboxnlp.github.io/2026/"
+  - "https://blackboxnlp.github.io/2025/"
+verified_on: "2026-10-16"
 tracks:
   - name: "Main track"
     source: "https://2026.emnlp.org/calls/main_conference_papers/"
@@ -40,6 +45,32 @@ tracks:
       - label: "Decision"
         date: null
         display: "Aug 20, 2027"
+        tentative_from: 2026
+        decision: true
+  - name: "REALM Workshop (Agent Language Models)"
+    source: "https://realm-workshop.github.io/call_for_papers/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Aug 5, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Sep 7, 2027"
+        tentative_from: 2026
+        decision: true
+  - name: "BlackboxNLP Workshop"
+    source: "https://blackboxnlp.github.io/2026/call/"
+    deadlines:
+      - label: "Paper"
+        date: null
+        display: "Jul 17, 2027"
+        tentative_from: 2026
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Sep 2, 2027"
         tentative_from: 2026
         decision: true
   - name: "Workshop proposals"
