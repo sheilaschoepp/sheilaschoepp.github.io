@@ -10,7 +10,7 @@ num: 220
 tags: ["NLP"]
 timezone: "UTC−12"
 id: "acl27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-18"
 sources:
   - "https://2026.aclweb.org/calls/industry_track/"
   - "https://2026.aclweb.org/calls/main_conference_papers/"
@@ -33,6 +33,19 @@ tracks:
         decision: true
         tentative_from: 2026
         source: "https://2026.aclweb.org/calls/main_conference_papers/"
+  - name: "Theme track: Homogenization and knowledge collapse in LLMs"
+    source: "https://2027.aclweb.org/calls/main/"
+    deadlines:
+      - label: "ARR submission"
+        date: "2027-01-04T23:59:00-12:00"
+        display: "Jan 4, 2027"
+        decision: false
+      - label: "Decision"
+        date: null
+        display: "Apr 4, 2027"
+        tentative_from: 2026
+        source: "https://2026.aclweb.org/calls/main_conference_papers/"
+        decision: true
   - name: "Industry Track"
     source: "https://2027.aclweb.org/calls/industry_track/"
     deadlines:

@@ -10,12 +10,13 @@ num: 210
 tags: ["NLP"]
 timezone: "UTC−12"
 id: "naacl27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-18"
 sources:
   - "https://2027.naacl.org/"
   - "https://2027.naacl.org/calls/main_conference_papers/"
   - "https://2027.naacl.org/calls/workshops/"
   - "https://2027.naacl.org/calls/industry_track/"
+  - "https://2027.naacl.org/calls/system_demonstration/"
 tracks:
   - name: "Main track"
     deadlines:
@@ -39,6 +40,17 @@ tracks:
       - label: "Decision"
         date: "2027-02-24T23:59:00-12:00"
         display: "Feb 24, 2027"
+        decision: true
+  - name: "System Demonstrations"
+    source: "https://2027.naacl.org/calls/system_demonstration/"
+    deadlines:
+      - label: "Paper"
+        date: "2026-12-04T23:59:00-12:00"
+        display: "Dec 4, 2026"
+        decision: false
+      - label: "Decision"
+        date: "2027-02-10T23:59:00-12:00"
+        display: "Feb 10, 2027"
         decision: true
   - name: "Workshop proposals"
     source: "https://2027.naacl.org/calls/workshops/"
