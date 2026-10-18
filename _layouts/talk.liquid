@@ -7,10 +7,7 @@ layout: page
   <p class="talk-meta">
     <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
   </p>
-  <p class="talk-venue">{{ page.venue | escape }}</p>
-  {% if page.note %}
-    <p>{{ page.note | escape }}</p>
-  {% endif %}
+  <p class="talk-venue">{{ page.talk_type | escape }}</p>
 
   {% if page.resources %}
     <ul class="talk-resources" aria-label="Talk resources">
@@ -58,10 +55,12 @@ layout: page
     </ul>
   {% endif %}
 
-  <section class="talk-abstract" aria-labelledby="talk-abstract-heading">
-    <h2 id="talk-abstract-heading">Abstract</h2>
-    {{ content }}
-  </section>
+  {% unless page.abstract_hidden %}
+    <section class="talk-abstract" aria-labelledby="talk-abstract-heading">
+      <h2 id="talk-abstract-heading">Abstract</h2>
+      {{ content }}
+    </section>
+  {% endunless %}
 
   <a class="talk-back" href="{{ '/talks/' | relative_url }}">&larr; All talks</a>
 </article>

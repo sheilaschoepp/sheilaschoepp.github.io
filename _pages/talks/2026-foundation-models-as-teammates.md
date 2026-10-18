@@ -3,6 +3,7 @@ layout: talk
 title: "Foundation Models as Teammates: Coordination in FM-Only and Human-FM Teams"
 permalink: /talks/foundation-models-as-teammates/
 talk: true
+abstract_hidden: true
 topic_label: Research
 icon: fa-comments
 thumbnail: /assets/img/talks/foundation-models-in-conversation.png
@@ -11,7 +12,7 @@ thumbnail_height: 1024
 thumbnail_alt: "ChatGPT, PaLM E, Claude, and Gemini represented as robots sharing ideas, perspectives, knowledge, and solutions around a table."
 nav: false
 date: 2026-06-29
-venue: Graduate Student Seminar, University of Alberta
+talk_type: Graduate Student Seminar
 # Unpublished slides are kept locally in .private/slides/Schoepp2026FoundationModels-slides.pdf.
 # When ready, copy the PDF to assets/pdf/ and uncomment the resource below.
 # resources:

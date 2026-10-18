@@ -11,8 +11,7 @@ thumbnail_height: 565
 thumbnail_alt: "Taxonomy of LLM and VLM roles in reinforcement learning: agent, planner, and reward."
 nav: false
 date: 2025-08-21
-venue: IJCAI 2025, Montréal, Canada
-note: "Oral presentation in the Machine Learning: Reinforcement Learning session."
+talk_type: Conference Presentation
 resources:
   - label: Publisher
     url: https://doi.org/10.24963/ijcai.2025/1181

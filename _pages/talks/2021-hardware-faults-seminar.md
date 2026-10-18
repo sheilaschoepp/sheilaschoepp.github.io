@@ -11,8 +11,7 @@ thumbnail_height: 464
 thumbnail_alt: "Simulated Ant robot with a damaged leg in a hardware fault experiment."
 nav: false
 date: 2021-01-25
-venue: Graduate Student Seminar, University of Alberta
-note: "Online at 2:00 p.m. MST. Supervisors: Osmar Zaiane and Johannes Gunther."
+talk_type: Graduate Student Seminar
 ---
 
 On July 20, 1969, the Apollo 11 lunar module, with Astronauts Neil Armstrong and Buzz Aldrin aboard, landed on the moon. It was a great achievement in space exploration. Most people know of this mission's success; yet, there is an untold story about this mission that many people are not aware of, and that ultimately led to its success. In the moments prior to landing on the moon, the astronauts' attention was disrupted by loud alarms, notifying them of a problem with their on-board computer systems. The moment intensified as an error, unknown to the astronauts, was identified - error 1202. After relaying the error code to mission control, the cause of the error was determined; the computer was overloaded and memory was low. Thanks to the software created by a young NASA engineer, Margaret Hamilton, the software controlling the computer system began to handle the error, re-initializing and re-assigning tasks with the highest priority, while dropping those of low priority. Margaret Hamilton, a visionary of her time, had planned for unexpected situations, and in doing so, she had created software that was able to detect, identify, and recover from errors.

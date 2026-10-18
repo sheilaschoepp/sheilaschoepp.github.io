@@ -60,14 +60,16 @@ published: true
           </p>
           <ol class="talk-appearances">
             {% for talk in group.items %}
-              {% capture search_text %}{{ talk.title }} {{ talk.topic_label }} {{ talk.venue }} {{ talk.note }} {{ talk.date | date: '%B %b %-d %Y' }} {{ talk.date | date: '%Y-%m-%d' }} {{ talk.content | markdownify | strip_html }}{% endcapture %}
+              {% capture search_text %}{{ talk.title }} {{ talk.topic_label }} {{ talk.talk_type }} {{ talk.date | date: '%B %b %-d %Y' }} {{ talk.date | date: '%Y-%m-%d' }} {% unless talk.abstract_hidden %}{{ talk.content | markdownify | strip_html }}{% endunless %}{% endcapture %}
               <li class="talk-appearance" data-talk-search="{{ search_text | strip | escape }}">
                 <div class="talk-appearance-details">
-                  <span class="talk-appearance-venue">{{ talk.venue | escape }}</span>
+                  <span class="talk-appearance-venue">{{ talk.talk_type | escape }}</span>
                   <time class="talk-appearance-date" datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%B %-d, %Y' }}</time>
                 </div>
                 <div class="talk-appearance-actions">
-                  <a class="talk-action" href="{{ talk.url | relative_url }}"><i class="fa-solid fa-align-left" aria-hidden="true"></i> Abstract</a>
+                  {% unless talk.abstract_hidden %}
+                    <a class="talk-action" href="{{ talk.url | relative_url }}"><i class="fa-solid fa-align-left" aria-hidden="true"></i> Abstract</a>
+                  {% endunless %}
                   {% for resource in talk.resources %}
                     {% if resource.label == 'Video' or resource.label == 'Slides' %}
                       {% assign resource_url = resource.url %}
