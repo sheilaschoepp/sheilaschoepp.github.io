@@ -23,7 +23,7 @@ sources:
   - "https://ala-workshop.github.io/"
   - "https://coin-workshop.github.io/coine-2026-paphos/"
   - "https://coin-workshop.github.io/coine_workshop_series.html"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/"

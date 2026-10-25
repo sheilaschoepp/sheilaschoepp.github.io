@@ -18,7 +18,7 @@ sources:
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-dc-paprs/"
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-papers-demos/"
   - "https://2026.ijcai.org/ijcai-ecai-2026-call-for-competitions-and-challenges/"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://ecai2027.org/#deadlines-section"

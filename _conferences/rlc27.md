@@ -9,7 +9,7 @@ num: 160
 tags: ["RL", "ML"]
 timezone: "N/A"
 id: "rlc27"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 sources:
   - "https://rl-conference.cc/2026/index.html"
   - "https://rl-conference.cc/2026/callforpapers.html"

@@ -10,7 +10,7 @@ num: 70
 tags: ["ML"]
 timezone: "UTC−12"
 id: "iclr27"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 sources:
   - "https://iclr.cc/Conferences/2027"
   - "https://iclr.cc/Conferences/2027/Dates"

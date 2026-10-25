@@ -18,7 +18,7 @@ sources:
   - "https://blackboxnlp.github.io/2026/call/"
   - "https://blackboxnlp.github.io/2026/"
   - "https://blackboxnlp.github.io/2025/"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://2026.emnlp.org/calls/main_conference_papers/"

@@ -10,7 +10,7 @@ num: 170
 tags: ["ML"]
 timezone: "UTC−12"
 id: "collas26"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 sources:
   - "https://lifelong-ml.cc/Conferences/2026/call"
   - "https://lifelong-ml.cc/Conferences/2026/call_for_non_archival_track"

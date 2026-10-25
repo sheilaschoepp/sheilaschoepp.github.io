@@ -21,7 +21,7 @@ sources:
   - "https://groups.google.com/g/planning-list/c/Wm9ri4eo940"
   - "https://icaps26.icaps-conference.org/program/workshops/planrob/"
   - "https://icaps25.icaps-conference.org/program/workshops/planrob/"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://icaps27.icaps-conference.org/calls/cfp/"

@@ -10,7 +10,7 @@ num: 20
 tags: ["ML"]
 timezone: "N/A"
 id: "nips27"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 sources:
   - "https://neurips.cc/Conferences/FutureMeetings"
   - "https://neurips.cc/Conferences/2026/Dates"

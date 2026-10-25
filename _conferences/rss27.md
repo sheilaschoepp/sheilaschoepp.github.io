@@ -12,7 +12,7 @@ id: "rss27"
 sources:
   - "https://roboticsconference.org/information/cfp/"
   - "https://roboticsconference.org/2026/information/cfw/"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     deadlines:

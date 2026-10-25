@@ -10,7 +10,7 @@ num: 150
 tags: ["RL", "ML"]
 timezone: "UTC−12"
 id: "rldm27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 sources:
   - "https://rldm.org/"
   - "https://rldm.org/call-for-abstracts-2027/"

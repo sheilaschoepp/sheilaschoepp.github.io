@@ -20,7 +20,7 @@ sources:
   - "https://tom4ai.github.io/AAAI2027/call-for-papers/"
   - "https://tom4ai.github.io/events/AAAI2027/"
   - "https://tom4ai.github.io/events/"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"

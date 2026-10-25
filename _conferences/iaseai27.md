@@ -17,7 +17,7 @@ sources:
   - "https://docs.google.com/document/d/e/2PACX-1vS3R-wdreA_S8TJ5YhQMYQ0nhmdTbd1vog9xaXmfmFdDO1FLLxqpJdMWJZHPu8xpMyM-W_gcM37AZtO/pub"
   - "https://docs.google.com/document/d/e/2PACX-1vR81xSFG39VEr5l43ULeLMsG1_bfHyZEiTFDFr88xkHUtVxTsWUAEZN2Xt1uLzDuT6jYGPsKS1Ij7OH/pub"
   - "https://docs.google.com/document/d/e/2PACX-1vSdQb-TtNpT-TrZ7jq9kdjfCZ9D2q-46oTH2igJQsZ1nZ-z44xXWM1vxR_DzDY5tVS62HW8eNLuRLVZ/pub"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://docs.google.com/document/d/e/2PACX-1vR_hLJSEv5WZF66P2HPg8zvezNttnaHvuekFJGdam3gYBMJu57ma2iKeXJKl_DHF4oCuJZ7CLc-IE3d/pub"

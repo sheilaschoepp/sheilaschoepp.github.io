@@ -14,7 +14,7 @@ sources:
   - "https://www.corl.org/contributions/call-for-workshops"
   - "https://www.corl.org/"
   - "https://www.corl.org/contributions/instruction-for-authors"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://www.corl.org/contributions/call-for-papers"

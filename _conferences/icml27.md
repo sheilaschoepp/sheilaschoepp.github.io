@@ -10,7 +10,7 @@ num: 200
 tags: ["ML"]
 timezone: "N/A"
 id: "icml27"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 sources:
   - "https://icml.cc/Conferences/FutureMeetings"
   - "https://icml.cc/Conferences/2026/Dates"

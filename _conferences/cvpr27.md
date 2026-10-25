@@ -19,7 +19,7 @@ sources:
   - "https://foundation-models-meet-embodied-agents.github.io/cvpr2026/"
   - "https://foundation-models-meet-embodied-agents.github.io/cvpr2025/"
   - "https://cvpr.thecvf.com/Conferences/2026/Workshops"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     source: "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
@@ -67,7 +67,7 @@ tracks:
         display: "Nov 4, 2026"
         decision: false
       - label: "Decision"
-        date: null
-        display: "Dec 22, 2026"
+        date: "2026-12-23T02:00:00+00:00"
+        display: "Dec 23, 2026"
         decision: true
 ---

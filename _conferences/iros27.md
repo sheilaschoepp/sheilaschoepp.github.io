@@ -15,7 +15,7 @@ sources:
   - "https://www.ieee-ras.org/event/2027-ieee-rsj-international-conference-on-intelligent-robots-and-systems-iros-70525/"
   - "https://2026.ieee-iros.org/about/important-dates/"
   - "https://openspace-lab.github.io/SpaceRobotics-IROS26/"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 tracks:
   - name: "Main track"
     deadlines:

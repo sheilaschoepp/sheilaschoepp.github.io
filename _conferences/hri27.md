@@ -10,7 +10,7 @@ num: 50
 tags: ["RO", "HCI"]
 timezone: "UTC−12"
 id: "hri27"
-verified_on: "2026-10-16"
+verified_on: "2026-10-25"
 sources:
   - "https://humanrobotinteraction.org/2027/"
   - "https://humanrobotinteraction.org/2027/full-papers/"

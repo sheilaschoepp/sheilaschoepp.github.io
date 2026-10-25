@@ -10,7 +10,7 @@ num: 80
 tags: ["HCI"]
 timezone: "UTC−12"
 id: "chi27"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 sources:
   - "https://chi2027.acm.org/"
   - "https://chi2027.acm.org/authors/workshops/"

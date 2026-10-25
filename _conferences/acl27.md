@@ -10,7 +10,7 @@ num: 220
 tags: ["NLP"]
 timezone: "UTC−12"
 id: "acl27"
-verified_on: "2026-10-18"
+verified_on: "2026-10-25"
 sources:
   - "https://2026.aclweb.org/calls/industry_track/"
   - "https://2026.aclweb.org/calls/main_conference_papers/"

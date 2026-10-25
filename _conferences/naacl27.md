@@ -10,7 +10,7 @@ num: 210
 tags: ["NLP"]
 timezone: "UTC−12"
 id: "naacl27"
-verified_on: "2026-10-18"
+verified_on: "2026-10-25"
 sources:
   - "https://2027.naacl.org/"
   - "https://2027.naacl.org/calls/main_conference_papers/"

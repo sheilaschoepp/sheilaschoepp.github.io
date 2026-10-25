@@ -10,7 +10,7 @@ num: 180
 tags: ["ML", "NLP"]
 timezone: "UTC−12"
 id: "colm26"
-verified_on: "2026-10-12"
+verified_on: "2026-10-25"
 sources:
   - "https://colm.cc/Conferences/2026/CallForWorkshops"
   - "https://colm.cc/"
