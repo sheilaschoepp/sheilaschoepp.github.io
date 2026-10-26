@@ -14,7 +14,7 @@ sources:
   - "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
   - "https://2027.ieee-icra.org/attend/venue-conference-center/"
   - "https://2027.ieee-icra.org/contribute/call-for-workshop-and-tutorial/"
-verified_on: "2026-10-25"
+verified_on: "2026-10-26"
 tracks:
   - name: "Main track"
     deadlines:
