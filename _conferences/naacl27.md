@@ -10,7 +10,7 @@ num: 210
 tags: ["NLP"]
 timezone: "UTC−12"
 id: "naacl27"
-verified_on: "2026-10-25"
+verified_on: "2026-11-04"
 sources:
   - "https://2027.naacl.org/"
   - "https://2027.naacl.org/calls/main_conference_papers/"
@@ -34,8 +34,8 @@ tracks:
     source: "https://2027.naacl.org/calls/industry_track/"
     deadlines:
       - label: "Paper"
-        date: "2026-10-31T23:59:00-12:00"
-        display: "Oct 31, 2026"
+        date: "2026-11-13T23:59:00-12:00"
+        display: "Nov 13, 2026"
         decision: false
       - label: "Decision"
         date: "2027-02-24T23:59:00-12:00"

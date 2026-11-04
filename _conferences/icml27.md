@@ -1,17 +1,18 @@
 ---
 shortname: "ICML 2027"
 name: "International Conference on Machine Learning"
-location: "South America; city and venue TBD"
-dates: "July 6–11, 2027 (tentative, based on 2026)"
-start_date: "2027-07-06"
-end_date: "2027-07-11"
-website: "https://icml.cc/Conferences/FutureMeetings"
+location: "Riocentro, Rio de Janeiro, Brazil"
+dates: "July 31–August 6, 2027"
+start_date: "2027-07-31"
+end_date: "2027-08-06"
+website: "https://icml.cc/Conferences/2027"
 num: 200
 tags: ["ML"]
 timezone: "N/A"
 id: "icml27"
-verified_on: "2026-10-25"
+verified_on: "2026-11-04"
 sources:
+  - "https://icml.cc/Conferences/2027"
   - "https://icml.cc/Conferences/FutureMeetings"
   - "https://icml.cc/Conferences/2026/Dates"
   - "https://icml.cc/Conferences/2026/CallForPositionPapers"
