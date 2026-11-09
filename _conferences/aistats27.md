@@ -10,7 +10,7 @@ num: 190
 tags: ["ML"]
 timezone: "UTC−12"
 id: "aistats27"
-verified_on: "2026-10-25"
+verified_on: "2026-11-09"
 sources:
   - "https://virtual.aistats.org/Conferences/2027/CallForWorkshops"
   - "https://virtual.aistats.org/Conferences/2027/CallForPapers"
@@ -49,7 +49,7 @@ tracks:
     source: "https://virtual.aistats.org/Conferences/2027/CallForWorkshops"
     deadlines:
       - label: "Proposal"
-        date: "2026-10-30T22:59:00+01:00"
-        display: "Oct 30, 2026"
+        date: "2026-11-06T22:59:00+01:00"
+        display: "Nov 6, 2026"
         decision: false
 ---
