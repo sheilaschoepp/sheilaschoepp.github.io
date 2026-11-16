@@ -2,15 +2,15 @@
 shortname: "CoLLAs 2026"
 name: "Conference on Lifelong Learning Agents"
 location: "National University of Science and Technology POLITEHNICA Bucharest, Romania"
-dates: "September 14–17, 2026"
+dates: "September 14–18, 2026"
 start_date: "2026-09-14"
-end_date: "2026-09-17"
+end_date: "2026-09-18"
 website: "https://lifelong-ml.cc/"
 num: 170
 tags: ["ML"]
 timezone: "UTC−12"
 id: "collas26"
-verified_on: "2026-10-26"
+verified_on: "2026-11-16"
 sources:
   - "https://lifelong-ml.cc/Conferences/2026/call"
   - "https://lifelong-ml.cc/Conferences/2026/call_for_non_archival_track"

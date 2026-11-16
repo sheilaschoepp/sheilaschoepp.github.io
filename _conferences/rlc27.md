@@ -1,16 +1,18 @@
 ---
 shortname: "RLC 2027"
 name: "Reinforcement Learning Conference"
-location: "Brown University, USA; Odense, Denmark"
-dates: "Early August 2027 (Brown); late August 2027 (Odense). Exact dates TBD."
-start_date: ""
+location: "Brown University, Providence, RI, USA; Nyborg, Denmark (joint with EWRL)"
+dates: "August 2–6, 2027 (Providence); August 22–25, 2027 (Nyborg)"
+start_date: "2027-08-02"
+end_date: "2027-08-25"
 website: "https://rl-conference.cc/"
 num: 160
 tags: ["RL", "ML"]
 timezone: "N/A"
 id: "rlc27"
-verified_on: "2026-10-25"
+verified_on: "2026-11-16"
 sources:
+  - "https://rl-conference.cc/2027/index.html"
   - "https://rl-conference.cc/2026/index.html"
   - "https://rl-conference.cc/2026/callforpapers.html"
   - "https://rl-conference.cc/2026/call_for_workshops.html"

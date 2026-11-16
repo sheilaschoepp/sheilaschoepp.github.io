@@ -20,7 +20,7 @@ sources:
   - "https://tom4ai.github.io/AAAI2027/call-for-papers/"
   - "https://tom4ai.github.io/events/AAAI2027/"
   - "https://tom4ai.github.io/events/"
-verified_on: "2026-10-25"
+verified_on: "2026-11-16"
 tracks:
   - name: "Main track"
     source: "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
@@ -96,11 +96,11 @@ tracks:
     deadlines:
       - label: "Extended abstract"
         date: null
-        display: "Nov 20, 2026"
+        display: "Dec 2, 2026"
         decision: false
       - label: "Decision"
         date: null
-        display: "Dec 2, 2026"
+        display: "Dec 10, 2026"
         decision: true
   - name: "Workshop proposals"
     source: "https://aaai.org/conference/aaai/aaai-27/workshops-call/"
