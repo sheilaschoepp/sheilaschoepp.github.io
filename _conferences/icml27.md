@@ -10,16 +10,15 @@ num: 200
 tags: ["ML"]
 timezone: "UTC−12"
 id: "icml27"
-verified_on: "2026-11-16"
+verified_on: "2026-11-23"
 sources:
   - "https://icml.cc/Conferences/2027"
   - "https://icml.cc/Conferences/FutureMeetings"
   - "https://icml.cc/Conferences/2027/Dates"
   - "https://icml.cc/Conferences/2027/CallForPapers"
   - "https://icml.cc/Conferences/2026/Dates"
-  - "https://icml.cc/Conferences/2026/CallForPositionPapers"
+  - "https://icml.cc/Conferences/2027/CallForPositionPapers"
   - "https://icml.cc/Conferences/2026/CallForWorkshops"
-  - "https://icml.cc/Conferences/2026/ReviewerInstructions"
   - "https://llmforplanning.github.io/ICML26/"
   - "https://llmforplanning.github.io/previous/"
   - "https://groups.google.com/g/rl-list/c/kPkZ378cqLM"
@@ -42,24 +41,20 @@ tracks:
         display: "May 3, 2027"
         decision: true
   - name: "Position papers"
-    source: "https://icml.cc/Conferences/2026/CallForPositionPapers"
+    source: "https://icml.cc/Conferences/2027/CallForPositionPapers"
     deadlines:
       - label: "Abstract"
-        date: null
-        display: "Jan 23, 2027"
+        date: "2027-01-14T23:59:00-12:00"
+        display: "Jan 14, 2027"
         decision: false
-        tentative_from: 2026
       - label: "Paper"
-        date: null
-        display: "Jan 28, 2027"
+        date: "2027-01-22T23:59:00-12:00"
+        display: "Jan 22, 2027"
         decision: false
-        tentative_from: 2026
       - label: "Decision"
         date: null
-        display: "Apr 30, 2027"
+        display: "May 3, 2027"
         decision: true
-        tentative_from: 2026
-        source: "https://icml.cc/Conferences/2026/ReviewerInstructions"
   - name: "Planning in the Era of LLMs (LM4Plan) workshop"
     source: "https://groups.google.com/g/rl-list/c/kPkZ378cqLM"
     deadlines:
