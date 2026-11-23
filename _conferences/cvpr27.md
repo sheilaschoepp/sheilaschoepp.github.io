@@ -2,8 +2,9 @@
 shortname: "CVPR 2027"
 name: "IEEE/CVF Conference on Computer Vision and Pattern Recognition"
 location: "Seattle, Washington, USA"
-dates: "June 20-25, 2027"
+dates: "June 20-24, 2027"
 start_date: "2027-06-20"
+end_date: "2027-06-24"
 website: "https://cvpr.thecvf.com/Conferences/2027"
 num: 230
 tags: ["CV", "ML"]
@@ -19,7 +20,7 @@ sources:
   - "https://foundation-models-meet-embodied-agents.github.io/cvpr2026/"
   - "https://foundation-models-meet-embodied-agents.github.io/cvpr2025/"
   - "https://cvpr.thecvf.com/Conferences/2026/Workshops"
-verified_on: "2026-10-25"
+verified_on: "2026-11-23"
 tracks:
   - name: "Main track"
     source: "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
